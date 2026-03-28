@@ -41,17 +41,38 @@ router.get('/categories', verifyDspToken, async (_req: Request, res: Response, n
 });
 
 // ── GET /api/roster/daily ───────────────────────────────────
+// Returns ALL sectors for the DSP's area, each with their roster status for the given date.
+// Sectors without a roster show status='not_created' so the app shows the "Roster Banao" button.
 router.get('/daily', verifyDspToken, async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { date } = req.query as { date?: string };
     const targetDate = date || new Date().toISOString().slice(0, 10);
+    const dspAreaId = (req as Request & { user?: { areaId?: string } }).user?.areaId ?? null;
 
-    const rosters = await db
+    if (!dspAreaId) {
+      // DSP not assigned to any area — return empty
+      return ok(res, []);
+    }
+
+    // Fetch all active sectors for the DSP's area
+    const allSectors = await db
+      .select({
+        id: sectors.id,
+        name: sectors.name,
+        colorHex: sectors.colorHex,
+      })
+      .from(sectors)
+      .where(and(eq(sectors.areaId, dspAreaId), eq(sectors.isActive, true)))
+      .orderBy(asc(sectors.name));
+
+    if (allSectors.length === 0) return ok(res, []);
+
+    // Fetch existing rosters for those sectors on the target date
+    const sectorIds = allSectors.map((s) => s.id);
+    const existingRosters = await db
       .select({
         id: dailyRosters.id,
         sectorId: dailyRosters.sectorId,
-        sectorName: sectors.name,
-        sectorColor: sectors.colorHex,
         rosterDate: dailyRosters.rosterDate,
         status: dailyRosters.status,
         totalStaffCount: dailyRosters.totalStaffCount,
@@ -61,10 +82,34 @@ router.get('/daily', verifyDspToken, async (req: Request, res: Response, next: N
         notes: dailyRosters.notes,
       })
       .from(dailyRosters)
-      .innerJoin(sectors, eq(sectors.id, dailyRosters.sectorId))
-      .where(eq(dailyRosters.rosterDate, targetDate))
-      .orderBy(asc(sectors.name));
-    ok(res, rosters);
+      .where(
+        and(
+          eq(dailyRosters.rosterDate, targetDate),
+          sql`${dailyRosters.sectorId} = ANY(ARRAY[${sql.join(sectorIds.map(id => sql`${id}::uuid`), sql`, `)}])`
+        )
+      );
+
+    // Merge: for each sector, attach its roster or default to not_created
+    const rosterMap = new Map(existingRosters.map((r) => [r.sectorId, r]));
+
+    const result = allSectors.map((sector) => {
+      const roster = rosterMap.get(sector.id);
+      return {
+        id: roster?.id ?? null,
+        sectorId: sector.id,
+        sectorName: sector.name,
+        sectorColor: sector.colorHex,
+        rosterDate: targetDate,
+        status: roster?.status ?? 'not_created',
+        totalStaffCount: roster?.totalStaffCount ?? 0,
+        assignedStaffCount: roster?.assignedStaffCount ?? 0,
+        createdByDspId: roster?.createdByDspId ?? null,
+        publishedAt: roster?.publishedAt ?? null,
+        notes: roster?.notes ?? null,
+      };
+    });
+
+    ok(res, result);
   } catch (err) { next(err); }
 });
 
