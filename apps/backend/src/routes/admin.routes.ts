@@ -716,7 +716,15 @@ router.post(
           colorHex: colorHex ?? '#2563EB',
           boundary: boundaryValue as unknown as string,
         })
-        .returning();
+        .returning({
+          id: areas.id,
+          name: areas.name,
+          colorHex: areas.colorHex,
+          isActive: areas.isActive,
+          dspUserId: areas.dspUserId,
+          createdAt: areas.createdAt,
+          updatedAt: areas.updatedAt,
+        });
 
       // Auto-create 3 default sectors
       const defaultSectors = await db
@@ -764,7 +772,14 @@ router.put(
         .update(areas)
         .set(updateData)
         .where(eq(areas.id, id))
-        .returning();
+        .returning({
+          id: areas.id,
+          name: areas.name,
+          colorHex: areas.colorHex,
+          isActive: areas.isActive,
+          dspUserId: areas.dspUserId,
+          updatedAt: areas.updatedAt,
+        });
 
       if (!updated) {
         throw new AppError(404, 'NOT_FOUND', 'Area not found');
