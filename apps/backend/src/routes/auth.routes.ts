@@ -122,6 +122,7 @@ router.post(
             badgeNumber: dsp.badgeNumber,
             rank: dsp.rank,
             designation: dsp.designation,
+            assignedAreaId: area?.id ?? null,
           },
         },
         error: null,
