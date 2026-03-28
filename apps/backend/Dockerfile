@@ -5,6 +5,8 @@ COPY turbo.json ./
 COPY packages/ ./packages/
 COPY apps/backend/package*.json ./apps/backend/
 RUN npm install --legacy-peer-deps
+# Build shared-types package first (required by backend)
+RUN cd packages/shared-types && npm install --legacy-peer-deps && npm run build
 COPY apps/backend/ ./apps/backend/
 RUN cd apps/backend && npm run build
 
