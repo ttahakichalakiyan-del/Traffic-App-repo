@@ -104,14 +104,16 @@ app.use(globalLimiter);
 // ============================================================
 // Health check
 // ============================================================
-app.get('/health', (_req: Request, res: Response) => {
+const healthHandler = (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
     env: process.env.NODE_ENV || 'development',
   });
-});
+};
+app.get('/health', healthHandler);
+app.get('/api/health', healthHandler); // Admin panel alias
 
 // ============================================================
 // Routes
