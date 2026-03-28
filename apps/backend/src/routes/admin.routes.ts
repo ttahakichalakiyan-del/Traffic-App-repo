@@ -495,7 +495,7 @@ router.post(
           .where(eq(staffMembers.phone, phone))
           .limit(1);
         if (existing) {
-          return fail(res, 409, 'Yeh phone number pehle se kisi staff member ke liye registered hai');
+          throw new AppError(409, 'CONFLICT', 'Yeh phone number pehle se kisi staff member ke liye registered hai');
         }
       }
 
