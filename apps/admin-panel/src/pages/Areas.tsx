@@ -11,6 +11,7 @@ interface Area {
   dspUserId: string | null;
   dspName: string | null;
   sectorCount: number;
+  boundaryGeoJson: string | null;
 }
 
 interface Sector {
@@ -215,7 +216,7 @@ export default function Areas() {
     setEditName(area.name);
     setEditColor(area.colorHex);
     setEditDspId(area.dspUserId ?? '');
-    setEditGeoJson('');
+    setEditGeoJson(area.boundaryGeoJson ?? '');
     setIsEditingName(false);
     setSaveError(null);
     setSaveSuccess(false);
@@ -226,7 +227,7 @@ export default function Areas() {
       name: editName,
       colorHex: editColor,
       dspUserId: editDspId || null,
-      geoJson: editGeoJson || undefined,
+      geoJsonPolygon: editGeoJson ? JSON.parse(editGeoJson) : undefined,
     }),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['areas'] });

@@ -659,6 +659,7 @@ router.get('/areas', async (_req: Request, res: Response, next: NextFunction) =>
         createdAt: areas.createdAt,
         updatedAt: areas.updatedAt,
         dspFullName: dspUsers.fullName,
+        boundaryGeoJson: sql<string | null>`ST_AsGeoJSON(${areas.boundary})`,
       })
       .from(areas)
       .leftJoin(dspUsers, eq(areas.dspUserId, dspUsers.id))
