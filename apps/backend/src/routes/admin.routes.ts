@@ -487,6 +487,18 @@ router.post(
     try {
       const { badgeId, fullName, rank, designation, phone, areaId, sectorId, pin } = req.body;
 
+      // Check phone uniqueness (badge uniqueness is enforced by DB unique constraint)
+      if (phone) {
+        const [existing] = await db
+          .select({ id: staffMembers.id })
+          .from(staffMembers)
+          .where(eq(staffMembers.phone, phone))
+          .limit(1);
+        if (existing) {
+          return fail(res, 409, 'Yeh phone number pehle se kisi staff member ke liye registered hai');
+        }
+      }
+
       const pinHash = await hashPin(pin);
 
       const [member] = await db
