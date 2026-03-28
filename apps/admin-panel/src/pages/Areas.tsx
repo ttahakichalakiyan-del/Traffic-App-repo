@@ -50,7 +50,6 @@ function CreateAreaModal({
     geoJson: '',
   });
   const [error, setError] = useState<string | null>(null);
-  const [showMapPreview, setShowMapPreview] = useState(false);
 
   const mutation = useMutation({
     mutationFn: () => api.post('/admin/areas', { ...form, dspUserId: form.dspUserId || null }),
