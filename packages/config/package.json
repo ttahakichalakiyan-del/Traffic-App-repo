@@ -1,0 +1,13 @@
+{
+  "name": "@ctpl/config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'nothing to build'",
+    "lint": "echo 'nothing to lint'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

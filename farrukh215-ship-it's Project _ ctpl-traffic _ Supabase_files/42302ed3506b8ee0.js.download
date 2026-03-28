@@ -1,0 +1,1829 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="7a46a9f4-2362-3ab9-fa62-53114f94b81b")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,693241,e=>{"use strict";var t=e.i(478902),s=e.i(710483);let a=({resourceText:e,isFullPage:a=!1})=>{let i=()=>(0,t.jsx)(s.Admonition,{type:"warning",title:`You need additional permissions to ${e}`,description:"Contact your organization owner or administrator for assistance."});return a?(0,t.jsx)("div",{className:"flex h-full items-center justify-center",children:(0,t.jsx)("div",{className:"max-w-lg",children:(0,t.jsx)(i,{})})}):(0,t.jsx)(i,{})};e.s(["NoPermission",0,a,"default",0,a])},53071,e=>{"use strict";let t=(0,e.i(388019).default)("SquarePen",[["path",{d:"M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7",key:"1m0v6g"}],["path",{d:"M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z",key:"ohrbg2"}]]);e.s(["Edit",()=>t],53071)},29750,(e,t,s)=>{"use strict";var a="function"==typeof Symbol&&Symbol.for,i=a?Symbol.for("react.element"):60103,n=a?Symbol.for("react.portal"):60106,r=a?Symbol.for("react.fragment"):60107,o=a?Symbol.for("react.strict_mode"):60108,l=a?Symbol.for("react.profiler"):60114,c=a?Symbol.for("react.provider"):60109,u=a?Symbol.for("react.context"):60110,d=a?Symbol.for("react.async_mode"):60111,m=a?Symbol.for("react.concurrent_mode"):60111,p=a?Symbol.for("react.forward_ref"):60112,h=a?Symbol.for("react.suspense"):60113,_=a?Symbol.for("react.suspense_list"):60120,f=a?Symbol.for("react.memo"):60115,b=a?Symbol.for("react.lazy"):60116,g=a?Symbol.for("react.block"):60121,y=a?Symbol.for("react.fundamental"):60117,A=a?Symbol.for("react.responder"):60118,x=a?Symbol.for("react.scope"):60119;function v(e){if("object"==typeof e&&null!==e){var t=e.$$typeof;switch(t){case i:switch(e=e.type){case d:case m:case r:case l:case o:case h:return e;default:switch(e=e&&e.$$typeof){case u:case p:case b:case f:case c:return e;default:return t}}case n:return t}}}function E(e){return v(e)===m}s.AsyncMode=d,s.ConcurrentMode=m,s.ContextConsumer=u,s.ContextProvider=c,s.Element=i,s.ForwardRef=p,s.Fragment=r,s.Lazy=b,s.Memo=f,s.Portal=n,s.Profiler=l,s.StrictMode=o,s.Suspense=h,s.isAsyncMode=function(e){return E(e)||v(e)===d},s.isConcurrentMode=E,s.isContextConsumer=function(e){return v(e)===u},s.isContextProvider=function(e){return v(e)===c},s.isElement=function(e){return"object"==typeof e&&null!==e&&e.$$typeof===i},s.isForwardRef=function(e){return v(e)===p},s.isFragment=function(e){return v(e)===r},s.isLazy=function(e){return v(e)===b},s.isMemo=function(e){return v(e)===f},s.isPortal=function(e){return v(e)===n},s.isProfiler=function(e){return v(e)===l},s.isStrictMode=function(e){return v(e)===o},s.isSuspense=function(e){return v(e)===h},s.isValidElementType=function(e){return"string"==typeof e||"function"==typeof e||e===r||e===m||e===l||e===o||e===h||e===_||"object"==typeof e&&null!==e&&(e.$$typeof===b||e.$$typeof===f||e.$$typeof===c||e.$$typeof===u||e.$$typeof===p||e.$$typeof===y||e.$$typeof===A||e.$$typeof===x||e.$$typeof===g)},s.typeOf=v},213784,(e,t,s)=>{"use strict";t.exports=e.r(29750)},781979,(e,t,s)=>{"use strict";var a=e.r(213784),i={childContextTypes:!0,contextType:!0,contextTypes:!0,defaultProps:!0,displayName:!0,getDefaultProps:!0,getDerivedStateFromError:!0,getDerivedStateFromProps:!0,mixins:!0,propTypes:!0,type:!0},n={name:!0,length:!0,prototype:!0,caller:!0,callee:!0,arguments:!0,arity:!0},r={$$typeof:!0,compare:!0,defaultProps:!0,displayName:!0,propTypes:!0,type:!0},o={};function l(e){return a.isMemo(e)?r:o[e.$$typeof]||i}o[a.ForwardRef]={$$typeof:!0,render:!0,defaultProps:!0,displayName:!0,propTypes:!0},o[a.Memo]=r;var c=Object.defineProperty,u=Object.getOwnPropertyNames,d=Object.getOwnPropertySymbols,m=Object.getOwnPropertyDescriptor,p=Object.getPrototypeOf,h=Object.prototype;t.exports=function e(t,s,a){if("string"!=typeof s){if(h){var i=p(s);i&&i!==h&&e(t,i,a)}var r=u(s);d&&(r=r.concat(d(s)));for(var o=l(t),_=l(s),f=0;f<r.length;++f){var b=r[f];if(!n[b]&&!(a&&a[b])&&!(_&&_[b])&&!(o&&o[b])){var g=m(s,b);try{c(t,b,g)}catch(e){}}}}return t}},420985,e=>{"use strict";var t=e.i(38429),s=e.i(356003),a=e.i(355901),i=e.i(234745),n=e.i(718727);async function r({projectRef:e,payload:t},s){let{data:a,error:n}=await (0,i.put)("/platform/projects/{ref}/content",{params:{path:{ref:e}},body:t,headers:{Version:"2"},signal:s});return n&&(0,i.handleError)(n),a}e.s(["upsertContent",()=>r,"useContentUpsertMutation",0,({onError:e,onSuccess:i,invalidateQueriesOnSuccess:o=!0,...l}={})=>{let c=(0,s.useQueryClient)();return(0,t.useMutation)({mutationFn:e=>r(e),async onSuccess(e,t,s){let{projectRef:a}=t;o&&await Promise.all([c.invalidateQueries({queryKey:n.contentKeys.allContentLists(a)}),c.invalidateQueries({queryKey:n.contentKeys.infiniteList(a)})]),await i?.(e,t,s)},async onError(t,s,i){void 0===e?a.toast.error(`Failed to insert content: ${t.message}`):e(t,s,i)},...l})}])},867987,e=>{"use strict";var t=e.i(478902);e.i(481541);var s=e.i(337394),s=s,a=e.i(102220),a=a,i=e.i(967052),n=e.i(370410),r=e.i(88816),o=e.i(816467),l=e.i(389959),c=e.i(602089),u=e.i(837710),d=e.i(843778),m=e.i(375761),p=e.i(874311),h=e.i(613580);let _=[{label:"Ask ChatGPT",url:"https://chatgpt.com/",promptParam:"q",icon:s.default,toolId:"chatgpt"},{label:"Ask Claude",url:"https://claude.ai/new",promptParam:"q",icon:a.default,toolId:"claude"}];function f({buildPrompt:e,label:s,iconOnly:a=!1,onOpenAssistant:f,telemetrySource:b,size:g="tiny",type:y="default",disabled:A=!1,loading:x=!1,className:v,tooltip:E,copyLabel:C="Copy prompt",showExternalAI:S=!1,extraDropdownItems:k,additionalDropdownItems:w}){let j=(0,i.useTrack)(),[N,O]=(0,l.useState)(!1),[R,T]=(0,l.useState)(!1);(0,l.useEffect)(()=>{if(!N)return;let e=setTimeout(()=>O(!1),2e3);return()=>clearTimeout(e)},[N]);let L=(0,t.jsxs)("div",{className:(0,d.cn)("flex items-center","gap-0"),children:[(0,t.jsx)(u.Button,{type:y,size:g,disabled:A,onClick:()=>{f(),b&&j("ai_assistant_dropdown_button_clicked",{source:b})},icon:(0,t.jsx)(c.AiIconAnimation,{size:a?16:14,loading:x}),className:(0,d.cn)("rounded-r-none border-r-0",a&&"px-1.5",v),children:!a&&s}),(0,t.jsxs)(p.DropdownMenu,{open:R,onOpenChange:T,children:[(0,t.jsx)(p.DropdownMenuTrigger,{asChild:!0,children:(0,t.jsx)(u.Button,{type:y,size:g,disabled:A,className:(0,d.cn)("rounded-l-none px-1",a&&"px-1"),icon:(0,t.jsx)(r.ChevronDown,{size:12})})}),(0,t.jsxs)(p.DropdownMenuContent,{align:"end",className:"w-44",children:[k,(0,t.jsxs)(p.DropdownMenuItem,{onClick:()=>{let t=e();(0,m.copyToClipboard)(t),O(!0),T(!1),b&&j("ai_prompt_copied",{source:b})},className:"gap-2",children:[N?(0,t.jsx)(n.Check,{size:14,className:"text-brand"}):(0,t.jsx)(o.Copy,{size:14}),N?"Copied!":C]}),S&&(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(p.DropdownMenuSeparator,{}),_.map(s=>(0,t.jsxs)(p.DropdownMenuItem,{className:"gap-2",onClick:()=>{let t;return t=e(),void(window.open(`${s.url}?${s.promptParam}=${encodeURIComponent(t)}`,"_blank","noreferrer"),b&&j("ai_external_tool_clicked",{source:b,tool:s.toolId}))},children:[(0,t.jsx)(s.icon,{size:14}),s.label]},s.url))]}),w&&w.length>0&&(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(p.DropdownMenuSeparator,{}),w.map((e,s)=>(0,t.jsxs)(p.DropdownMenuItem,{onClick:e.onClick,className:"gap-2",children:[e.icon,e.label]},s))]})]})]})]});return a&&E?(0,t.jsxs)(h.Tooltip,{children:[(0,t.jsx)(h.TooltipTrigger,{asChild:!0,children:(0,t.jsx)("div",{className:"inline-flex",children:L})}),(0,t.jsx)(h.TooltipContent,{side:"bottom",children:E})]}):L}e.s(["AiAssistantDropdown",()=>f],867987)},237002,e=>{"use strict";var t=e.i(478902),s=e.i(459323),a=e.i(389959),i=e.i(639786),n=e.i(837491),r=e.i(515689),o=e.i(871115),l=e.i(801574),c=e.i(298032),u=e.i(43341),d=e.i(57352);let m="Checkbox",[p,h]=(0,n.createContextScope)(m),[_,f]=p(m),b=(0,a.forwardRef)((e,t)=>{let{__scopeCheckbox:n,name:l,checked:c,defaultChecked:u,required:m,disabled:p,value:h="on",onCheckedChange:f,...b}=e,[g,v]=(0,a.useState)(null),E=(0,i.useComposedRefs)(t,e=>v(e)),C=(0,a.useRef)(!1),S=!g||!!g.closest("form"),[k=!1,w]=(0,o.useControllableState)({prop:c,defaultProp:u,onChange:f}),j=(0,a.useRef)(k);return(0,a.useEffect)(()=>{let e=null==g?void 0:g.form;if(e){let t=()=>w(j.current);return e.addEventListener("reset",t),()=>e.removeEventListener("reset",t)}},[g,w]),(0,a.createElement)(_,{scope:n,state:k,disabled:p},(0,a.createElement)(d.Primitive.button,(0,s.default)({type:"button",role:"checkbox","aria-checked":A(k)?"mixed":k,"aria-required":m,"data-state":x(k),"data-disabled":p?"":void 0,disabled:p,value:h},b,{ref:E,onKeyDown:(0,r.composeEventHandlers)(e.onKeyDown,e=>{"Enter"===e.key&&e.preventDefault()}),onClick:(0,r.composeEventHandlers)(e.onClick,e=>{w(e=>!!A(e)||!e),S&&(C.current=e.isPropagationStopped(),C.current||e.stopPropagation())})})),S&&(0,a.createElement)(y,{control:g,bubbles:!C.current,name:l,value:h,checked:k,required:m,disabled:p,style:{transform:"translateX(-100%)"}}))}),g=(0,a.forwardRef)((e,t)=>{let{__scopeCheckbox:i,forceMount:n,...r}=e,o=f("CheckboxIndicator",i);return(0,a.createElement)(u.Presence,{present:n||A(o.state)||!0===o.state},(0,a.createElement)(d.Primitive.span,(0,s.default)({"data-state":x(o.state),"data-disabled":o.disabled?"":void 0},r,{ref:t,style:{pointerEvents:"none",...e.style}})))}),y=e=>{let{control:t,checked:i,bubbles:n=!0,...r}=e,o=(0,a.useRef)(null),u=(0,l.usePrevious)(i),d=(0,c.useSize)(t);return(0,a.useEffect)(()=>{let e=o.current,t=Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype,"checked").set;if(u!==i&&t){let s=new Event("click",{bubbles:n});e.indeterminate=A(i),t.call(e,!A(i)&&i),e.dispatchEvent(s)}},[u,i,n]),(0,a.createElement)("input",(0,s.default)({type:"checkbox","aria-hidden":!0,defaultChecked:!A(i)&&i},r,{tabIndex:-1,ref:o,style:{...e.style,...d,position:"absolute",pointerEvents:"none",opacity:0,margin:0}}))};function A(e){return"indeterminate"===e}function x(e){return A(e)?"indeterminate":e?"checked":"unchecked"}var v=e.i(370410),E=e.i(843778);let C=a.forwardRef(({className:e,...s},a)=>(0,t.jsx)(b,{ref:a,className:(0,E.cn)("peer flex items-center justify-center h-4 w-4 shrink-0 rounded border border-control bg-control/25 ring-offset-background","transition-colors duration-150 ease-in-out","hover:border-strong","focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2","disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-foreground data-[state=checked]:text-background",e),...s,children:(0,t.jsx)(g,{className:(0,E.cn)("flex items-center justify-center text-current"),children:(0,t.jsx)(v.Check,{className:"h-3 w-3 text-background",strokeWidth:4})})}));C.displayName=b.displayName,e.s(["Checkbox",()=>C],237002)},34411,e=>{"use strict";var t=e.i(237002);e.s(["Checkbox_Shadcn_",()=>t.Checkbox])},680576,e=>{"use strict";var t=e.i(389959),s=e.i(367905);function a(e,a,i,n){let r=Array.isArray(i)?n:i,o=r?.enabled??!0,l=r?.shift??!1,c=(0,s.useLatest)(o),u=(0,s.useLatest)(e),d=(0,s.useLatest)(a),m=(0,s.useLatest)(l);(0,t.useEffect)(()=>{function e(e){c.current&&(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()===d.current.toLowerCase()&&!e.altKey&&(m.current?e.shiftKey:!e.shiftKey)&&u.current(e)}return window.addEventListener("keydown",e,!0),()=>{window.removeEventListener("keydown",e,!0)}},[u,c,d,m])}e.s(["useHotKey",()=>a])},586468,(e,t,s)=>{var a;let i;e.e,a=function e(){"use strict";var t="u">typeof self?self:"u">typeof window?window:void 0!==t?t:{},s=!t.document&&!!t.postMessage,a=t.IS_PAPA_WORKER||!1,i={},n=0,r={parse:function(s,a){var o,l=(a=a||{}).dynamicTyping||!1;if(x(l)&&(a.dynamicTypingFunction=l,l={}),a.dynamicTyping=l,a.transform=!!x(a.transform)&&a.transform,a.worker&&r.WORKERS_SUPPORTED){var p=function(){if(!r.WORKERS_SUPPORTED)return!1;var s,a,o=(s=t.URL||t.webkitURL||null,a=e.toString(),r.BLOB_URL||(r.BLOB_URL=s.createObjectURL(new Blob(["var global = (function() { if (typeof self !== 'undefined') { return self; } if (typeof window !== 'undefined') { return window; } if (typeof global !== 'undefined') { return global; } return {}; })(); global.IS_PAPA_WORKER=true; ","(",a,")();"],{type:"text/javascript"})))),l=new t.Worker(o);return l.onmessage=f,l.id=n++,i[l.id]=l}();return p.userStep=a.step,p.userChunk=a.chunk,p.userComplete=a.complete,p.userError=a.error,a.step=x(a.step),a.chunk=x(a.chunk),a.complete=x(a.complete),a.error=x(a.error),delete a.worker,void p.postMessage({input:s,config:a,workerId:p.id})}var h=null;return r.NODE_STREAM_INPUT,"string"==typeof s?(s=65279===(o=s).charCodeAt(0)?o.slice(1):o,h=a.download?new c(a):new d(a)):!0===s.readable&&x(s.read)&&x(s.on)?h=new m(a):(t.File&&s instanceof File||s instanceof Object)&&(h=new u(a)),h.stream(s)},unparse:function(e,t){var s=!1,a=!0,i=",",n="\r\n",o='"',l=o+o,c=!1,u=null,d=!1;if("object"==typeof t){if("string"!=typeof t.delimiter||r.BAD_DELIMITERS.filter(function(e){return -1!==t.delimiter.indexOf(e)}).length||(i=t.delimiter),("boolean"==typeof t.quotes||"function"==typeof t.quotes||Array.isArray(t.quotes))&&(s=t.quotes),"boolean"!=typeof t.skipEmptyLines&&"string"!=typeof t.skipEmptyLines||(c=t.skipEmptyLines),"string"==typeof t.newline&&(n=t.newline),"string"==typeof t.quoteChar&&(o=t.quoteChar),"boolean"==typeof t.header&&(a=t.header),Array.isArray(t.columns)){if(0===t.columns.length)throw Error("Option columns is empty");u=t.columns}void 0!==t.escapeChar&&(l=t.escapeChar+o),("boolean"==typeof t.escapeFormulae||t.escapeFormulae instanceof RegExp)&&(d=t.escapeFormulae instanceof RegExp?t.escapeFormulae:/^[=+\-@\t\r].*$/)}var m=RegExp(h(o),"g");if("string"==typeof e&&(e=JSON.parse(e)),Array.isArray(e)){if(!e.length||Array.isArray(e[0]))return p(null,e,c);if("object"==typeof e[0])return p(u||Object.keys(e[0]),e,c)}else if("object"==typeof e)return"string"==typeof e.data&&(e.data=JSON.parse(e.data)),Array.isArray(e.data)&&(e.fields||(e.fields=e.meta&&e.meta.fields||u),e.fields||(e.fields=Array.isArray(e.data[0])?e.fields:"object"==typeof e.data[0]?Object.keys(e.data[0]):[]),Array.isArray(e.data[0])||"object"==typeof e.data[0]||(e.data=[e.data])),p(e.fields||[],e.data||[],c);throw Error("Unable to serialize unrecognized input");function p(e,t,s){var r="";"string"==typeof e&&(e=JSON.parse(e)),"string"==typeof t&&(t=JSON.parse(t));var o=Array.isArray(e)&&0<e.length,l=!Array.isArray(t[0]);if(o&&a){for(var c=0;c<e.length;c++)0<c&&(r+=i),r+=_(e[c],c);0<t.length&&(r+=n)}for(var u=0;u<t.length;u++){var d=o?e.length:t[u].length,m=!1,p=o?0===Object.keys(t[u]).length:0===t[u].length;if(s&&!o&&(m="greedy"===s?""===t[u].join("").trim():1===t[u].length&&0===t[u][0].length),"greedy"===s&&o){for(var h=[],f=0;f<d;f++){var b=l?e[f]:f;h.push(t[u][b])}m=""===h.join("").trim()}if(!m){for(var g=0;g<d;g++){0<g&&!p&&(r+=i);var y=o&&l?e[g]:g;r+=_(t[u][y],g)}u<t.length-1&&(!s||0<d&&!p)&&(r+=n)}}return r}function _(e,t){if(null==e)return"";if(e.constructor===Date)return JSON.stringify(e).slice(1,25);var a=!1;d&&"string"==typeof e&&d.test(e)&&(e="'"+e,a=!0);var n=e.toString().replace(m,l);return(a=a||!0===s||"function"==typeof s&&s(e,t)||Array.isArray(s)&&s[t]||function(e,t){for(var s=0;s<t.length;s++)if(-1<e.indexOf(t[s]))return!0;return!1}(n,r.BAD_DELIMITERS)||-1<n.indexOf(i)||" "===n.charAt(0)||" "===n.charAt(n.length-1))?o+n+o:n}}};if(r.RECORD_SEP="\x1e",r.UNIT_SEP="\x1f",r.BYTE_ORDER_MARK="\uFEFF",r.BAD_DELIMITERS=["\r","\n",'"',r.BYTE_ORDER_MARK],r.WORKERS_SUPPORTED=!s&&!!t.Worker,r.NODE_STREAM_INPUT=1,r.LocalChunkSize=0xa00000,r.RemoteChunkSize=5242880,r.DefaultDelimiter=",",r.Parser=_,r.ParserHandle=p,r.NetworkStreamer=c,r.FileStreamer=u,r.StringStreamer=d,r.ReadableStreamStreamer=m,t.jQuery){var o=t.jQuery;o.fn.parse=function(e){var s=e.config||{},a=[];return this.each(function(e){if(!("INPUT"===o(this).prop("tagName").toUpperCase()&&"file"===o(this).attr("type").toLowerCase()&&t.FileReader)||!this.files||0===this.files.length)return!0;for(var i=0;i<this.files.length;i++)a.push({file:this.files[i],inputElem:this,instanceConfig:o.extend({},s)})}),i(),this;function i(){if(0!==a.length){var t,s,i,l=a[0];if(x(e.before)){var c=e.before(l.file,l.inputElem);if("object"==typeof c){if("abort"===c.action)return t=l.file,s=l.inputElem,i=c.reason,void(x(e.error)&&e.error({name:"AbortError"},t,s,i));if("skip"===c.action)return void n();"object"==typeof c.config&&(l.instanceConfig=o.extend(l.instanceConfig,c.config))}else if("skip"===c)return void n()}var u=l.instanceConfig.complete;l.instanceConfig.complete=function(e){x(u)&&u(e,l.file,l.inputElem),n()},r.parse(l.file,l.instanceConfig)}else x(e.complete)&&e.complete()}function n(){a.splice(0,1),i()}}}function l(e){this._handle=null,this._finished=!1,this._completed=!1,this._halted=!1,this._input=null,this._baseIndex=0,this._partialLine="",this._rowCount=0,this._start=0,this._nextChunk=null,this.isFirstChunk=!0,this._completeResults={data:[],errors:[],meta:{}},(function(e){var t=y(e);t.chunkSize=parseInt(t.chunkSize),e.step||e.chunk||(t.chunkSize=null),this._handle=new p(t),(this._handle.streamer=this)._config=t}).call(this,e),this.parseChunk=function(e,s){if(this.isFirstChunk&&x(this._config.beforeFirstChunk)){var i=this._config.beforeFirstChunk(e);void 0!==i&&(e=i)}this.isFirstChunk=!1,this._halted=!1;var n=this._partialLine+e;this._partialLine="";var o=this._handle.parse(n,this._baseIndex,!this._finished);if(!this._handle.paused()&&!this._handle.aborted()){var l=o.meta.cursor;this._finished||(this._partialLine=n.substring(l-this._baseIndex),this._baseIndex=l),o&&o.data&&(this._rowCount+=o.data.length);var c=this._finished||this._config.preview&&this._rowCount>=this._config.preview;if(a)t.postMessage({results:o,workerId:r.WORKER_ID,finished:c});else if(x(this._config.chunk)&&!s){if(this._config.chunk(o,this._handle),this._handle.paused()||this._handle.aborted())return void(this._halted=!0);o=void 0,this._completeResults=void 0}return this._config.step||this._config.chunk||(this._completeResults.data=this._completeResults.data.concat(o.data),this._completeResults.errors=this._completeResults.errors.concat(o.errors),this._completeResults.meta=o.meta),this._completed||!c||!x(this._config.complete)||o&&o.meta.aborted||(this._config.complete(this._completeResults,this._input),this._completed=!0),c||o&&o.meta.paused||this._nextChunk(),o}this._halted=!0},this._sendError=function(e){x(this._config.error)?this._config.error(e):a&&this._config.error&&t.postMessage({workerId:r.WORKER_ID,error:e,finished:!1})}}function c(e){var t;(e=e||{}).chunkSize||(e.chunkSize=r.RemoteChunkSize),l.call(this,e),this._nextChunk=s?function(){this._readChunk(),this._chunkLoaded()}:function(){this._readChunk()},this.stream=function(e){this._input=e,this._nextChunk()},this._readChunk=function(){if(this._finished)this._chunkLoaded();else{if(t=new XMLHttpRequest,this._config.withCredentials&&(t.withCredentials=this._config.withCredentials),s||(t.onload=A(this._chunkLoaded,this),t.onerror=A(this._chunkError,this)),t.open(this._config.downloadRequestBody?"POST":"GET",this._input,!s),this._config.downloadRequestHeaders){var e=this._config.downloadRequestHeaders;for(var a in e)t.setRequestHeader(a,e[a])}if(this._config.chunkSize){var i=this._start+this._config.chunkSize-1;t.setRequestHeader("Range","bytes="+this._start+"-"+i)}try{t.send(this._config.downloadRequestBody)}catch(e){this._chunkError(e.message)}s&&0===t.status&&this._chunkError()}},this._chunkLoaded=function(){var e;4===t.readyState&&(t.status<200||400<=t.status?this._chunkError():(this._start+=this._config.chunkSize?this._config.chunkSize:t.responseText.length,this._finished=!this._config.chunkSize||this._start>=(null===(e=t.getResponseHeader("Content-Range"))?-1:parseInt(e.substring(e.lastIndexOf("/")+1))),this.parseChunk(t.responseText)))},this._chunkError=function(e){var s=t.statusText||e;this._sendError(Error(s))}}function u(e){(e=e||{}).chunkSize||(e.chunkSize=r.LocalChunkSize),l.call(this,e);var t,s,a="u">typeof FileReader;this.stream=function(e){this._input=e,s=e.slice||e.webkitSlice||e.mozSlice,a?((t=new FileReader).onload=A(this._chunkLoaded,this),t.onerror=A(this._chunkError,this)):t=new FileReaderSync,this._nextChunk()},this._nextChunk=function(){this._finished||this._config.preview&&!(this._rowCount<this._config.preview)||this._readChunk()},this._readChunk=function(){var e=this._input;if(this._config.chunkSize){var i=Math.min(this._start+this._config.chunkSize,this._input.size);e=s.call(e,this._start,i)}var n=t.readAsText(e,this._config.encoding);a||this._chunkLoaded({target:{result:n}})},this._chunkLoaded=function(e){this._start+=this._config.chunkSize,this._finished=!this._config.chunkSize||this._start>=this._input.size,this.parseChunk(e.target.result)},this._chunkError=function(){this._sendError(t.error)}}function d(e){var t;l.call(this,e=e||{}),this.stream=function(e){return t=e,this._nextChunk()},this._nextChunk=function(){if(!this._finished){var e,s=this._config.chunkSize;return s?(e=t.substring(0,s),t=t.substring(s)):(e=t,t=""),this._finished=!t,this.parseChunk(e)}}}function m(e){l.call(this,e=e||{});var t=[],s=!0,a=!1;this.pause=function(){l.prototype.pause.apply(this,arguments),this._input.pause()},this.resume=function(){l.prototype.resume.apply(this,arguments),this._input.resume()},this.stream=function(e){this._input=e,this._input.on("data",this._streamData),this._input.on("end",this._streamEnd),this._input.on("error",this._streamError)},this._checkIsFinished=function(){a&&1===t.length&&(this._finished=!0)},this._nextChunk=function(){this._checkIsFinished(),t.length?this.parseChunk(t.shift()):s=!0},this._streamData=A(function(e){try{t.push("string"==typeof e?e:e.toString(this._config.encoding)),s&&(s=!1,this._checkIsFinished(),this.parseChunk(t.shift()))}catch(e){this._streamError(e)}},this),this._streamError=A(function(e){this._streamCleanUp(),this._sendError(e)},this),this._streamEnd=A(function(){this._streamCleanUp(),a=!0,this._streamData("")},this),this._streamCleanUp=A(function(){this._input.removeListener("data",this._streamData),this._input.removeListener("end",this._streamEnd),this._input.removeListener("error",this._streamError)},this)}function p(e){var t,s,a,i=/^\s*-?(\d+\.?|\.\d+|\d+\.\d+)([eE][-+]?\d+)?\s*$/,n=/^((\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z))|(\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)))$/,o=this,l=0,c=0,u=!1,d=!1,m=[],p={data:[],errors:[],meta:{}};if(x(e.step)){var f=e.step;e.step=function(t){if(p=t,A())g();else{if(g(),0===p.data.length)return;l+=t.data.length,e.preview&&l>e.preview?s.abort():(p.data=p.data[0],f(p,o))}}}function b(t){return"greedy"===e.skipEmptyLines?""===t.join("").trim():1===t.length&&0===t[0].length}function g(){return p&&a&&(v("Delimiter","UndetectableDelimiter","Unable to auto-detect delimiting character; defaulted to '"+r.DefaultDelimiter+"'"),a=!1),e.skipEmptyLines&&(p.data=p.data.filter(function(e){return!b(e)})),A()&&function(){if(p)if(Array.isArray(p.data[0])){for(var t=0;A()&&t<p.data.length;t++)p.data[t].forEach(s);p.data.splice(0,1)}else p.data.forEach(s);function s(t,s){x(e.transformHeader)&&(t=e.transformHeader(t,s)),m.push(t)}}(),function(){if(!p||!e.header&&!e.dynamicTyping&&!e.transform)return p;function t(t,s){var a,r=e.header?{}:[];for(a=0;a<t.length;a++){var o,l,u=a,d=t[a];e.header&&(u=a>=m.length?"__parsed_extra":m[a]),e.transform&&(d=e.transform(d,u)),o=u,l=d,e.dynamicTypingFunction&&void 0===e.dynamicTyping[o]&&(e.dynamicTyping[o]=e.dynamicTypingFunction(o)),d=!0===(e.dynamicTyping[o]||e.dynamicTyping)?"true"===l||"TRUE"===l||"false"!==l&&"FALSE"!==l&&(!function(e){if(i.test(e)){var t=parseFloat(e);if(-0x20000000000000<t&&t<0x20000000000000)return!0}return!1}(l)?n.test(l)?new Date(l):""===l?null:l:parseFloat(l)):l,"__parsed_extra"===u?(r[u]=r[u]||[],r[u].push(d)):r[u]=d}return e.header&&(a>m.length?v("FieldMismatch","TooManyFields","Too many fields: expected "+m.length+" fields but parsed "+a,c+s):a<m.length&&v("FieldMismatch","TooFewFields","Too few fields: expected "+m.length+" fields but parsed "+a,c+s)),r}var s=1;return!p.data.length||Array.isArray(p.data[0])?(p.data=p.data.map(t),s=p.data.length):p.data=t(p.data,0),e.header&&p.meta&&(p.meta.fields=m),c+=s,p}()}function A(){return e.header&&0===m.length}function v(e,t,s,a){var i={type:e,code:t,message:s};void 0!==a&&(i.row=a),p.errors.push(i)}this.parse=function(i,n,o){var l=e.quoteChar||'"';if(e.newline||(e.newline=function(e,t){e=e.substring(0,1048576);var s=RegExp(h(t)+"([^]*?)"+h(t),"gm"),a=(e=e.replace(s,"")).split("\r"),i=e.split("\n"),n=1<i.length&&i[0].length<a[0].length;if(1===a.length||n)return"\n";for(var r=0,o=0;o<a.length;o++)"\n"===a[o][0]&&r++;return r>=a.length/2?"\r\n":"\r"}(i,l)),a=!1,e.delimiter)x(e.delimiter)&&(e.delimiter=e.delimiter(i),p.meta.delimiter=e.delimiter);else{var c=function(t,s,a,i,n){var o,l,c,u;n=n||[",","	","|",";",r.RECORD_SEP,r.UNIT_SEP];for(var d=0;d<n.length;d++){var m=n[d],p=0,h=0,f=0;c=void 0;for(var g=new _({comments:i,delimiter:m,newline:s,preview:10}).parse(t),y=0;y<g.data.length;y++)if(a&&b(g.data[y]))f++;else{var A=g.data[y].length;h+=A,void 0!==c?0<A&&(p+=Math.abs(A-c),c=A):c=A}0<g.data.length&&(h/=g.data.length-f),(void 0===l||p<=l)&&(void 0===u||u<h)&&1.99<h&&(l=p,o=m,u=h)}return{successful:!!(e.delimiter=o),bestDelimiter:o}}(i,e.newline,e.skipEmptyLines,e.comments,e.delimitersToGuess);c.successful?e.delimiter=c.bestDelimiter:(a=!0,e.delimiter=r.DefaultDelimiter),p.meta.delimiter=e.delimiter}var d=y(e);return e.preview&&e.header&&d.preview++,t=i,p=(s=new _(d)).parse(t,n,o),g(),u?{meta:{paused:!0}}:p||{meta:{paused:!1}}},this.paused=function(){return u},this.pause=function(){u=!0,s.abort(),t=x(e.chunk)?"":t.substring(s.getCharIndex())},this.resume=function(){o.streamer._halted?(u=!1,o.streamer.parseChunk(t,!0)):setTimeout(o.resume,3)},this.aborted=function(){return d},this.abort=function(){d=!0,s.abort(),p.meta.aborted=!0,x(e.complete)&&e.complete(p),t=""}}function h(e){return e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}function _(e){var t,s=(e=e||{}).delimiter,a=e.newline,i=e.comments,n=e.step,o=e.preview,l=e.fastMode,c=t=void 0===e.quoteChar||null===e.quoteChar?'"':e.quoteChar;if(void 0!==e.escapeChar&&(c=e.escapeChar),("string"!=typeof s||-1<r.BAD_DELIMITERS.indexOf(s))&&(s=","),i===s)throw Error("Comment character same as delimiter");!0===i?i="#":("string"!=typeof i||-1<r.BAD_DELIMITERS.indexOf(i))&&(i=!1),"\n"!==a&&"\r"!==a&&"\r\n"!==a&&(a="\n");var u=0,d=!1;this.parse=function(r,m,p){if("string"!=typeof r)throw Error("Input must be a string");var _=r.length,f=s.length,b=a.length,g=i.length,y=x(n),A=[],v=[],E=[],C=u=0;if(!r)return W();if(e.header&&!m){var S=r.split(a)[0].split(s),k=[],w={},j=!1;for(var N in S){var O=S[N];x(e.transformHeader)&&(O=e.transformHeader(O,N));var R=O,T=w[O]||0;for(0<T&&(j=!0,R=O+"_"+T),w[O]=T+1;k.includes(R);)R=R+"_"+T;k.push(R)}if(j){var L=r.split(a);L[0]=k.join(s),r=L.join(a)}}if(l||!1!==l&&-1===r.indexOf(t)){for(var D=r.split(a),I=0;I<D.length;I++){if(E=D[I],u+=E.length,I!==D.length-1)u+=a.length;else if(p)break;if(!i||E.substring(0,g)!==i){if(y){if(A=[],$(E.split(s)),X(),d)return W()}else $(E.split(s));if(o&&o<=I)return A=A.slice(0,o),W(!0)}}return W()}for(var B=r.indexOf(s,u),P=r.indexOf(a,u),F=RegExp(h(c)+h(t),"g"),q=r.indexOf(t,u);;)if(r[u]!==t)if(i&&0===E.length&&r.substring(u,u+g)===i){if(-1===P)return W();u=P+b,P=r.indexOf(a,u),B=r.indexOf(s,u)}else if(-1!==B&&(B<P||-1===P))E.push(r.substring(u,B)),u=B+f,B=r.indexOf(s,u);else{if(-1===P)break;if(E.push(r.substring(u,P)),H(P+b),y&&(X(),d))return W();if(o&&A.length>=o)return W(!0)}else for(q=u,u++;;){if(-1===(q=r.indexOf(t,q+1)))return p||v.push({type:"Quotes",code:"MissingQuotes",message:"Quoted field unterminated",row:A.length,index:u}),Y();if(q===_-1)return Y(r.substring(u,q).replace(F,t));if(t!==c||r[q+1]!==c){if(t===c||0===q||r[q-1]!==c){-1!==B&&B<q+1&&(B=r.indexOf(s,q+1)),-1!==P&&P<q+1&&(P=r.indexOf(a,q+1));var M=z(-1===P?B:Math.min(B,P));if(r.substr(q+1+M,f)===s){E.push(r.substring(u,q).replace(F,t)),r[u=q+1+M+f]!==t&&(q=r.indexOf(t,u)),B=r.indexOf(s,u),P=r.indexOf(a,u);break}var U=z(P);if(r.substring(q+1+U,q+1+U+b)===a){if(E.push(r.substring(u,q).replace(F,t)),H(q+1+U+b),B=r.indexOf(s,u),q=r.indexOf(t,u),y&&(X(),d))return W();if(o&&A.length>=o)return W(!0);break}v.push({type:"Quotes",code:"InvalidQuotes",message:"Trailing quote on quoted field is malformed",row:A.length,index:u}),q++}}else q++}return Y();function $(e){A.push(e),C=u}function z(e){var t=0;if(-1!==e){var s=r.substring(q+1,e);s&&""===s.trim()&&(t=s.length)}return t}function Y(e){return p||(void 0===e&&(e=r.substring(u)),E.push(e),u=_,$(E),y&&X()),W()}function H(e){u=e,$(E),E=[],P=r.indexOf(a,u)}function W(e){return{data:A,errors:v,meta:{delimiter:s,linebreak:a,aborted:d,truncated:!!e,cursor:C+(m||0)}}}function X(){n(W()),A=[],v=[]}},this.abort=function(){d=!0},this.getCharIndex=function(){return u}}function f(e){var t=e.data,s=i[t.workerId],a=!1;if(t.error)s.userError(t.error,t.file);else if(t.results&&t.results.data){var n={abort:function(){a=!0,b(t.workerId,{data:[],errors:[],meta:{aborted:!0}})},pause:g,resume:g};if(x(s.userStep)){for(var r=0;r<t.results.data.length&&(s.userStep({data:t.results.data[r],errors:t.results.errors,meta:t.results.meta},n),!a);r++);delete t.results}else x(s.userChunk)&&(s.userChunk(t.results,n,t.file),delete t.results)}t.finished&&!a&&b(t.workerId,t.results)}function b(e,t){var s=i[e];x(s.userComplete)&&s.userComplete(t),s.terminate(),delete i[e]}function g(){throw Error("Not implemented.")}function y(e){if("object"!=typeof e||null===e)return e;var t=Array.isArray(e)?[]:{};for(var s in e)t[s]=y(e[s]);return t}function A(e,t){return function(){e.apply(t,arguments)}}function x(e){return"function"==typeof e}return a&&(t.onmessage=function(e){var s=e.data;if(void 0===r.WORKER_ID&&s&&(r.WORKER_ID=s.workerId),"string"==typeof s.input)t.postMessage({workerId:r.WORKER_ID,results:r.parse(s.input,s.config),finished:!0});else if(t.File&&s.input instanceof File||s.input instanceof Object){var a=r.parse(s.input,s.config);a&&t.postMessage({workerId:r.WORKER_ID,results:a,finished:!0})}}),(c.prototype=Object.create(l.prototype)).constructor=c,(u.prototype=Object.create(l.prototype)).constructor=u,(d.prototype=Object.create(d.prototype)).constructor=d,(m.prototype=Object.create(l.prototype)).constructor=m,r},"function"==typeof define&&define.amd?void 0!==(i=a())&&e.v(i):t.exports=a()},616688,(e,t,s)=>{!function(t,s){if("function"==typeof define&&define.amd){let t;void 0!==(t=s())&&e.v(t)}else s()}(e.e,function(){"use strict";function s(e,t,s){var a=new XMLHttpRequest;a.open("GET",e),a.responseType="blob",a.onload=function(){o(a.response,t,s)},a.onerror=function(){console.error("could not download file")},a.send()}function a(e){var t=new XMLHttpRequest;t.open("HEAD",e,!1);try{t.send()}catch(e){}return 200<=t.status&&299>=t.status}function i(e){try{e.dispatchEvent(new MouseEvent("click"))}catch(s){var t=document.createEvent("MouseEvents");t.initMouseEvent("click",!0,!0,window,0,0,0,80,20,!1,!1,!1,!1,0,null),e.dispatchEvent(t)}}var n="object"==typeof window&&window.window===window?window:"object"==typeof self&&self.self===self?self:e.g.global===e.g?e.g:void 0,r=n.navigator&&/Macintosh/.test(navigator.userAgent)&&/AppleWebKit/.test(navigator.userAgent)&&!/Safari/.test(navigator.userAgent),o=n.saveAs||("object"!=typeof window||window!==n?function(){}:"download"in HTMLAnchorElement.prototype&&!r?function(e,t,r){var o=n.URL||n.webkitURL,l=document.createElement("a");l.download=t=t||e.name||"download",l.rel="noopener","string"==typeof e?(l.href=e,l.origin===location.origin?i(l):a(l.href)?s(e,t,r):i(l,l.target="_blank")):(l.href=o.createObjectURL(e),setTimeout(function(){o.revokeObjectURL(l.href)},4e4),setTimeout(function(){i(l)},0))}:"msSaveOrOpenBlob"in navigator?function(e,t,n){if(t=t||e.name||"download","string"!=typeof e){var r;navigator.msSaveOrOpenBlob((void 0===(r=n)?r={autoBom:!1}:"object"!=typeof r&&(console.warn("Deprecated: Expected third argument to be a object"),r={autoBom:!r}),r.autoBom&&/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type)?new Blob(["\uFEFF",e],{type:e.type}):e),t)}else if(a(e))s(e,t,n);else{var o=document.createElement("a");o.href=e,o.target="_blank",setTimeout(function(){i(o)})}}:function(e,t,a,i){if((i=i||open("","_blank"))&&(i.document.title=i.document.body.innerText="downloading..."),"string"==typeof e)return s(e,t,a);var o="application/octet-stream"===e.type,l=/constructor/i.test(n.HTMLElement)||n.safari,c=/CriOS\/[\d]+/.test(navigator.userAgent);if((c||o&&l||r)&&"u">typeof FileReader){var u=new FileReader;u.onloadend=function(){var e=u.result;e=c?e:e.replace(/^data:[^;]*;/,"data:attachment/file;"),i?i.location.href=e:location=e,i=null},u.readAsDataURL(e)}else{var d=n.URL||n.webkitURL,m=d.createObjectURL(e);i?i.location=m:location.href=m,i=null,setTimeout(function(){d.revokeObjectURL(m)},4e4)}});n.saveAs=o.saveAs=o,t.exports=o})},350046,e=>{"use strict";var t=e.i(478902),s=e.i(224521),a=e.i(88816),i=e.i(389959),n=e.i(843778);let r=s.Root,o=i.forwardRef(({className:e,...a},i)=>(0,t.jsx)(s.Item,{ref:i,className:(0,n.cn)("border-b",e),...a}));o.displayName="AccordionItem";let l=i.forwardRef(({className:e,children:i,hideIcon:r,...o},l)=>(0,t.jsx)(s.Header,{className:"flex",children:(0,t.jsxs)(s.Trigger,{ref:l,className:(0,n.cn)("flex flex-1 gap-2 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-left",e),...o,children:[i,!r&&(0,t.jsx)(a.ChevronDown,{className:"h-4 w-4 transition-transform duration-200 shrink-0"})]})}));l.displayName=s.Trigger.displayName;let c=i.forwardRef(({className:e,children:a,...i},r)=>(0,t.jsx)(s.Content,{ref:r,className:(0,n.cn)("overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",e),...i,children:(0,t.jsx)("div",{className:"pb-4 pt-0",children:a})}));c.displayName=s.Content.displayName,e.s(["Accordion",()=>r,"AccordionContent",()=>c,"AccordionItem",()=>o,"AccordionTrigger",()=>l])},350341,31227,154225,e=>{"use strict";var t=e.i(350046);e.s(["Accordion_Shadcn_",()=>t.Accordion],350341),e.s(["AccordionContent_Shadcn_",()=>t.AccordionContent],31227),e.s(["AccordionItem_Shadcn_",()=>t.AccordionItem],154225)},66212,e=>{"use strict";var t=e.i(350046);e.s(["AccordionTrigger_Shadcn_",()=>t.AccordionTrigger])},300424,e=>{"use strict";var t=e.i(478902),s=e.i(934302),a=e.i(801834),i=e.i(2579),n=e.i(635494),r=e.i(370410),o=e.i(365257),l=e.i(479232),c=e.i(389959),u=e.i(178527),d=e.i(206413),m=e.i(592360),p=e.i(837710),h=e.i(866205),_=e.i(703526),f=e.i(917007),b=e.i(920432),g=e.i(549815),y=e.i(911509),A=e.i(996960),x=e.i(689805),v=e.i(793912),E=e.i(135144),C=e.i(396831),S=e.i(903248);let k=({className:e,disabled:k=!1,size:w="tiny",showError:j=!0,selectedSchemaName:N,placeholderLabel:O="Choose a schema...",supportSelectAll:R=!1,excludedSchemas:T=[],stopScrollPropagation:L=!1,onSelectSchema:D,onSelectCreateSchema:I,align:B="start"})=>{let[P,F]=(0,c.useState)(!1),{can:q}=(0,i.useAsyncCheckPermissions)(s.PermissionAction.TENANT_SQL_ADMIN_WRITE,"schemas"),{data:M}=(0,n.useSelectedProjectQuery)(),{data:U,isPending:$,isSuccess:z,isError:Y,error:H,refetch:W}=(0,a.useSchemasQuery)({projectRef:M?.ref,connectionString:M?.connectionString}),X=(U||[]).filter(e=>!T.includes(e.name)).sort((e,t)=>e.name.localeCompare(t.name));return(0,t.jsxs)("div",{className:e,children:[$&&(0,t.jsx)(p.Button,{type:"default",className:"w-full [&>span]:w-full",size:w,disabled:!0,children:(0,t.jsx)(S.Skeleton,{className:"w-full h-3 bg-foreground-muted"})},"schema-selector-skeleton"),j&&Y&&(0,t.jsxs)(u.Alert_Shadcn_,{variant:"warning",className:"!px-3 !py-3",children:[(0,t.jsx)(m.AlertTitle_Shadcn_,{className:"text-xs text-amber-900",children:"Failed to load schemas"}),(0,t.jsxs)(d.AlertDescription_Shadcn_,{className:"text-xs mb-2 break-words",children:["Error: ",H?.message]}),(0,t.jsx)(p.Button,{type:"default",size:"tiny",onClick:()=>W(),children:"Reload schemas"})]}),z&&(0,t.jsxs)(x.Popover_Shadcn_,{open:P,onOpenChange:F,modal:!1,children:[(0,t.jsx)(E.PopoverTrigger_Shadcn_,{asChild:!0,children:(0,t.jsx)(p.Button,{size:w,disabled:k,type:"default","data-testid":"schema-selector",className:"w-full [&>span]:w-full !pr-1 space-x-1",iconRight:(0,t.jsx)(o.ChevronsUpDown,{className:"text-foreground-muted",strokeWidth:2,size:14}),children:N?(0,t.jsxs)("div",{className:"w-full flex gap-1",children:[(0,t.jsx)("p",{className:"text-foreground-lighter",children:"schema"}),(0,t.jsx)("p",{className:"text-foreground",children:"*"===N?"All schemas":N})]}):(0,t.jsx)("div",{className:"w-full flex gap-1",children:(0,t.jsx)("p",{className:"text-foreground-lighter",children:O})})})}),(0,t.jsx)(v.PopoverContent_Shadcn_,{className:"p-0 min-w-[200px] pointer-events-auto",side:"bottom",align:B,sameWidthAsTrigger:!0,children:(0,t.jsxs)(h.Command_Shadcn_,{children:[(0,t.jsx)(b.CommandInput_Shadcn_,{className:"text-xs",placeholder:"Find schema..."}),(0,t.jsxs)(y.CommandList_Shadcn_,{onWheel:L?e=>e.stopPropagation():void 0,children:[(0,t.jsx)(_.CommandEmpty_Shadcn_,{children:"No schemas found"}),(0,t.jsx)(f.CommandGroup_Shadcn_,{children:(0,t.jsxs)(C.ScrollArea,{className:(X||[]).length>7?"h-[210px]":"",children:[R&&(0,t.jsxs)(g.CommandItem_Shadcn_,{className:"cursor-pointer flex items-center justify-between space-x-2 w-full",onSelect:()=>{D("*"),F(!1)},onClick:()=>{D("*"),F(!1)},children:[(0,t.jsx)("span",{children:"All schemas"}),"*"===N&&(0,t.jsx)(r.Check,{className:"text-brand",strokeWidth:2,size:16})]},"select-all"),X.map(e=>(0,t.jsxs)(g.CommandItem_Shadcn_,{className:"cursor-pointer flex items-center justify-between space-x-2 w-full",onSelect:()=>{D(e.name),F(!1)},onClick:()=>{D(e.name),F(!1)},children:[(0,t.jsx)("span",{children:e.name}),N===e.name&&(0,t.jsx)(r.Check,{className:"text-brand",strokeWidth:2,size:16})]},e.id))]})}),void 0!==I&&q&&(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(A.CommandSeparator_Shadcn_,{}),(0,t.jsx)(f.CommandGroup_Shadcn_,{children:(0,t.jsxs)(g.CommandItem_Shadcn_,{className:"cursor-pointer flex items-center gap-x-2 w-full",onSelect:()=>{I(),F(!1)},onClick:()=>{I(),F(!1)},children:[(0,t.jsx)(l.Plus,{size:12}),"Create a new schema"]})})]})]})]})})]})]})};e.s(["SchemaSelector",0,k,"default",0,k])},983783,e=>{"use strict";e.i(128328);var t=e.i(947748),s=e.i(158639),a=e.i(208661),i=e.i(389959);e.s(["useQuerySchemaState",0,()=>{var e;let{ref:n}=(0,s.useParams)(),r=window.localStorage&&n&&n.length>0&&window.localStorage.getItem(t.LOCAL_STORAGE_KEYS.LAST_SELECTED_SCHEMA(n))||"public",[o,l]=(e=(0,i.useMemo)(()=>r,[n]),(0,a.useQueryState)("schema",a.parseAsString.withDefault(e).withOptions({clearOnDefault:!1})));return(0,i.useEffect)(()=>{window.localStorage&&n&&n.length>0&&window.localStorage.setItem(t.LOCAL_STORAGE_KEYS.LAST_SELECTED_SCHEMA(n),o)},[o,n]),{selectedSchema:o,setSelectedSchema:l}}])},892277,e=>{"use strict";var t=e.i(478902),s=e.i(389959),a=e.i(837710),i=e.i(253214),n=e.i(392491),r=e.i(710483);let o=({onClose:e})=>(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(i.DialogHeader,{children:(0,t.jsx)(i.DialogTitle,{children:"Schemas managed by Supabase"})}),(0,t.jsx)(i.DialogSectionSeparator,{}),(0,t.jsxs)(i.DialogSection,{className:"space-y-2 prose",children:[(0,t.jsx)("p",{className:"text-sm",children:"The following schemas are managed by Supabase and are currently protected from write access through the dashboard."}),(0,t.jsx)("div",{className:"flex flex-wrap gap-1",children:n.INTERNAL_SCHEMAS.map(e=>(0,t.jsx)("code",{className:"text-xs",children:e},e))}),(0,t.jsx)("p",{className:"text-sm !mt-4",children:"These schemas are critical to the functionality of your Supabase project and hence we highly recommend not altering them."}),(0,t.jsx)("p",{className:"text-sm",children:"You can, however, still interact with those schemas through the SQL Editor although we advise you only do so if you know what you are doing."})]}),(0,t.jsx)(i.DialogFooter,{children:(0,t.jsx)("div",{className:"flex items-center justify-end space-x-2",children:(0,t.jsx)(a.Button,{type:"default",onClick:e,children:"Understood"})})})]});e.s(["ProtectedSchemaWarning",0,({size:e="md",schema:l,entity:c})=>{let[u,d]=(0,s.useState)(!1),{isSchemaLocked:m,reason:p,fdwType:h}=(0,n.useIsProtectedSchema)({schema:l});return m?(0,t.jsx)(r.Admonition,{showIcon:"sm"!==e,layout:"sm"===e?"vertical":"horizontal",type:"note",title:"sm"===e?"Viewing protected schema":`Viewing ${c} from a protected schema`,description:"fdw"===p&&"iceberg"===h?(0,t.jsxs)("p",{children:["The ",(0,t.jsx)("code",{className:"text-code-inline",children:l})," schema is used by Supabase to connect to analytics buckets and is read-only through the dashboard."]}):"fdw"===p&&"s3_vectors"===h?(0,t.jsxs)("p",{children:["The ",(0,t.jsx)("code",{className:"text-code-inline",children:l})," schema is used by Supabase to connect to vector buckets and is read-only through the dashboard."]}):(0,t.jsxs)("p",{children:["The ",(0,t.jsx)("code",{className:"text-code-inline",children:l})," schema is managed by Supabase and is read-only through the dashboard."]}),actions:("fdw"!==p||"iceberg"!==h&&"s3_vectors"!==h)&&(0,t.jsxs)(i.Dialog,{open:u,onOpenChange:d,children:[(0,t.jsx)(i.DialogTrigger,{asChild:!0,children:(0,t.jsx)(a.Button,{type:"default",size:"tiny",onClick:()=>d(!0),children:"Learn more"})}),(0,t.jsx)(i.DialogContent,{children:(0,t.jsx)(o,{onClose:()=>d(!1)})})]})}):null}])},749199,e=>{"use strict";var t=e.i(242882),s=e.i(820308),a=e.i(150671),i=e.i(714403),n=e.i(635494),r=e.i(189329);e.s(["default",0,({sql:e,params:o=s.DEFAULT_QUERY_PARAMS,where:l,orderBy:c})=>{let{data:u}=(0,n.useSelectedProjectQuery)(),d=(0,r.useDatabaseSelectorStateSnapshot)(),{data:m}=(0,a.useReadReplicasQuery)({projectRef:u?.ref}),p=(m||[]).find(e=>e.identifier===d.selectedDatabaseId)?.connectionString,h=d.selectedDatabaseId,_="function"==typeof e?e([]):e,{data:f,error:b,isPending:g,isRefetching:y,refetch:A}=(0,t.useQuery)({queryKey:["projects",u?.ref,"db",{...o,sql:_,identifier:h},l,c],queryFn:({signal:e})=>(0,i.executeSql)({projectRef:u?.ref,connectionString:p||u?.connectionString,sql:_},e).then(e=>e.result),enabled:!!_,refetchOnWindowFocus:!1,refetchOnReconnect:!1});return{error:b||("object"==typeof f?f?.error:""),data:f,isLoading:g,isRefetching:y,params:o,runQuery:A,resolvedSql:_}}])},888525,760255,284399,e=>{"use strict";var t=e.i(355901),s=e.i(714403),a=e.i(392491);function i(e=[]){return{hypopg:e.find(e=>"hypopg"===e.name),indexAdvisor:e.find(e=>"index_advisor"===e.name)}}function n(e,t){return void 0===e||void 0===t||e<=0||e<=t?0:(e-t)/e*100}async function r({projectRef:e,connectionString:a,indexStatements:i,onSuccess:n,onError:r}){if(!e){let e=Error("Project ref is required");return r&&r(e),Promise.reject(e)}if(0===i.length){let e=Error("No index statements provided");return r&&r(e),Promise.reject(e)}try{return await (0,s.executeSql)({projectRef:e,connectionString:a,sql:i.join(";\n")+";"}),t.toast.success("Successfully created index"),n&&n(),Promise.resolve()}catch(e){return t.toast.error(`Failed to create index: ${e.message}`),r&&r(e),Promise.reject(e)}}function o(e,t){return!!(t&&e?.index_statements&&e.index_statements.length>0)}function l(e){return e&&0!==e.length?e.filter(e=>{let t=e.match(/ON\s+(?:"?(\w+)"?\.|(\w+)\.)/i);if(!t)return!0;let s=t[1]||t[2];return!s||!a.INTERNAL_SCHEMAS.includes(s.toLowerCase())}):[]}function c(e){if(!e||!e.index_statements)return e??null;let t=l(e.index_statements);return 0===t.length?null:{...e,index_statements:t}}function u(e){if(!e)return!1;let t=e.toLowerCase();return a.INTERNAL_SCHEMAS.some(e=>RegExp(`(?:from|join|update|insert\\s+into|delete\\s+from)\\s+(?:${e}\\.|"${e}"\\.)`,"i").test(t))}e.s(["calculateImprovement",()=>n,"createIndexes",()=>r,"filterProtectedSchemaIndexAdvisorResult",()=>c,"filterProtectedSchemaIndexStatements",()=>l,"getIndexAdvisorExtensions",()=>i,"hasIndexRecommendations",()=>o,"queryInvolvesProtectedSchemas",()=>u],760255);var d=e.i(450972),m=e.i(635494);function p(){let{data:e}=(0,m.useSelectedProjectQuery)(),{data:t}=(0,d.useDatabaseExtensionsQuery)({projectRef:e?.ref,connectionString:e?.connectionString}),{hypopg:s,indexAdvisor:a}=i(t??[]),n=!!s&&!!a,r=n&&null!==s.installed_version&&null!==a.installed_version;return{isIndexAdvisorAvailable:n,isIndexAdvisorEnabled:r}}e.s(["useIndexAdvisorStatus",()=>p],888525);var h=e.i(478902),_=e.i(389959),f=e.i(610144),b=e.i(967052),g=e.i(232520),y=e.i(837710);e.s(["EnableIndexAdvisorButton",0,()=>{let e=(0,b.useTrack)(),{data:s}=(0,m.useSelectedProjectQuery)(),[a,n]=(0,_.useState)(!1),{data:r}=(0,d.useDatabaseExtensionsQuery)({projectRef:s?.ref,connectionString:s?.connectionString}),{hypopg:o,indexAdvisor:l}=i(r),{mutateAsync:c,isPending:u}=(0,f.useDatabaseExtensionEnableMutation)(),p=async()=>{if(void 0===s)return t.toast.error("Project is required");try{o?.installed_version===null&&await c({projectRef:s?.ref,connectionString:s?.connectionString,name:o.name,schema:o?.schema??"extensions",version:o.default_version}),l?.installed_version===null&&await c({projectRef:s?.ref,connectionString:s?.connectionString,name:l.name,schema:l?.schema??"extensions",version:l.default_version}),t.toast.success("Successfully enabled Index Advisor!"),n(!1)}catch(e){t.toast.error(`Failed to enable Index Advisor: ${e.message}`)}};return(0,h.jsxs)(g.AlertDialog,{open:a,onOpenChange:()=>n(!a),children:[(0,h.jsx)(g.AlertDialogTrigger,{asChild:!0,children:(0,h.jsx)(y.Button,{type:"primary",onClick:()=>e("index_advisor_banner_enable_button_clicked"),children:"Enable"})}),(0,h.jsxs)(g.AlertDialogContent,{children:[(0,h.jsxs)(g.AlertDialogHeader,{children:[(0,h.jsx)(g.AlertDialogTitle,{children:"Enable Index Advisor"}),(0,h.jsxs)(g.AlertDialogDescription,{children:["This will enable the ",(0,h.jsx)("code",{className:"text-code-inline",children:"index_advisor"})," and"," ",(0,h.jsx)("code",{className:"text-code-inline",children:"hypopg"})," Postgres extensions so Index Advisor can analyse queries and suggest performance-improving indexes."]})]}),(0,h.jsxs)(g.AlertDialogFooter,{children:[(0,h.jsx)(g.AlertDialogCancel,{children:"Cancel"}),(0,h.jsx)(g.AlertDialogAction,{onClick:t=>{t.preventDefault(),p(),e("index_advisor_dialog_enable_button_clicked")},disabled:u,children:u?"Enabling...":"Enable"})]})]})]})}],284399)},610144,e=>{"use strict";var t=e.i(850036),s=e.i(479084),a=e.i(38429),i=e.i(356003),n=e.i(355901),r=e.i(78162),o=e.i(714403),l=e.i(667286);async function c({projectRef:e,connectionString:a,schema:i,name:n,version:r,cascade:l=!1,createSchema:c=!1}){let u=new Headers;a&&u.set("x-connection-encrypted",a);let{sql:d}=t.default.extensions.create({schema:i,name:n,version:r,cascade:l}),{result:m}=await (0,o.executeSql)({projectRef:e,connectionString:a,sql:c?`create schema if not exists ${(0,s.ident)(i)}; ${d}`:d,queryKey:["extension","create"]});return m}e.s(["useDatabaseExtensionEnableMutation",0,({onSuccess:e,onError:t,...s}={})=>{let o=(0,i.useQueryClient)();return(0,a.useMutation)({mutationFn:e=>c(e),async onSuccess(t,s,a){let{projectRef:i}=s;await Promise.all([o.invalidateQueries({queryKey:l.databaseExtensionsKeys.list(i)}),o.invalidateQueries({queryKey:r.configKeys.upgradeEligibility(i)})]),await e?.(t,s,a)},async onError(e,s,a){void 0===t?n.toast.error(`Failed to enable database extension: ${e.message}`):t(e,s,a)},...s})}])},820308,775159,e=>{"use strict";var t,s,a=e.i(55956),i=((t={}).API="api",t.STORAGE="storage",t.AUTH="auth",t.QUERY_PERFORMANCE="query_performance",t.DATABASE="database",t);e.s(["Presets",()=>i],775159);var n=((s={}).LAST_10_MINUTES="Last 10 minutes",s.LAST_30_MINUTES="Last 30 minutes",s.LAST_60_MINUTES="Last 60 minutes",s.LAST_3_HOURS="Last 3 hours",s.LAST_24_HOURS="Last 24 hours",s.LAST_7_DAYS="Last 7 days",s.LAST_14_DAYS="Last 14 days",s.LAST_28_DAYS="Last 28 days",s);let r=[{text:"Last 10 minutes",calcFrom:()=>(0,a.default)().subtract(10,"minute").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["free","pro","team","enterprise","platform"]},{text:"Last 30 minutes",calcFrom:()=>(0,a.default)().subtract(30,"minute").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["free","pro","team","enterprise","platform"]},{text:"Last 60 minutes",calcFrom:()=>(0,a.default)().subtract(1,"hour").toISOString(),calcTo:()=>(0,a.default)().toISOString(),default:!0,availableIn:["free","pro","team","enterprise","platform"]},{text:"Last 3 hours",calcFrom:()=>(0,a.default)().subtract(3,"hour").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["free","pro","team","enterprise","platform"]},{text:"Last 24 hours",calcFrom:()=>(0,a.default)().subtract(1,"day").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["free","pro","team","enterprise","platform"]},{text:"Last 7 days",calcFrom:()=>(0,a.default)().subtract(7,"day").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["pro","team","enterprise"]},{text:"Last 14 days",calcFrom:()=>(0,a.default)().subtract(14,"day").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["team","enterprise"]},{text:"Last 28 days",calcFrom:()=>(0,a.default)().subtract(28,"day").toISOString(),calcTo:()=>(0,a.default)().toISOString(),availableIn:["team","enterprise"]}],o={iso_timestamp_start:r[0].calcFrom(),iso_timestamp_end:r[0].calcTo()},l=(e,t=!0)=>{if(0===e.length)return"";let s=e.map(e=>{let t=e.key.split("."),s=[t[t.length-2],t[t.length-1]].join("."),a=e.key.includes(".")?s:e.key,i=e.value.toString().includes('"')||e.value.toString().includes("'"),n=!isNaN(Number(e.value)),r=!n&&i?e.value:`'${e.value}'`,o=!n&&String(r).toLowerCase(),l=n?e.value:o;switch(e.compare){case"matches":return`REGEXP_CONTAINS(${a}, ${l})`;case"is":default:return`${a} = ${l}`;case"!=":return`${a} != ${l}`;case">=":return`${a} >= ${l}`;case"<=":return`${a} <= ${l}`;case">":return`${a} > ${l}`;case"<":return`${a} < ${l}`}}).filter(Boolean).join(" AND ");return""===s?"":t?"WHERE "+s:"AND "+s},c={[i.API]:{title:"API",queries:{totalRequests:{queryType:"logs",sql:e=>`
+        -- reports-api-total-requests
+        select
+          cast(timestamp_trunc(t.timestamp, hour) as datetime) as timestamp,
+          count(t.id) as count
+        FROM edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+          ${l(e)}
+        GROUP BY
+          timestamp
+        ORDER BY
+          timestamp ASC`},topRoutes:{queryType:"logs",sql:e=>`
+        -- reports-api-top-routes
+        select
+          request.path as path,
+          request.method as method,
+          request.search as search,
+          response.status_code as status_code,
+          count(t.id) as count
+        from edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+          ${l(e)}
+        group by
+          request.path, request.method, request.search, response.status_code
+        order by
+          count desc
+        limit 10
+        `},errorCounts:{queryType:"logs",sql:e=>`
+        -- reports-api-error-counts
+        select
+          cast(timestamp_trunc(t.timestamp, hour) as datetime) as timestamp,
+          count(t.id) as count
+        FROM edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+        WHERE
+          response.status_code >= 400
+        ${l(e,!1)}
+        GROUP BY
+          timestamp
+        ORDER BY
+          timestamp ASC
+        `},topErrorRoutes:{queryType:"logs",sql:e=>`
+        -- reports-api-top-error-routes
+        select
+          request.path as path,
+          request.method as method,
+          request.search as search,
+          response.status_code as status_code,
+          count(t.id) as count
+        from edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+        where
+          response.status_code >= 400
+        ${l(e,!1)}
+        group by
+          request.path, request.method, request.search, response.status_code
+        order by
+          count desc
+        limit 10
+        `},responseSpeed:{queryType:"logs",sql:e=>`
+        -- reports-api-response-speed
+        select
+          cast(timestamp_trunc(t.timestamp, hour) as datetime) as timestamp,
+          avg(response.origin_time) as avg
+        FROM
+          edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+          ${l(e)}
+        GROUP BY
+          timestamp
+        ORDER BY
+          timestamp ASC
+      `},topSlowRoutes:{queryType:"logs",sql:e=>`
+        -- reports-api-top-slow-routes
+        select
+          request.path as path,
+          request.method as method,
+          request.search as search,
+          response.status_code as status_code,
+          count(t.id) as count,
+          avg(response.origin_time) as avg
+        from edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+        ${l(e)}
+        group by
+          request.path, request.method, request.search, response.status_code
+        order by
+          avg desc
+        limit 10
+        `},networkTraffic:{queryType:"logs",sql:e=>`
+        -- reports-api-network-traffic
+        select
+          cast(timestamp_trunc(t.timestamp, hour) as datetime) as timestamp,
+          coalesce(
+            safe_divide(
+              sum(
+                cast(coalesce(headers.content_length, "0") as int64)
+              ),
+              1000000
+            ),
+            0
+          ) as ingress_mb,
+          coalesce(
+            safe_divide(
+              sum(
+                cast(coalesce(resp_headers.content_length, "0") as int64)
+              ),
+              1000000
+            ),
+            0
+          ) as egress_mb,
+        FROM
+          edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+          cross join unnest(response.headers) as resp_headers
+          ${l(e)}
+        GROUP BY
+          timestamp
+        ORDER BY
+          timestamp ASC
+        `},requestsByCountry:{queryType:"logs",sql:e=>`
+        -- reports-api-requests-by-country
+        select
+          cf.country as country,
+          count(t.id) as count
+        from edge_logs t
+          cross join unnest(metadata) as m
+          cross join unnest(m.response) as response
+          cross join unnest(m.request) as request
+          cross join unnest(request.headers) as headers
+          cross join unnest(request.cf) as cf
+        where
+          cf.country is not null
+        ${l(e,!1)}
+        group by
+          cf.country
+        `}}},[i.AUTH]:{title:"",queries:{}},[i.STORAGE]:{title:"Storage",queries:{cacheHitRate:{queryType:"logs",sql:e=>`
+        -- reports-storage-cache-hit-rate
+SELECT
+  timestamp_trunc(timestamp, hour) as timestamp,
+  countif( h.cf_cache_status in ('HIT', 'STALE', 'REVALIDATED', 'UPDATING') ) as hit_count,
+  countif( h.cf_cache_status in ('MISS', 'NONE/UNKNOWN', 'EXPIRED', 'BYPASS', 'DYNAMIC') ) as miss_count
+from edge_logs f
+  cross join unnest(f.metadata) as m
+  cross join unnest(m.request) as r
+  cross join unnest(m.response) as res
+  cross join unnest(res.headers) as h
+where starts_with(r.path, '/storage/v1/object') and r.method = 'GET'
+  ${l(e,!1)}
+group by timestamp
+order by timestamp desc
+`},topCacheMisses:{queryType:"logs",sql:e=>`
+        -- reports-storage-top-cache-misses
+SELECT
+  r.path as path,
+  r.search as search,
+  count(id) as count
+from edge_logs f
+  cross join unnest(f.metadata) as m
+  cross join unnest(m.request) as r
+  cross join unnest(m.response) as res
+  cross join unnest(res.headers) as h
+where starts_with(r.path, '/storage/v1/object')
+  and r.method = 'GET'
+  and h.cf_cache_status in ('MISS', 'NONE/UNKNOWN', 'EXPIRED', 'BYPASS', 'DYNAMIC')
+  ${l(e,!1)}
+group by path, search
+order by count desc
+limit 12
+    `}}},[i.QUERY_PERFORMANCE]:{title:"Query performance",queries:{mostFrequentlyInvoked:{queryType:"db",sql:(e,t,s,a=!1,i=!1)=>`
+        -- reports-query-performance-most-frequently-invoked
+set search_path to public, extensions;
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    -- -- Postgres 13, 14, 15
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.min_exec_time + statements.min_plan_time as min_time,
+    statements.max_exec_time + statements.max_plan_time as max_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    -- -- Postgres <= 12
+    -- total_time,
+    -- min_time,
+    -- max_time,
+    -- mean_time,
+    coalesce(statements.rows::numeric / nullif(statements.calls, 0), 0) as avg_rows,
+    statements.rows as rows_read,
+    case
+      when (statements.shared_blks_hit + statements.shared_blks_read) > 0
+      then round(
+        (statements.shared_blks_hit * 100.0) /
+        (statements.shared_blks_hit + statements.shared_blks_read),
+        2
+      )
+      else 0
+    end as cache_hit_rate${a?`,
+    case
+      when (lower(statements.query) like 'select%' or lower(statements.query) like 'with pgrst%')
+      then (
+        select json_build_object(
+          'has_suggestion', array_length(index_statements, 1) > 0,
+          'startup_cost_before', startup_cost_before,
+          'startup_cost_after', startup_cost_after,
+          'total_cost_before', total_cost_before,
+          'total_cost_after', total_cost_after,
+          'index_statements', index_statements
+        )
+        from index_advisor(statements.query)
+      )
+      else null
+    end as index_advisor_result`:""}
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  -- skip queries that were never actually executed
+  WHERE statements.calls > 0 ${t?t.replace(/^WHERE/,"AND"):""}
+  ${s||"order by statements.calls desc"}
+  limit 20`},mostTimeConsuming:{queryType:"db",sql:(e,t,s,a=!1,i=!1)=>`
+        -- reports-query-performance-most-time-consuming
+set search_path to public, extensions;
+
+-- compute total time once up front so we don't need a window function over all rows
+with grand_total as (
+  select coalesce(nullif(sum(total_exec_time + total_plan_time), 0), 1) as v
+  from pg_stat_statements where calls > 0
+)
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    coalesce(
+      ((statements.total_exec_time + statements.total_plan_time) /
+        (select v from grand_total)) *
+        100,
+      0
+    ) as prop_total_time${a?`,
+    case
+      when (lower(statements.query) like 'select%' or lower(statements.query) like 'with pgrst%')
+      then (
+        select json_build_object(
+          'has_suggestion', array_length(index_statements, 1) > 0,
+          'startup_cost_before', startup_cost_before,
+          'startup_cost_after', startup_cost_after,
+          'total_cost_before', total_cost_before,
+          'total_cost_after', total_cost_after,
+          'index_statements', index_statements
+        )
+        from index_advisor(statements.query)
+      )
+      else null
+    end as index_advisor_result`:""}
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  -- skip queries that were never actually executed
+  WHERE statements.calls > 0 ${t?t.replace(/^WHERE/,"AND"):""}
+  ${s||"order by total_time desc"}
+  limit 20`},slowestExecutionTime:{queryType:"db",sql:(e,t,s,a=!1,i=!1)=>`
+        -- reports-query-performance-slowest-execution-time
+set search_path to public, extensions;
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    -- -- Postgres 13, 14, 15
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.min_exec_time + statements.min_plan_time as min_time,
+    statements.max_exec_time + statements.max_plan_time as max_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    -- -- Postgres <= 12
+    -- total_time,
+    -- min_time,
+    -- max_time,
+    -- mean_time,
+    coalesce(statements.rows::numeric / nullif(statements.calls, 0), 0) as avg_rows${a?`,
+    case
+      when (lower(statements.query) like 'select%' or lower(statements.query) like 'with pgrst%')
+      then (
+        select json_build_object(
+          'has_suggestion', array_length(index_statements, 1) > 0,
+          'startup_cost_before', startup_cost_before,
+          'startup_cost_after', startup_cost_after,
+          'total_cost_before', total_cost_before,
+          'total_cost_after', total_cost_after,
+          'index_statements', index_statements
+        )
+        from index_advisor(statements.query)
+      )
+      else null
+    end as index_advisor_result`:""}
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  -- skip queries that were never actually executed
+  WHERE statements.calls > 0 ${t?t.replace(/^WHERE/,"AND"):""}
+  ${s||"order by max_time desc"}
+  limit 20`},queryHitRate:{queryType:"db",sql:e=>`-- reports-query-performance-cache-and-index-hit-rate
+select
+    'index hit rate' as name,
+    (sum(idx_blks_hit)) / nullif(sum(idx_blks_hit + idx_blks_read),0) as ratio
+  from pg_statio_user_indexes
+  union all
+  select
+    'table hit rate' as name,
+    sum(heap_blks_hit) / nullif(sum(heap_blks_hit) + sum(heap_blks_read),0) as ratio
+  from pg_statio_user_tables;`},unified:{queryType:"db",sql:(e,t,s,a=!1,i=!1,n=1,r=20)=>{let o=(n-1)*r,l=i&&a?o+10*r:o+r,c=a?Math.min(l,500):l;return`
+        -- reports-query-performance-unified
+        set search_path to public, extensions;
+
+        -- compute total time once up front so we don't need a window function over all rows
+        with grand_total as (
+          select coalesce(nullif(sum(total_exec_time + total_plan_time), 0), 1) as v
+          from pg_stat_statements where calls > 0
+        ),
+        base as (
+          select
+            auth.rolname,
+            statements.query,
+            statements.calls,
+            statements.total_exec_time + statements.total_plan_time as total_time,
+            statements.min_exec_time + statements.min_plan_time as min_time,
+            statements.max_exec_time + statements.max_plan_time as max_time,
+            statements.mean_exec_time + statements.mean_plan_time as mean_time,
+            coalesce(statements.rows::numeric / nullif(statements.calls, 0), 0) as avg_rows,
+            statements.rows as rows_read,
+            statements.shared_blks_hit as debug_hit,
+            statements.shared_blks_read as debug_read,
+            case
+              when (statements.shared_blks_hit + statements.shared_blks_read) > 0
+              then (statements.shared_blks_hit::numeric * 100.0) /
+                   (statements.shared_blks_hit + statements.shared_blks_read)
+              else 0
+            end as cache_hit_rate,
+            coalesce(
+              ((statements.total_exec_time + statements.total_plan_time) /
+                (select v from grand_total)) *
+                100,
+              0
+            ) as prop_total_time
+          from pg_stat_statements as statements
+            inner join pg_authid as auth on statements.userid = auth.oid
+          -- skip queries that were never actually executed
+          WHERE statements.calls > 0 ${t?t.replace(/^WHERE/,"AND"):""}
+          ${s||"order by total_time desc"}
+          ${null!==c?`limit ${c}`:""}
+        ),
+        query_results as (
+          select
+            base.*${a?`,
+            case
+              when (lower(base.query) like 'select%' or lower(base.query) like 'with pgrst%')
+              then (
+                select json_build_object(
+                  'has_suggestion', array_length(index_statements, 1) > 0,
+                  'startup_cost_before', startup_cost_before,
+                  'startup_cost_after', startup_cost_after,
+                  'total_cost_before', total_cost_before,
+                  'total_cost_after', total_cost_after,
+                  'index_statements', index_statements
+                )
+                from index_advisor(base.query)
+              )
+              else null
+            end as index_advisor_result`:""}
+          from base
+        )
+        select *
+        from query_results
+        ${i&&a?"where (index_advisor_result->>'has_suggestion')::boolean = true":""}
+        ${s||"order by total_time desc"}
+        limit ${r} offset ${o}`}},slowQueriesCount:{queryType:"db",sql:()=>`
+        -- reports-query-performance-slow-queries-count
+        set search_path to public, extensions;
+
+        -- Count of slow queries (> 1 second average)
+        SELECT count(*) as slow_queries_count
+        -- alias needed to reference columns in WHERE
+        FROM pg_stat_statements as statements
+        -- skip never-executed queries; mean_exec_time > 1000ms = avg over 1 second
+        WHERE statements.calls > 0 AND statements.mean_exec_time > 1000;`},queryMetrics:{queryType:"db",sql:(e,t,s,a=!1,i=!1)=>`
+        -- reports-query-performance-metrics
+        set search_path to public, extensions;
+
+        SELECT
+          COALESCE(ROUND(AVG(statements.rows::numeric / NULLIF(statements.calls, 0)), 1), 0) as avg_rows_per_call,
+          COUNT(*) FILTER (WHERE statements.total_exec_time + statements.total_plan_time > 1000) as slow_queries,
+          COALESCE(
+            ROUND(
+              SUM(statements.shared_blks_hit) * 100.0 /
+              NULLIF(SUM(statements.shared_blks_hit + statements.shared_blks_read), 0),
+              2
+            ), 0
+          ) || '%' as cache_hit_rate
+        FROM pg_stat_statements as statements
+        -- skip queries that were never actually executed
+        WHERE statements.calls > 0 ${t?t.replace(/^WHERE/,"AND"):""}
+        ${s||""}`}}},[i.DATABASE]:{title:"database",queries:{largeObjects:{queryType:"db",sql:e=>`-- reports-database-large-objects
+SELECT
+        SCHEMA_NAME,
+        relname,
+        table_size
+      FROM
+        (SELECT
+          pg_catalog.pg_namespace.nspname AS SCHEMA_NAME,
+          relname,
+          pg_total_relation_size(pg_catalog.pg_class.oid) AS table_size
+        FROM pg_catalog.pg_class
+        JOIN pg_catalog.pg_namespace ON relnamespace = pg_catalog.pg_namespace.oid
+        ) t
+      WHERE SCHEMA_NAME NOT LIKE 'pg_%'
+      ORDER BY table_size DESC
+      LIMIT 5;`}}}};e.s(["DEFAULT_QUERY_PARAMS",0,o,"DEPRECATED_REPORTS",0,["total_realtime_ingress","total_rest_options_requests","total_auth_ingress","total_auth_get_requests","total_auth_post_requests","total_auth_patch_requests","total_auth_options_requests","total_storage_options_requests","total_storage_patch_requests","total_options_requests","total_rest_ingress","total_rest_get_requests","total_rest_post_requests","total_rest_patch_requests","total_rest_delete_requests","total_storage_get_requests","total_storage_post_requests","total_storage_delete_requests","total_auth_delete_requests","total_get_requests","total_patch_requests","total_post_requests","total_ingress","total_delete_requests"],"EDGE_FUNCTION_REGIONS",0,[{key:"ap-northeast-1",label:"Tokyo"},{key:"ap-northeast-2",label:"Seoul"},{key:"ap-south-1",label:"Mumbai"},{key:"ap-southeast-1",label:"Singapore"},{key:"ap-southeast-2",label:"Sydney"},{key:"ca-central-1",label:"Canada Central"},{key:"us-east-1",label:"N. Virginia"},{key:"us-west-1",label:"N. California"},{key:"us-west-2",label:"Oregon"},{key:"eu-central-1",label:"Frankfurt"},{key:"eu-west-1",label:"Ireland"},{key:"eu-west-2",label:"London"},{key:"eu-west-3",label:"Paris"},{key:"sa-east-1",label:"São Paulo"}],"LAYOUT_COLUMN_COUNT",0,2,"PRESET_CONFIG",0,c,"REPORTS_DATEPICKER_HELPERS",0,r,"REPORT_DATERANGE_HELPER_LABELS",()=>n,"generateRegexpWhere",0,l],820308)},670447,e=>{"use strict";var t=e.i(478902),s=e.i(975924),a=e.i(837710),i=e.i(627069),n=e.i(843778),r=e.i(10429);e.s(["BannerCard",0,({onDismiss:e,children:o,className:l})=>(0,t.jsxs)(i.Card,{className:(0,n.cn)("relative overflow-hidden shadow-lg rounded-2xl",l),children:[(0,t.jsxs)("div",{className:"absolute -inset-16 z-0 opacity-100 pointer-events-none",children:[(0,t.jsx)("img",{src:`${r.BASE_PATH}/img/reports/bg-grafana-dark.svg`,alt:"Background pattern",className:"w-full h-full object-cover object-right hidden dark:block"}),(0,t.jsx)("img",{src:`${r.BASE_PATH}/img/reports/bg-grafana-light.svg`,alt:"Background pattern",className:"w-full h-full object-cover object-right dark:hidden"}),(0,t.jsx)("div",{className:"absolute inset-0 bg-gradient-to-r from-background-alternative to-transparent"})]}),(0,t.jsxs)(i.CardContent,{className:"relative z-10 p-6",children:[e&&(0,t.jsx)("div",{className:"absolute top-4 right-4 z-20",children:(0,t.jsx)(a.Button,{type:"text",size:"tiny",htmlType:"button",icon:(0,t.jsx)(s.X,{size:16,strokeWidth:1.5}),onClick:t=>{t.preventDefault(),e()},className:"opacity-75 hover:opacity-100 px-1","aria-label":"Close banner"})}),o]})]})])},384429,e=>{"use strict";var t=e.i(698175);e.s(["Select",()=>t.default])},194576,e=>{"use strict";var t=e.i(478902),s=e.i(221287),a=e.i(938933);let i=({open:e,children:a,className:i,...n})=>(0,t.jsx)(s.Root,{asChild:n.asChild,defaultOpen:n.defaultOpen,open:e,onOpenChange:n.onOpenChange,disabled:n.disabled,className:i,children:a});i.Trigger=function({children:e,asChild:a}){return(0,t.jsx)(s.Trigger,{asChild:a,children:e})},i.Content=function({asChild:e,children:i,className:n}){let r=(0,a.default)("collapsible");return(0,t.jsx)(s.Content,{asChild:e,className:[r.content,n].join(" "),children:i})},e.s(["default",0,i])},58359,e=>{"use strict";var t=e.i(194576);e.s(["Collapsible",()=>t.default])},698175,e=>{"use strict";var t=e.i(478902),s=e.i(389959),a=e.i(753515),i=e.i(440401),n=e.i(701823),r=e.i(938933),o=e.i(140449);function l({autoComplete:e,autofocus:l,children:c,className:u,descriptionText:d,disabled:m,error:p,icon:h,id:_="",inputRef:f,label:b,afterLabel:g,beforeLabel:y,labelOptional:A,layout:x,name:v="",onChange:E,onBlur:C,placeholder:S,required:k,value:w,defaultValue:j,style:N,size:O="medium",borderless:R=!1,validation:T,...L}){let{formContextOnChange:D,values:I,errors:B,handleBlur:P,touched:F,fieldLevelValidation:q}=(0,o.useFormContext)();I&&!w&&(w=I[_]),p||(B&&!p&&(p=B[_||v]),p=F&&F[_||v]?p:void 0),(0,s.useEffect)(()=>{T&&q(_,T(w))},[]);let M=(0,r.default)("select"),U=[M.container];u&&U.push(u);let $=[M.base];return p&&$.push(M.variants.error),p||$.push(M.variants.standard),h&&$.push(M.with_icon[O]),O&&$.push(M.size[O]),m&&$.push(M.disabled),(0,t.jsx)(a.FormLayout,{label:b,afterLabel:g,beforeLabel:y,labelOptional:A,layout:x,id:_,error:p,descriptionText:d,className:u,style:N,size:O,children:(0,t.jsxs)("div",{className:M.container,children:[(0,t.jsx)("select",{id:_,name:v,"data-size":O,defaultValue:j,autoComplete:e,autoFocus:l,className:$.join(" "),onChange:function(e){E&&E(e),D&&D(e),T&&q(_,T(e.target.value))},onBlur:function(e){P&&P(e),C&&C(e)},ref:f,value:w,disabled:m,required:k,placeholder:S,...L,children:c}),h&&(0,t.jsx)(n.default,{size:O,icon:h}),p&&(0,t.jsx)("div",{className:M.actions_container,children:p&&(0,t.jsx)(i.default,{size:O})}),(0,t.jsx)("span",{className:M.chevron_container,children:(0,t.jsx)("svg",{className:M.chevron,xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 20 20",fill:"currentColor","aria-hidden":"true",children:(0,t.jsx)("path",{fillRule:"evenodd",d:"M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z",clipRule:"evenodd"})})})]})})}l.Option=function({value:e,children:s,selected:a}){return(0,t.jsx)("option",{value:e,selected:a,children:s})},l.OptGroup=function({label:e,children:s}){return(0,t.jsx)("optgroup",{label:e,children:s})},e.s(["default",0,l])},448761,457395,e=>{"use strict";var t=e.i(10429);let s=[{id:1,type:"template",title:"Create table",description:'Basic table template. Change "table_name" to the name you prefer.',sql:`create table table_name (
+  id bigint generated by default as identity primary key,
+  inserted_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  data jsonb,
+  name text
+);`},{id:2,type:"template",title:"Add view",description:"Template to add a view. Make sure to change the table and column names to ones that already exist.",sql:`CREATE VIEW countries_view AS
+SELECT id, continent
+FROM countries;`},{id:3,type:"template",title:"Add column",description:"Template to add a column. Make sure to change the name and type.",sql:`alter table table_name
+add column new_column_name data_type;`},{id:4,type:"template",title:"Add comments",description:"Templates to add a comment to either a table or a column.",sql:`comment on table table_name is 'Table description';
+comment on column table_name.column_name is 'Column description';`},{id:5,type:"template",title:"Show extensions",description:"Get a list of extensions in your database and status.",sql:`select
+  name, comment, default_version, installed_version
+from
+  pg_available_extensions
+order by
+  name asc;`},{id:6,type:"template",title:"Show version",description:"Get your Postgres version.",sql:`select * from
+  (select version()) as version,
+  (select current_setting('server_version_num')) as version_number;`},{id:7,type:"template",title:"Show active connections",description:"Get the number of active and max connections.",sql:`select * from
+(select count(pid) as active_connections FROM pg_stat_activity where state = 'active') active_connections,
+(select setting as max_connections from pg_settings where name = 'max_connections') max_connections;`},{id:8,type:"template",title:"Automatically update timestamps",description:"Update a column timestamp on every update.",sql:`
+create extension if not exists moddatetime schema extensions;
+
+-- assuming the table name is "todos", and a timestamp column "updated_at"
+-- this trigger will set the "updated_at" column to the current timestamp for every update
+create trigger
+  handle_updated_at before update
+on todos
+for each row execute
+  procedure moddatetime(updated_at);
+  `.trim()},{id:9,type:"template",title:"Increment field value",description:"Update a field with incrementing value using stored procedure.",sql:`
+create function increment(row_id int)
+returns void as
+$$
+  update table_name
+  set field_name = field_name + 1
+  where id = row_id;
+$$
+language sql volatile;
+
+-- you can call the function from your browser with supabase-js
+-- const { data, error } = await supabase.rpc('increment', { row_id: 2 })
+  `.trim()},{id:10,type:"template",title:"pg_stat_statements report",description:"Select from pg_stat_statements and view recent queries",sql:`-- pg_stat_statements report
+
+-- A limit of 100 has been added below
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    -- -- Postgres 13, 14
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.min_exec_time + statements.min_plan_time as min_time,
+    statements.max_exec_time + statements.max_plan_time as max_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    -- -- Postgres <= 12
+    -- total_time,
+    -- min_time,
+    -- max_time,
+    -- mean_time,
+    statements.rows / statements.calls as avg_rows,
+    statements.wal_bytes,
+    statements.wal_records
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  order by
+    total_time desc
+  limit
+    100;`},{id:11,type:"quickstart",title:"Colors",description:"Create a table with a list of colors and their hex values.",sql:`-- Information from Wikipedia "List of Colors"
+CREATE TYPE public.color_source AS ENUM (
+    '99COLORS_NET',
+    'ART_PAINTS_YG07S',
+    'BYRNE',
+    'CRAYOLA',
+    'CMYK_COLOR_MODEL',
+    'COLORCODE_IS',
+    'COLORHEXA',
+    'COLORXS',
+    'CORNELL_UNIVERSITY',
+    'COLUMBIA_UNIVERSITY',
+    'DUKE_UNIVERSITY',
+    'ENCYCOLORPEDIA_COM',
+    'ETON_COLLEGE',
+    'FANTETTI_AND_PETRACCHI',
+    'FINDTHEDATA_COM',
+    'FERRARIO_1919',
+    'FEDERAL_STANDARD_595',
+    'FLAG_OF_INDIA',
+    'FLAG_OF_SOUTH_AFRICA',
+    'GLAZEBROOK_AND_BALDRY',
+    'GOOGLE',
+    'HEXCOLOR_CO',
+    'ISCC_NBS',
+    'KELLY_MOORE',
+    'MATTEL',
+    'MAERZ_AND_PAUL',
+    'MILK_PAINT',
+    'MUNSELL_COLOR_WHEEL',
+    'NATURAL_COLOR_SYSTEM',
+    'PANTONE',
+    'PLOCHERE',
+    'POURPRE_COM',
+    'RAL',
+    'RESENE',
+    'RGB_COLOR_MODEL',
+    'THOM_POOLE',
+    'UNIVERSITY_OF_ALABAMA',
+    'UNIVERSITY_OF_CALIFORNIA_DAVIS',
+    'UNIVERSITY_OF_CAMBRIDGE',
+    'UNIVERSITY_OF_NORTH_CAROLINA',
+    'UNIVERSITY_OF_TEXAS_AT_AUSTIN',
+    'X11_WEB',
+    'XONA_COM'
+);
+
+create table public.colors (
+  id bigint generated by default as identity primary key,
+  name text,
+  hex text not null,
+  red int2,
+  green int2,
+  blue int2,
+  hue int2,
+  sat_hsl int2,
+  light_hsl int2,
+  sat_hsv int2,
+  val_hsv int2,
+  source color_source
+);
+
+comment on table colors is 'Full list of colors (based on various sources)';
+comment on column colors.name is 'Name of the color';
+comment on column colors.hex is 'Hex tripliets of the color for HTML web colors';
+comment on column colors.red is 'Red in RGB (%)';
+comment on column colors.green is 'Green in RGB (%)';
+comment on column colors.blue is 'Blue in RGB (%)';
+comment on column colors.hue is 'Hue in HSL (\xb0)';
+comment on column colors.sat_hsl is 'Saturation in HSL (%)';
+comment on column colors.light_hsl is 'Light in HSL (%)';
+comment on column colors.sat_hsv is 'Saturation in HSV (%)';
+comment on column colors.val_hsv is 'Value in HSV (%)';
+comment on column colors.source is 'Source of information on the color';
+
+insert into public.colors (name, hex, red, green, blue, hue, sat_hsl, light_hsl, sat_hsv, val_hsv, source) values
+  ('Absolute Zero', '#0048BA', 0, 28, 73, 217, 100, 37, 100, 73, 'CRAYOLA'),
+  ('Acid green', '#B0BF1A', 69, 75, 10, 65, 76, 43, 76, 75, 'ART_PAINTS_YG07S'),
+  ('Aero', '#7CB9E8', 49, 73, 91, 206, 70, 70, 47, 91, 'MAERZ_AND_PAUL'),
+  ('African violet', '#B284BE', 70, 52, 75, 288, 31, 63, 31.5, '75', 'PANTONE'),
+  ('Air superiority blue', '#72A0C1', 45, 63, 76, 205, 39, 60, 41, 76, 'FEDERAL_STANDARD_595'),
+  ('Alice blue', '#F0F8FF', 94, 97, 100, 208, 100, 97, 6, 100, 'X11_WEB'),
+  ('Alizarin', '#DB2D43', 86, 18, 26, 352, 71, 52, 79, 86, 'MAERZ_AND_PAUL'),
+  ('Alloy orange', '#C46210', 77, 38, 6, 27, 85, 42, 92, 77, 'CRAYOLA'),
+  ('Almond', '#EED9C4', 93, 85, 77, 30, 55, 85, 18, 93, 'CRAYOLA'),
+  ('Amaranth deep purple', '#9F2B68', 62, 17, 41, 328, 57, 40, 73, 62, 'MAERZ_AND_PAUL'),
+  ('Amaranth pink', '#F19CBB', 95, 61, 73, 338, 75, 78, 35, 95, 'MAERZ_AND_PAUL'),
+  ('Amaranth purple', '#AB274F', 67, 15, 31, 342, 63, 41, 77, 67, 'MAERZ_AND_PAUL'),
+  ('Amazon', '#3B7A57', 23, 48, 34, 147, 35, 36, 52, 48, 'XONA_COM'),
+  ('Amber', '#FFBF00', 100, 75, 0, 45, 100, 50, 100, 100, 'RGB_COLOR_MODEL'),
+  ('Amethyst', '#9966CC', 60, 40, 80, 270, 50, 60, 50, 80, 'X11_WEB'),
+  ('Android green', '#3DDC84', 24, 86, 53, 148, 69, 55, 72, 86, 'GOOGLE'),
+  ('Antique brass', '#C88A65', 78, 54, 40, 22, 47, 59, 49, 78, 'CRAYOLA'),
+  ('Antique bronze', '#665D1E', 40, 36, 12, 53, 55, 26, 71, 40, 'ISCC_NBS'),
+  ('Antique fuchsia', '#915C83', 57, 36, 51, 316, 22, 46, 37, 57, 'PLOCHERE'),
+  ('Antique ruby', '#841B2D', 52, 11, 18, 350, 66, 31, 80, 52, 'ISCC_NBS'),
+  ('Antique white', '#FAEBD7', 98, 92, 84, 34, 78, 91, 14, 98, 'X11_WEB'),
+  ('Apricot', '#FBCEB1', 98, 81, 69, 24, 90, 84, 29, 98, 'MAERZ_AND_PAUL'),
+  ('Aqua', '#00FFFF', 0, 100, 100, 180, 100, 50, 100, 100, 'X11_WEB'),
+  ('Aquamarine', '#7FFFD4', 50, 100, 83, 160, 100, 75, 50, 100, 'X11_WEB'),
+  ('Arctic lime', '#D0FF14', 82, 100, 8, 72, 100, 54, 92, 100, 'CRAYOLA'),
+  ('Artichoke green', '#4B6F44', 29, 44, 27, 110, 24, 35, 39, 44, 'PANTONE'),
+  ('Arylide yellow', '#E9D66B', 91, 84, 42, 51, 74, 67, 54, 91, 'COLORHEXA'),
+  ('Ash gray', '#B2BEB5', 70, 75, 71, 135, 9, 72, 6, 75, 'ISCC_NBS'),
+  ('Atomic tangerine', '#FF9966', 100, 60, 40, 20, 100, 70, 60, 100, 'CRAYOLA'),
+  ('Aureolin', '#FDEE00', 99, 93, 0, 56, 100, 50, 100, 99, 'X11_WEB'),
+  ('Azure', '#007FFF', 0, 50, 100, 210, 100, 50, 100, 100, 'RGB_COLOR_MODEL'),
+  ('Azure (X11/web color)', '#F0FFFF', 94, 100, 100, 180, 100, 97, 6, 100, 'X11_WEB'),
+  ('Baby blue', '#89CFF0', 54, 81, 94, 199, 77, 74, 43, 94, 'MAERZ_AND_PAUL'),
+  ('Baby blue eyes', '#A1CAF1', 63, 79, 95, 209, 74, 79, 33, 95, 'PLOCHERE'),
+  ('Baby pink', '#F4C2C2', 96, 76, 76, 0, 69, 86, 20, 96, 'ISCC_NBS'),
+  ('Baby powder', '#FEFEFA', 100, 100, 98, 60, 67, 99, 2, 100, 'CRAYOLA'),
+  ('Baker-Miller pink', '#FF91AF', 100, 57, 69, 344, 100, 78, 43, 100, 'BYRNE'),
+  ('Banana Mania', '#FAE7B5', 98, 91, 71, 43, 87, 85, 28, 98, 'CRAYOLA'),
+  ('Barbie Pink', '#DA1884', 85, 9, 52, 327, 80, 48, 89, 85, 'MATTEL'),
+  ('Barn red', '#7C0A02', 49, 4, 1, 4, 97, 25, 98, 49, 'MILK_PAINT'),
+  ('Battleship grey', '#848482', 52, 52, 51, 60, 1, 51, 2, 52, 'ISCC_NBS'),
+  ('Beau blue', '#BCD4E6', 74, 83, 90, 206, 46, 82, 18, 90, 'PLOCHERE'),
+  ('Beaver', '#9F8170', 62, 51, 44, 22, 20, 53, 30, 62, 'CRAYOLA'),
+  ('Beige', '#F5F5DC', 96, 96, 86, 60, 56, 91, 10, 96, 'X11_WEB'),
+  ('B''dazzled blue', '#2E5894', 18, 35, 58, 215, 53, 38, 69, 58, 'CRAYOLA'),
+  ('Big dip o''ruby', '#9C2542', 61, 15, 26, 345, 62, 38, 76, 61, 'CRAYOLA'),
+  ('Bisque', '#FFE4C4', 100, 89, 77, 33, 100, 88, 23, 100, 'X11_WEB'),
+  ('Bistre', '#3D2B1F', 24, 17, 12, 24, 33, 18, 49, 24, '99COLORS_NET'),
+  ('Bistre brown', '#967117', 59, 44, 9, 43, 73, 34, 85, 59, 'ISCC_NBS'),
+  ('Bitter lemon', '#CAE00D', 79, 88, 5, 66, 89, 47, 94, 88, 'XONA_COM'),
+  ('Black', '#000000', 0, 0, 0, 0, 0, 0, 0, 0, 'RGB_COLOR_MODEL'),
+  ('Black bean', '#3D0C02', 24, 5, 1, 10, 94, 12, 97, 24, 'XONA_COM'),
+  ('Black coral', '#54626F', 33, 38, 44, 209, 14, 38, 24, 44, 'CRAYOLA'),
+  ('Black olive', '#3B3C36', 23, 24, 21, 70, 5, 22, 10, 24, 'RAL'),
+  ('Black Shadows', '#BFAFB2', 75, 69, 70, 349, 11, 72, 8, 75, 'CRAYOLA'),
+  ('Blanched almond', '#FFEBCD', 100, 92, 80, 36, 100, 90, 20, 100, 'X11_WEB'),
+  ('Blast-off bronze', '#A57164', 65, 44, 39, 12, 27, 52, 39, 65, 'CRAYOLA'),
+  ('Bleu de France', '#318CE7', 19, 55, 91, 210, 79, 55, 79, 91, 'POURPRE_COM'),
+  ('Blizzard blue', '#ACE5EE', 67, 90, 93, 188, 66, 80, 28, 93, 'CRAYOLA'),
+  ('Blood red', '#660000', 40, 0, 0, 0, 100, 20, 100, 40, 'THOM_POOLE'),
+  ('Blue', '#0000FF', 0, 0, 100, 240, 100, 50, 100, 100, 'X11_WEB'),
+  ('Blue (Crayola)', '#1F75FE', 12, 46, 100, 217, 99, 56, 88, 100, 'CRAYOLA'),
+  ('Blue (Munsell)', '#0093AF', 0, 58, 69, 190, 100, 34, 100, 69, 'MUNSELL_COLOR_WHEEL'),
+  ('Blue (NCS)', '#0087BD', 0, 53, 74, 197, 100, 37, 100, 74, 'NATURAL_COLOR_SYSTEM'),
+  ('Blue (Pantone)', '#0018A8', 0, 9, 66, 231, 100, 33, 100, 66, 'PANTONE'),
+  ('Blue (pigment)', '#333399', 20, 20, 60, 240, 50, 40, 67, 60, 'CMYK_COLOR_MODEL'),
+  ('Blue bell', '#A2A2D0', 64, 64, 82, 240, 33, 73, 22, 82, 'CRAYOLA'),
+  ('Blue-gray (Crayola)', '#6699CC', 40, 60, 80, 210, 50, 60, 50, 80, 'CRAYOLA'),
+  ('Blue jeans', '#5DADEC', 36, 68, 93, 206, 79, 65, 61, 93, 'CRAYOLA'),
+  ('Blue sapphire', '#126180', 7, 38, 50, 197, 75, 29, 86, 50, 'PANTONE'),
+  ('Blue-violet', '#8A2BE2', 54, 17, 89, 271, 76, 53, 81, 89, 'X11_WEB'),
+  ('Blue yonder', '#5072A7', 31, 45, 65, 217, 35, 48, 52, 65, 'PANTONE'),
+  ('Bluetiful', '#3C69E7', 24, 41, 91, 224, 78, 57, 74, 91, 'CRAYOLA'),
+  ('Blush', '#DE5D83', 87, 36, 51, 342, 66, 62, 58, 87, 'CRAYOLA'),
+  ('Bole', '#79443B', 47, 27, 23, 9, 34, 35, 51, 47, 'ISCC_NBS'),
+  ('Bone', '#E3DAC9', 89, 85, 79, 39, 32, 84, 11, 89, 'KELLY_MOORE'),
+  ('Brick red', '#CB4154', 80, 25, 33, 352, 57, 53, 68, 80, 'CRAYOLA'),
+  ('Bright lilac', '#D891EF', 85, 57, 94, 285, 75, 75, 39, 94, 'CRAYOLA'),
+  ('Bright yellow (Crayola)', '#FFAA1D', 100, 67, 11, 37, 100, 56, 89, 100, 'CRAYOLA'),
+  ('British racing green', '#004225', 0, 26, 15, 154, 100, 13, 100, 26, 'COLORHEXA'),
+  ('Bronze', '#CD7F32', 80, 50, 20, 30, 61, 50, 76, 80, 'MAERZ_AND_PAUL'),
+  ('Brown', '#964B00', 59, 29, 0, 30, 100, 29, 100, 59, 'COLORXS'),
+  ('Brown sugar', '#AF6E4D', 69, 43, 30, 20, 39, 49, 56, 69, 'CRAYOLA'),
+  ('Bud green', '#7BB661', 48, 71, 38, 102, 37, 55, 47, 71, 'PANTONE'),
+  ('Buff', '#FFC680', 100, 78, 50, 33, 100, 75, 50, 100, 'MAERZ_AND_PAUL'),
+  ('Burgundy', '#800020', 50, 0, 13, 345, 100, 25, 100, 50, 'MAERZ_AND_PAUL'),
+  ('Burlywood', '#DEB887', 87, 72, 53, 34, 57, 70, 39, 87, 'X11_WEB'),
+  ('Burnished brown', '#A17A74', 63, 48, 45, 8, 19, 54, 28, 63, 'CRAYOLA'),
+  ('Burnt orange', '#CC5500', 80, 33, 0, 25, 100, 40, 100, 80, 'UNIVERSITY_OF_TEXAS_AT_AUSTIN'),
+  ('Burnt sienna', '#E97451', 91, 45, 32, 14, 78, 62, 65, 91, 'FERRARIO_1919'),
+  ('Burnt umber', '#8A3324', 54, 20, 14, 9, 59, 34, 74, 54, 'XONA_COM'),
+  ('Byzantine', '#BD33A4', 74, 20, 64, 311, 58, 47, 73, 74, 'MAERZ_AND_PAUL'),
+  ('Byzantium', '#702963', 44, 16, 39, 311, 46, 30, 63, 44, 'ISCC_NBS'),
+  ('Cadet blue', '#5F9EA0', 37, 62, 63, 182, 26, 50, 41, 63, 'X11_WEB'),
+  ('Cadet grey', '#91A3B0', 57, 64, 69, 205, 16, 63, 18, 69, 'ISCC_NBS'),
+  ('Cadmium green', '#006B3C', 0, 42, 24, 154, 100, 21, 100, 42, 'ISCC_NBS'),
+  ('Cadmium orange', '#ED872D', 93, 53, 18, 28, 84, 55, 81, 93, 'ISCC_NBS'),
+  ('Caf\xe9 au lait', '#A67B5B', 65, 48, 36, 26, 30, 50, 45, 65, 'ISCC_NBS'),
+  ('Caf\xe9 noir', '#4B3621', 29, 21, 13, 30, 39, 21, 56, 29, 'ISCC_NBS'),
+  ('Cambridge blue', '#A3C1AD', 64, 76, 68, 140, 20, 70, 16, 76, 'UNIVERSITY_OF_CAMBRIDGE'),
+  ('Camel', '#C19A6B', 76, 60, 42, 33, 41, 59, 45, 76, 'ISCC_NBS'),
+  ('Cameo pink', '#EFBBCC', 94, 73, 80, 340, 62, 84, 22, 94, 'ISCC_NBS'),
+  ('Canary', '#FFFF99', 100, 100, 60, 60, 100, 80, 40, 100, 'CRAYOLA'),
+  ('Canary yellow', '#FFEF00', 100, 94, 0, 56, 100, 50, 100, 100, 'CMYK_COLOR_MODEL'),
+  ('Candy pink', '#E4717A', 89, 44, 48, 355, 68, 67, 50, 89, 'ISCC_NBS'),
+  ('Cardinal', '#C41E3A', 77, 12, 23, 350, 74, 44, 85, 77, 'MAERZ_AND_PAUL'),
+  ('Caribbean green', '#00CC99', 0, 80, 60, 165, 100, 40, 100, 80, 'CRAYOLA'),
+  ('Carmine', '#960018', 59, 0, 9, 350, 100, 29, 100, 59, 'POURPRE_COM'),
+  ('Carmine (M&P)', '#D70040', 84, 0, 25, 342, 100, 42, 100, 84, 'MAERZ_AND_PAUL'),
+  ('Carnation pink', '#FFA6C9', 100, 65, 79, 336, 100, 83, 35, 100, 'CRAYOLA'),
+  ('Carnelian', '#B31B1B', 70, 11, 11, 0, 74, 40, 85, 70, 'CORNELL_UNIVERSITY'),
+  ('Carolina blue', '#56A0D3', 34, 63, 83, 204, 59, 58, 59, 83, 'UNIVERSITY_OF_NORTH_CAROLINA'),
+  ('Carrot orange', '#ED9121', 93, 57, 13, 33, 85, 53, 86, 93, 'MAERZ_AND_PAUL'),
+  ('Catawba', '#703642', 44, 21, 26, 348, 35, 33, 52, 44, 'MAERZ_AND_PAUL'),
+  ('Cedar Chest', '#C95A49', 79, 35, 29, 8, 54, 54, 64, 79, 'CRAYOLA'),
+  ('Celadon', '#ACE1AF', 67, 88, 69, 123, 47, 78, 24, 88, 'ENCYCOLORPEDIA_COM'),
+  ('Celeste', '#B2FFFF', 70, 100, 100, 180, 100, 85, 30, 100, 'FANTETTI_AND_PETRACCHI'),
+  ('Cerise', '#DE3163', 87, 19, 39, 343, 72, 53, 78, 87, 'MAERZ_AND_PAUL'),
+  ('Cerulean', '#007BA7', 0, 48, 65, 196, 100, 33, 100, 65, 'MAERZ_AND_PAUL'),
+  ('Cerulean blue', '#2A52BE', 16, 32, 75, 224, 64, 46, 78, 75, 'MAERZ_AND_PAUL'),
+  ('Cerulean frost', '#6D9BC3', 43, 61, 76, 208, 42, 60, 44, 76, 'CRAYOLA'),
+  ('Cerulean (Crayola)', '#1DACD6', 11, 67, 84, 194, 76, 48, 86, 84, 'CRAYOLA'),
+  ('Cerulean (RGB)', '#0040FF', 0, 25, 100, 225, 100, 50, 100, 100, null),
+  ('Champagne', '#F7E7CE', 97, 91, 81, 37, 72, 89, 17, 97, 'MAERZ_AND_PAUL'),
+  ('Champagne pink', '#F1DDCF', 95, 87, 81, 25, 55, 88, 14, 95, 'PANTONE'),
+  ('Charcoal', '#36454F', 21, 27, 31, 204, 19, 26, 32, 31, 'ISCC_NBS'),
+  ('Charm pink', '#E68FAC', 90, 56, 67, 340, 64, 73, 38, 90, 'PLOCHERE'),
+  ('Chartreuse (web)', '#80FF00', 50, 100, 0, 90, 100, 50, 100, 100, 'RGB_COLOR_MODEL'),
+  ('Cherry blossom pink', '#FFB7C5', 100, 72, 77, 348, 100, 86, 28, 100, 'MAERZ_AND_PAUL'),
+  ('Chestnut', '#954535', 58, 27, 21, 10, 48, 40, 64, 58, 'MAERZ_AND_PAUL'),
+  ('Chili red', '#E23D28', 89, 24, 16, 5, 76, 52, 183, 125, 'FLAG_OF_SOUTH_AFRICA'),
+  ('China pink', '#DE6FA1', 87, 44, 63, 333, 63, 65, 50, 87, 'PLOCHERE'),
+  ('Chinese red', '#AA381E', 67, 22, 12, 11, 70, 39, 82, 67, 'ISCC_NBS'),
+  ('Chinese violet', '#856088', 52, 38, 53, 296, 17, 46, 29, 53, 'PANTONE'),
+  ('Chinese yellow', '#FFB200', 100, 70, 0, 42, 100, 50, 100, 100, 'ISCC_NBS'),
+  ('Chocolate (traditional)', '#7B3F00', 48, 25, 0, 31, 100, 24, 100, 48, 'MAERZ_AND_PAUL'),
+  ('Chocolate (web)', '#D2691E', 82, 41, 12, 25, 75, 47, 86, 82, 'X11_WEB'),
+  ('Cinereous', '#98817B', 60, 51, 48, 12, 12, 54, 19, 60, 'MAERZ_AND_PAUL'),
+  ('Cinnabar', '#E34234', 89, 26, 20, 5, 76, 55, 77, 89, 'MAERZ_AND_PAUL'),
+  ('Cinnamon Satin', '#CD607E', 80, 38, 49, 343, 52, 59, 53, 80, 'CRAYOLA'),
+  ('Citrine', '#E4D00A', 89, 82, 4, 54, 92, 47, 96, 89, 'MAERZ_AND_PAUL'),
+  ('Citron', '#9FA91F', 62, 66, 12, 64, 69, 39, 82, 66, 'XONA_COM'),
+  ('Claret', '#7F1734', 50, 9, 20, 343, 69, 29, 82, 50, 'XONA_COM'),
+  ('Coffee', '#6F4E37', 44, 31, 22, 25, 34, 33, 50, 44, 'ISCC_NBS'),
+  ('Columbia Blue', '#B9D9EB', 73, 85, 92, 202, 56, 82, 21, 92, 'COLUMBIA_UNIVERSITY'),
+  ('Congo pink', '#F88379', 97, 51, 47, 5, 90, 72, 51, 97, 'ISCC_NBS'),
+  ('Cool grey', '#8C92AC', 55, 57, 67, 229, 16, 61, 19, 67, 'ISCC_NBS'),
+  ('Copper', '#B87333', 72, 45, 20, 29, 57, 46, 72, 72, 'MAERZ_AND_PAUL'),
+  ('Copper (Crayola)', '#DA8A67', 85, 54, 40, 18, 61, 63, 53, 85, 'CRAYOLA'),
+  ('Copper penny', '#AD6F69', 68, 44, 41, 5, 29, 55, 39, 68, 'CRAYOLA'),
+  ('Copper red', '#CB6D51', 80, 43, 32, 14, 54, 56, 60, 80, 'ISCC_NBS'),
+  ('Copper rose', '#996666', 60, 40, 40, 0, 20, 50, 33, 60, '99COLORS_NET'),
+  ('Coquelicot', '#FF3800', 100, 22, 0, 13, 100, 50, 100, 100, 'COLORHEXA'),
+  ('Coral', '#FF7F50', 100, 50, 31, 16, 100, 66, 69, 100, 'X11_WEB'),
+  ('Coral pink', '#F88379', 97, 51, 47, 5, 90, 72, 51, 97, 'ISCC_NBS'),
+  ('Cordovan', '#893F45', 54, 25, 27, 355, 37, 39, 54, 54, 'PANTONE'),
+  ('Corn', '#FBEC5D', 98, 93, 36, 54, 95, 68, 63, 98, 'MAERZ_AND_PAUL'),
+  ('Cornflower blue', '#6495ED', 39, 58, 93, 219, 79, 66, 58, 93, 'X11_WEB'),
+  ('Cornsilk', '#FFF8DC', 100, 97, 86, 48, 100, 93, 14, 100, 'X11_WEB'),
+  ('Cosmic cobalt', '#2E2D88', 18, 18, 53, 241, 50, 36, 67, 53, 'CRAYOLA'),
+  ('Cosmic latte', '#FFF8E7', 100, 97, 91, 43, 100, 95, 9, 100, 'GLAZEBROOK_AND_BALDRY'),
+  ('Coyote brown', '#81613C', 51, 38, 24, 32, 37, 37, 52, 51, 'COLORCODE_IS'),
+  ('Cotton candy', '#FFBCD9', 100, 74, 85, 334, 100, 87, 26, 100, 'CRAYOLA'),
+  ('Cream', '#FFFDD0', 100, 99, 82, 57, 100, 91, 18, 100, 'MAERZ_AND_PAUL'),
+  ('Crimson', '#DC143C', 86, 8, 24, 348, 83, 47, 91, 86, 'X11_WEB'),
+  ('Crimson (UA)', '#9E1B32', 62, 11, 20, 349, 71, 36, 83, 62, 'UNIVERSITY_OF_ALABAMA'),
+  ('Cultured Pearl', '#F5F5F5', 96, 96, 96, 0, 0, 96, 0, 96, 'CRAYOLA'),
+  ('Cyan', '#00FFFF', 0, 100, 100, 180, 100, 50, 100, 100, 'X11_WEB'),
+  ('Cyan (process)', '#00B7EB', 0, 72, 92, 193, 100, 46, 100, 92, 'CMYK_COLOR_MODEL'),
+  ('Cyber grape', '#58427C', 35, 26, 49, 263, 31, 37, 47, 49, 'CRAYOLA'),
+  ('Cyber yellow', '#FFD300', 100, 83, 0, 50, 100, 50, 100, 100, 'PANTONE'),
+  ('Cyclamen', '#F56FA1', 96, 44, 63, 338, 87, 70, 54, 96, 'CRAYOLA'),
+  ('Dandelion', '#FED85D', 100, 85, 36, 46, 99, 68, 63, 100, 'CRAYOLA'),
+  ('Dark brown', '#654321', 40, 26, 13, 30, 51, 26, 67, 40, 'X11_WEB'),
+  ('Dark byzantium', '#5D3954', 36, 22, 33, 315, 24, 29, 39, 36, 'ISCC_NBS'),
+  ('Dark cyan', '#008B8B', 0, 55, 55, 180, 100, 27, 100, 55, 'X11_WEB'),
+  ('Dark electric blue', '#536878', 33, 41, 47, 206, 18, 40, 31, 47, 'ISCC_NBS'),
+  ('Dark goldenrod', '#B8860B', 72, 53, 4, 43, 89, 38, 94, 72, 'X11_WEB'),
+  ('Dark green (X11)', '#006400', 0, 39, 0, 120, 100, 20, 100, 39, 'X11_WEB'),
+  ('Dark jungle green', '#1A2421', 10, 14, 13, 162, 16, 12, 28, 14, 'ISCC_NBS'),
+  ('Dark khaki', '#BDB76B', 74, 72, 42, 56, 38, 58, 43, 74, 'X11_WEB'),
+  ('Dark lava', '#483C32', 28, 24, 20, 27, 18, 24, 31, 28, 'ISCC_NBS'),
+  ('Dark liver (horses)', '#543D37', 33, 24, 22, 12, 21, 27, 35, 33, 'UNIVERSITY_OF_CALIFORNIA_DAVIS'),
+  ('Dark magenta', '#8B008B', 55, 0, 55, 300, 100, 27, 100, 55, 'X11_WEB'),
+  ('Dark olive green', '#556B2F', 33, 42, 18, 82, 39, 30, 56, 42, 'X11_WEB'),
+  ('Dark orange', '#FF8C00', 100, 55, 0, 33, 100, 50, 100, 100, 'X11_WEB'),
+  ('Dark orchid', '#9932CC', 60, 20, 80, 280, 61, 50, 75, 80, 'X11_WEB'),
+  ('Dark purple', '#301934', 19, 10, 20, 291, 35, 15, 51, 20, 'ISCC_NBS'),
+  ('Dark red', '#8B0000', 55, 0, 0, 0, 100, 27, 100, 55, 'X11_WEB'),
+  ('Dark salmon', '#E9967A', 91, 59, 48, 15, 72, 70, 48, 91, 'X11_WEB'),
+  ('Dark sea green', '#8FBC8F', 56, 74, 56, 120, 25, 65, 24, 74, 'X11_WEB'),
+  ('Dark sienna', '#3C1414', 24, 8, 8, 0, 50, 16, 67, 24, 'ISCC_NBS'),
+  ('Dark sky blue', '#8CBED6', 55, 75, 84, 199, 47, 69, 35, 84, 'PANTONE'),
+  ('Dark slate blue', '#483D8B', 28, 24, 55, 248, 39, 39, 56, 55, 'X11_WEB'),
+  ('Dark slate gray', '#2F4F4F', 18, 31, 31, 180, 25, 25, 41, 31, 'X11_WEB'),
+  ('Dark spring green', '#177245', 9, 45, 27, 150, 66, 27, 80, 45, 'X11_WEB'),
+  ('Dark turquoise', '#00CED1', 0, 81, 82, 181, 100, 41, 100, 82, 'X11_WEB'),
+  ('Dark violet', '#9400D3', 58, 0, 83, 282, 100, 41, 100, 83, 'X11_WEB'),
+  ('Davy''s grey', '#555555', 33, 33, 33, 0, 0, 33, 0, 33, 'ISCC_NBS'),
+  ('Deep cerise', '#DA3287', 85, 20, 53, 330, 69, 53, 77, 85, 'CRAYOLA'),
+  ('Deep champagne', '#FAD6A5', 98, 84, 65, 35, 90, 81, 34, 98, 'ISCC_NBS'),
+  ('Deep chestnut', '#B94E48', 73, 31, 28, 3, 45, 50, 61, 73, 'CRAYOLA'),
+  ('Deep jungle green', '#004B49', 0, 29, 29, 178, 100, 15, 100, 29, 'ISCC_NBS'),
+  ('Deep pink', '#FF1493', 100, 8, 58, 328, 100, 54, 92, 100, 'X11_WEB'),
+  ('Deep saffron', '#FF9933', 100, 60, 20, 30, 100, 60, 80, 100, 'FLAG_OF_INDIA'),
+  ('Deep sky blue', '#00BFFF', 0, 75, 100, 195, 100, 50, 100, 100, 'X11_WEB'),
+  ('Deep Space Sparkle', '#4A646C', 29, 39, 42, 194, 19, 36, 31, 42, 'CRAYOLA'),
+  ('Deep taupe', '#7E5E60', 49, 37, 38, 356, 15, 43, 25, 49, 'PANTONE'),
+  ('Denim', '#1560BD', 8, 38, 74, 213, 80, 41, 89, 74, 'CRAYOLA'),
+  ('Denim blue', '#2243B6', 13, 26, 71, 227, 69, 42, 81, 71, 'CRAYOLA'),
+  ('Desert', '#C19A6B', 76, 60, 42, 33, 41, 59, 45, 76, 'ISCC_NBS'),
+  ('Desert sand', '#EDC9AF', 93, 79, 69, 25, 63, 81, 26, 93, 'CRAYOLA'),
+  ('Dim gray', '#696969', 41, 41, 41, 0, 0, 41, 0, 41, 'X11_WEB'),
+  ('Dodger blue', '#1E90FF', 12, 56, 100, 210, 100, 56, 88, 100, 'X11_WEB'),
+  ('Drab dark brown', '#4A412A', 29, 25, 16, 43, 28, 23, 43, 29, 'PANTONE'),
+  ('Duke blue', '#00009C', 0, 0, 61, 240, 100, 31, 100, 61, 'DUKE_UNIVERSITY'),
+  ('Dutch white', '#EFDFBB', 94, 87, 73, 42, 62, 84, 22, 94, 'RESENE'),
+  ('Ebony', '#555D50', 33, 36, 31, 97, 8, 34, 14, 36, 'MAERZ_AND_PAUL'),
+  ('Ecru', '#C2B280', 76, 70, 50, 45, 35, 63, 34, 76, 'ISCC_NBS'),
+  ('Eerie black', '#1B1B1B', 11, 11, 11, 0, 0, 11, 0, 11, 'CRAYOLA'),
+  ('Eggplant', '#614051', 38, 25, 32, 329, 21, 32, 34, 38, 'CRAYOLA'),
+  ('Eggshell', '#F0EAD6', 94, 92, 84, 46, 46, 89, 11, 94, 'ISCC_NBS'),
+  ('Electric lime', '#CCFF00', 80, 100, 0, 72, 100, 50, 100, 100, 'CRAYOLA'),
+  ('Electric purple', '#BF00FF', 75, 0, 100, 285, 100, 50, 100, 100, 'X11_WEB'),
+  ('Electric violet', '#8F00FF', 56, 0, 100, 274, 100, 50, 100, 100, 'ISCC_NBS'),
+  ('Emerald', '#50C878', 31, 78, 47, 140, 52, 55, 60, 78, 'MAERZ_AND_PAUL'),
+  ('Eminence', '#6C3082', 42, 19, 51, 284, 46, 35, 63, 51, 'XONA_COM'),
+  ('English lavender', '#B48395', 71, 51, 58, 338, 25, 61, 27, 71, 'PANTONE'),
+  ('English red', '#AB4B52', 67, 29, 32, 356, 39, 48, 56, 67, 'ISCC_NBS'),
+  ('English vermillion', '#CC474B', 80, 28, 29, 358, 57, 54, 65, 80, 'CRAYOLA'),
+  ('English violet', '#563C5C', 34, 24, 36, 289, 21, 30, 35, 36, 'ISCC_NBS'),
+  ('Erin', '#00FF40', 0, 100, 25, 135, 100, 50, 100, 100, 'MAERZ_AND_PAUL'),
+  ('Eton blue', '#96C8A2', 59, 78, 64, 134, 31, 69, 25, 78, 'ETON_COLLEGE'),
+  ('Fallow', '#C19A6B', 76, 60, 42, 33, 41, 59, 45, 76, 'ISCC_NBS'),
+  ('Falu red', '#801818', 50, 9, 9, 0, 68, 30, 81, 50, 'COLORHEXA'),
+  ('Fandango', '#B53389', 71, 20, 54, 320, 56, 46, 72, 71, 'MAERZ_AND_PAUL'),
+  ('Fandango pink', '#DE5285', 87, 32, 52, 338, 68, 60, 63, 87, 'PANTONE'),
+  ('Fawn', '#E5AA70', 90, 67, 44, 30, 69, 67, 51, 90, 'X11_WEB'),
+  ('Fern green', '#4F7942', 31, 47, 26, 106, 29, 37, 45, 47, 'MAERZ_AND_PAUL'),
+  ('Field drab', '#6C541E', 42, 33, 12, 42, 57, 27, 72, 42, 'ISCC_NBS'),
+  ('Fiery rose', '#FF5470', 100, 33, 44, 350, 100, 67, 67, 100, 'CRAYOLA'),
+  ('Finn', '#683068', 41, 19, 41, 300, 37, 30, 54, 41, 'HEXCOLOR_CO'),
+  ('Firebrick', '#B22222', 70, 13, 13, 0, 68, 42, 81, 70, 'X11_WEB'),
+  ('Fire engine red', '#CE2029', 81, 13, 16, 357, 73, 47, 84, 81, 'FINDTHEDATA_COM'),
+  ('Flame', '#E25822', 89, 35, 13, 17, 77, 51, 85, 89, 'ISCC_NBS'),
+  ('Flax', '#EEDC82', 93, 86, 51, 50, 76, 72, 45, 93, 'MAERZ_AND_PAUL'),
+  ('Flirt', '#A2006D', 64, 0, 43, 320, 100, 32, 100, 64, 'XONA_COM'),
+  ('Floral white', '#FFFAF0', 100, 98, 94, 40, 100, 97, 6, 100, 'X11_WEB'),
+  ('Forest green (web)', '#228B22', 13, 55, 13, 120, 61, 34, 76, 55, 'X11_WEB'),
+  ('French beige', '#A67B5B', 65, 48, 36, 26, 30, 50, 45, 65, 'ISCC_NBS'),
+  ('French bistre', '#856D4D', 52, 43, 30, 34, 27, 41, 42, 52, 'POURPRE_COM'),
+  ('French blue', '#0072BB', 0, 45, 73, 203, 100, 37, 100, 73, 'MAERZ_AND_PAUL'),
+  ('French fuchsia', '#FD3F92', 99, 25, 57, 334, 98, 62, 75, 99, 'POURPRE_COM'),
+  ('French lilac', '#86608E', 53, 38, 56, 290, 19, 47, 32, 56, 'ISCC_NBS'),
+  ('French lime', '#9EFD38', 62, 99, 22, 89, 98, 61, 78, 99, 'POURPRE_COM'),
+  ('French mauve', '#D473D4', 83, 45, 83, 300, 53, 64, 46, 83, 'POURPRE_COM'),
+  ('French pink', '#FD6C9E', 99, 42, 62, 339, 97, 71, 57, 99, 'POURPRE_COM'),
+  ('French raspberry', '#C72C48', 78, 17, 28, 349, 64, 48, 78, 78, 'POURPRE_COM'),
+  ('French sky blue', '#77B5FE', 47, 71, 100, 212, 99, 73, 53, 100, 'POURPRE_COM'),
+  ('French violet', '#8806CE', 53, 2, 81, 279, 94, 42, 97, 81, 'POURPRE_COM'),
+  ('Frostbite', '#E936A7', 91, 21, 65, 322, 80, 56, 77, 91, 'CRAYOLA'),
+  ('Fuchsia', '#FF00FF', 100, 0, 100, 300, 100, 50, 100, 100, 'X11_WEB'),
+  ('Fuchsia (Crayola)', '#C154C1', 76, 33, 76, 300, 47, 54, 56, 76, 'CRAYOLA'),
+  ('Fulvous', '#E48400', 89, 52, 0, 35, 100, 45, 100, 89, '99COLORS_NET'),
+  ('Fuzzy Wuzzy', '#87421F', 53, 26, 12, 20, 63, 33, 77, 53, 'CRAYOLA');
+`.trim()},{id:12,type:"quickstart",title:"Slack Clone",description:"Build a basic slack clone with Row Level Security.",sql:`
+--
+-- For use with https://github.com/supabase/supabase/tree/master/examples/slack-clone/nextjs-slack-clone
+
+-- Custom types
+create type public.app_permission as enum ('channels.delete', 'messages.delete');
+create type public.app_role as enum ('admin', 'moderator');
+create type public.user_status as enum ('ONLINE', 'OFFLINE');
+
+-- USERS
+create table public.users (
+  id          uuid not null primary key, -- UUID from auth.users
+  username    text,
+  status      user_status default 'OFFLINE'::public.user_status
+);
+comment on table public.users is 'Profile data for each user.';
+comment on column public.users.id is 'References the internal Supabase Auth user.';
+
+-- CHANNELS
+create table public.channels (
+  id            bigint generated by default as identity primary key,
+  inserted_at   timestamp with time zone default timezone('utc'::text, now()) not null,
+  slug          text not null unique,
+  created_by    uuid references public.users not null
+);
+comment on table public.channels is 'Topics and groups.';
+
+-- MESSAGES
+create table public.messages (
+  id            bigint generated by default as identity primary key,
+  inserted_at   timestamp with time zone default timezone('utc'::text, now()) not null,
+  message       text,
+  user_id       uuid references public.users not null,
+  channel_id    bigint references public.channels on delete cascade not null
+);
+comment on table public.messages is 'Individual messages sent by each user.';
+
+-- USER ROLES
+create table public.user_roles (
+  id        bigint generated by default as identity primary key,
+  user_id   uuid references public.users on delete cascade not null,
+  role      app_role not null,
+  unique (user_id, role)
+);
+comment on table public.user_roles is 'Application roles for each user.';
+
+-- ROLE PERMISSIONS
+create table public.role_permissions (
+  id           bigint generated by default as identity primary key,
+  role         app_role not null,
+  permission   app_permission not null,
+  unique (role, permission)
+);
+comment on table public.role_permissions is 'Application permissions for each role.';
+
+-- authorize with role-based access control (RBAC)
+create function public.authorize(
+  requested_permission app_permission,
+  user_id uuid
+)
+returns boolean as
+$$
+  declare
+    bind_permissions int;
+  begin
+    select
+      count(*)
+    from public.role_permissions
+    inner join public.user_roles on role_permissions.role = user_roles.role
+    where
+      role_permissions.permission = authorize.requested_permission and
+      user_roles.user_id = authorize.user_id
+    into bind_permissions;
+
+    return bind_permissions > 0;
+  end;
+$$
+language plpgsql security definer;
+
+-- Secure the tables
+alter table public.users
+  enable row level security;
+alter table public.channels
+  enable row level security;
+alter table public.messages
+  enable row level security;
+alter table public.user_roles
+  enable row level security;
+alter table public.role_permissions
+  enable row level security;
+
+create policy "Allow logged-in read access" on public.users
+  for select using (auth.role() = 'authenticated');
+create policy "Allow individual insert access" on public.users
+  for insert with check ((select auth.uid()) = id);
+create policy "Allow individual update access" on public.users
+  for update using ( (select auth.uid()) = id );
+create policy "Allow logged-in read access" on public.channels
+  for select using (auth.role() = 'authenticated');
+create policy "Allow individual insert access" on public.channels
+  for insert with check ((select auth.uid()) = created_by);
+create policy "Allow individual delete access" on public.channels
+  for delete using ((select auth.uid()) = created_by);
+create policy "Allow authorized delete access" on public.channels
+  for delete using (authorize('channels.delete', auth.uid()));
+create policy "Allow logged-in read access" on public.messages
+  for select using (auth.role() = 'authenticated');
+create policy "Allow individual insert access" on public.messages
+  for insert with check ((select auth.uid()) = user_id);
+create policy "Allow individual update access" on public.messages
+  for update using ((select auth.uid()) = user_id);
+create policy "Allow individual delete access" on public.messages
+  for delete using ((select auth.uid()) = user_id);
+create policy "Allow authorized delete access" on public.messages
+  for delete using (authorize('messages.delete', auth.uid()));
+create policy "Allow individual read access" on public.user_roles
+  for select using ((select auth.uid()) = user_id);
+
+-- Send "previous data" on change
+alter table public.users
+  replica identity full;
+alter table public.channels
+  replica identity full;
+alter table public.messages
+  replica identity full;
+
+-- inserts a row into public.users and assigns roles
+create function public.handle_new_user()
+returns trigger
+set search_path = ''
+as $$
+  declare is_admin boolean;
+  begin
+    insert into public.users (id, username)
+    values (new.id, new.email);
+
+    select count(*) = 1 from auth.users into is_admin;
+
+    if position('+supaadmin@' in new.email) > 0 then
+      insert into public.user_roles (user_id, role) values (new.id, 'admin');
+    elsif position('+supamod@' in new.email) > 0 then
+      insert into public.user_roles (user_id, role) values (new.id, 'moderator');
+    end if;
+
+    return new;
+  end;
+$$ language plpgsql security definer;
+
+-- trigger the function every time a user is created
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute procedure public.handle_new_user();
+
+/**
+ * REALTIME SUBSCRIPTIONS
+ * Only allow realtime listening on public tables.
+ */
+
+begin;
+  -- remove the realtime publication
+  drop publication if exists supabase_realtime;
+
+  -- re-create the publication but don't enable it for any tables
+  create publication supabase_realtime;
+commit;
+
+-- add tables to the publication
+alter publication supabase_realtime add table public.channels;
+alter publication supabase_realtime add table public.messages;
+alter publication supabase_realtime add table public.users;
+
+-- DUMMY DATA
+insert into public.users (id, username)
+values
+    ('8d0fd2b3-9ca7-4d9e-a95f-9e13dded323e', 'supabot');
+
+insert into public.channels (slug, created_by)
+values
+    ('public', '8d0fd2b3-9ca7-4d9e-a95f-9e13dded323e'),
+    ('random', '8d0fd2b3-9ca7-4d9e-a95f-9e13dded323e');
+
+insert into public.messages (message, channel_id, user_id)
+values
+    ('Hello World 👋', 1, '8d0fd2b3-9ca7-4d9e-a95f-9e13dded323e'),
+    ('Perfection is attained, not when there is nothing more to add, but when there is nothing left to take away.', 2, '8d0fd2b3-9ca7-4d9e-a95f-9e13dded323e');
+
+insert into public.role_permissions (role, permission)
+values
+    ('admin', 'channels.delete'),
+    ('admin', 'messages.delete'),
+    ('moderator', 'messages.delete');
+`.trim()},{id:13,type:"quickstart",title:"Todo List",description:"Build a basic todo list with Row Level Security.",sql:`
+--
+-- For use with:
+-- https://github.com/supabase/supabase/tree/master/examples/todo-list/sveltejs-todo-list or
+-- https://github.com/supabase/examples-archive/tree/main/supabase-js-v1/todo-list
+--
+
+create table todos (
+  id bigint generated by default as identity primary key,
+  user_id uuid references auth.users not null,
+  task text check (char_length(task) > 3),
+  is_complete boolean default false,
+  inserted_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+alter table todos enable row level security;
+create policy "Individuals can create todos." on todos for
+    insert with check (auth.uid() = user_id);
+create policy "Individuals can view their own todos. " on todos for
+    select using ((select auth.uid()) = user_id);
+create policy "Individuals can update their own todos." on todos for
+    update using ((select auth.uid()) = user_id);
+create policy "Individuals can delete their own todos." on todos for
+    delete using ((select auth.uid()) = user_id);
+`.trim()},{id:14,type:"quickstart",title:"Stripe Subscriptions",description:"Starter template for the Next.js Stripe Subscriptions Starter.",sql:`
+/**
+* USERS
+* Note: This table contains user data. Users should only be able to view and update their own data.
+*/
+create table users (
+  -- UUID from auth.users
+  id uuid references auth.users not null primary key,
+  full_name text,
+  avatar_url text,
+  -- The customer's billing address, stored in JSON format.
+  billing_address jsonb,
+  -- Stores your customer's payment instruments.
+  payment_method jsonb
+);
+alter table users
+  enable row level security;
+create policy "Can view own user data." on users
+  for select using ((select auth.uid()) = id);
+create policy "Can update own user data." on users
+  for update using ((select auth.uid()) = id);
+
+/**
+* This trigger automatically creates a user entry when a new user signs up via Supabase Auth.
+*/
+create function public.handle_new_user()
+returns trigger
+set search_path = ''
+as $$
+  begin
+    insert into public.users (id, full_name, avatar_url)
+    values (new.id, new.raw_user_meta_data->>'full_name', new.raw_user_meta_data->>'avatar_url');
+    return new;
+  end;
+$$
+language plpgsql security definer;
+
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row
+    execute procedure public.handle_new_user();
+
+/**
+* CUSTOMERS
+* Note: this is a private table that contains a mapping of user IDs to Stripe customer IDs.
+*/
+create table customers (
+  -- UUID from auth.users
+  id uuid references auth.users not null primary key,
+  -- The user's customer ID in Stripe. User must not be able to update this.
+  stripe_customer_id text
+);
+alter table customers enable row level security;
+-- No policies as this is a private table that the user must not have access to.
+
+/**
+* PRODUCTS
+* Note: products are created and managed in Stripe and synced to our DB via Stripe webhooks.
+*/
+create table products (
+  -- Product ID from Stripe, e.g. prod_1234.
+  id text primary key,
+  -- Whether the product is currently available for purchase.
+  active boolean,
+  -- The product's name, meant to be displayable to the customer. Whenever this product is sold via a subscription, name will show up on associated invoice line item descriptions.
+  name text,
+  -- The product's description, meant to be displayable to the customer. Use this field to optionally store a long form explanation of the product being sold for your own rendering purposes.
+  description text,
+  -- A URL of the product image in Stripe, meant to be displayable to the customer.
+  image text,
+  -- Set of key-value pairs, used to store additional information about the object in a structured format.
+  metadata jsonb
+);
+alter table products
+  enable row level security;
+create policy "Allow public read-only access." on products
+  for select using (true);
+
+/**
+* PRICES
+* Note: prices are created and managed in Stripe and synced to our DB via Stripe webhooks.
+*/
+create type pricing_type as enum ('one_time', 'recurring');
+create type pricing_plan_interval as enum ('day', 'week', 'month', 'year');
+create table prices (
+  -- Price ID from Stripe, e.g. price_1234.
+  id text primary key,
+  -- The ID of the prduct that this price belongs to.
+  product_id text references products,
+  -- Whether the price can be used for new purchases.
+  active boolean,
+  -- A brief description of the price.
+  description text,
+  -- The unit amount as a positive integer in the smallest currency unit (e.g., 100 cents for US$1.00 or 100 for \xa5100, a zero-decimal currency).
+  unit_amount bigint,
+  -- Three-letter ISO currency code, in lowercase.
+  currency text check (char_length(currency) = 3),
+  -- One of \`one_time\` or \`recurring\` depending on whether the price is for a one-time purchase or a recurring (subscription) purchase.
+  type pricing_type,
+  -- The frequency at which a subscription is billed. One of \`day\`, \`week\`, \`month\` or \`year\`.
+  interval pricing_plan_interval,
+  -- The number of intervals (specified in the \`interval\` attribute) between subscription billings. For example, \`interval=month\` and \`interval_count=3\` bills every 3 months.
+  interval_count integer,
+  -- Default number of trial days when subscribing a customer to this price using [\`trial_from_plan=true\`](https://stripe.com/docs/api#create_subscription-trial_from_plan).
+  trial_period_days integer,
+  -- Set of key-value pairs, used to store additional information about the object in a structured format.
+  metadata jsonb
+);
+alter table prices
+  enable row level security;
+create policy "Allow public read-only access." on prices
+  for select using (true);
+
+/**
+* SUBSCRIPTIONS
+* Note: subscriptions are created and managed in Stripe and synced to our DB via Stripe webhooks.
+*/
+create type subscription_status as enum ('trialing', 'active', 'canceled', 'incomplete', 'incomplete_expired', 'past_due', 'unpaid');
+create table subscriptions (
+  -- Subscription ID from Stripe, e.g. sub_1234.
+  id text primary key,
+  user_id uuid references auth.users not null,
+  -- The status of the subscription object, one of subscription_status type above.
+  status subscription_status,
+  -- Set of key-value pairs, used to store additional information about the object in a structured format.
+  metadata jsonb,
+  -- ID of the price that created this subscription.
+  price_id text references prices,
+  -- Quantity multiplied by the unit amount of the price creates the amount of the subscription. Can be used to charge multiple seats.
+  quantity integer,
+  -- If true the subscription has been canceled by the user and will be deleted at the end of the billing period.
+  cancel_at_period_end boolean,
+  -- Time at which the subscription was created.
+  created timestamp with time zone default timezone('utc'::text, now()) not null,
+  -- Start of the current period that the subscription has been invoiced for.
+  current_period_start timestamp with time zone default timezone('utc'::text, now()) not null,
+  -- End of the current period that the subscription has been invoiced for. At the end of this period, a new invoice will be created.
+  current_period_end timestamp with time zone default timezone('utc'::text, now()) not null,
+  -- If the subscription has ended, the timestamp of the date the subscription ended.
+  ended_at timestamp with time zone default timezone('utc'::text, now()),
+  -- A date in the future at which the subscription will automatically get canceled.
+  cancel_at timestamp with time zone default timezone('utc'::text, now()),
+  -- If the subscription has been canceled, the date of that cancellation. If the subscription was canceled with \`cancel_at_period_end\`, \`canceled_at\` will still reflect the date of the initial cancellation request, not the end of the subscription period when the subscription is automatically moved to a canceled state.
+  canceled_at timestamp with time zone default timezone('utc'::text, now()),
+  -- If the subscription has a trial, the beginning of that trial.
+  trial_start timestamp with time zone default timezone('utc'::text, now()),
+  -- If the subscription has a trial, the end of that trial.
+  trial_end timestamp with time zone default timezone('utc'::text, now())
+);
+alter table subscriptions
+  enable row level security;
+create policy "Can only view own subs data." on subscriptions
+  for select using ((select auth.uid()) = user_id);
+
+/**
+ * REALTIME SUBSCRIPTIONS
+ * Only allow realtime listening on public tables.
+ */
+drop publication if exists supabase_realtime;
+create publication supabase_realtime
+  for table products, prices;
+`.trim()},{id:15,type:"quickstart",title:"User Management Starter",description:"Sets up a public Profiles table which you can access with your API.",sql:`
+-- Create a table for public profiles
+create table profiles (
+  id uuid references auth.users on delete cascade not null primary key,
+  updated_at timestamp with time zone,
+  username text unique,
+  full_name text,
+  avatar_url text,
+  website text,
+
+  constraint username_length check (char_length(username) >= 3)
+);
+-- Set up Row Level Security (RLS)
+-- See ${t.DOCS_URL}/guides/auth/row-level-security for more details.
+alter table profiles
+  enable row level security;
+
+create policy "Public profiles are viewable by everyone." on profiles
+  for select using (true);
+
+create policy "Users can insert their own profile." on profiles
+  for insert with check ((select auth.uid()) = id);
+
+create policy "Users can update own profile." on profiles
+  for update using ((select auth.uid()) = id);
+
+-- This trigger automatically creates a profile entry when a new user signs up via Supabase Auth.
+-- See ${t.DOCS_URL}/guides/auth/managing-user-data#using-triggers for more details.
+create function public.handle_new_user()
+returns trigger
+set search_path = ''
+as $$
+begin
+  insert into public.profiles (id, full_name, avatar_url)
+  values (new.id, new.raw_user_meta_data->>'full_name', new.raw_user_meta_data->>'avatar_url');
+  return new;
+end;
+$$ language plpgsql security definer;
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute procedure public.handle_new_user();
+
+-- Set up Storage!
+insert into storage.buckets (id, name)
+  values ('avatars', 'avatars');
+
+-- Set up access controls for storage.
+-- See ${t.DOCS_URL}/guides/storage#policy-examples for more details.
+create policy "Avatar images are publicly accessible." on storage.objects
+  for select using (bucket_id = 'avatars');
+
+create policy "Anyone can upload an avatar." on storage.objects
+  for insert with check (bucket_id = 'avatars');
+`.trim()},{id:16,type:"quickstart",title:"NextAuth Schema Setup",description:"Sets up a the Schema and Tables for the NextAuth Supabase Adapter.",sql:`
+--
+-- Name: next_auth; Type: SCHEMA;
+--
+CREATE SCHEMA next_auth;
+
+GRANT USAGE ON SCHEMA next_auth TO service_role;
+GRANT ALL ON SCHEMA next_auth TO postgres;
+
+--
+-- Create users table
+--
+CREATE TABLE IF NOT EXISTS next_auth.users
+(
+    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    name text,
+    email text,
+    "emailVerified" timestamp with time zone,
+    image text,
+    CONSTRAINT users_pkey PRIMARY KEY (id),
+    CONSTRAINT email_unique UNIQUE (email)
+);
+
+GRANT ALL ON TABLE next_auth.users TO postgres;
+GRANT ALL ON TABLE next_auth.users TO service_role;
+
+--- uid() function to be used in RLS policies
+CREATE FUNCTION next_auth.uid() RETURNS uuid
+    LANGUAGE sql STABLE
+    AS $$
+  select
+    coalesce(
+        nullif(current_setting('request.jwt.claim.sub', true), ''),
+        (nullif(current_setting('request.jwt.claims', true), '')::jsonb ->> 'sub')
+    )::uuid
+$$;
+
+--
+-- Create sessions table
+--
+CREATE TABLE IF NOT EXISTS  next_auth.sessions
+(
+    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    expires timestamp with time zone NOT NULL,
+    "sessionToken" text NOT NULL,
+    "userId" uuid,
+    CONSTRAINT sessions_pkey PRIMARY KEY (id),
+    CONSTRAINT sessionToken_unique UNIQUE ("sessionToken"),
+    CONSTRAINT "sessions_userId_fkey" FOREIGN KEY ("userId")
+        REFERENCES  next_auth.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+);
+
+GRANT ALL ON TABLE next_auth.sessions TO postgres;
+GRANT ALL ON TABLE next_auth.sessions TO service_role;
+
+--
+-- Create accounts table
+--
+CREATE TABLE IF NOT EXISTS  next_auth.accounts
+(
+    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    type text NOT NULL,
+    provider text NOT NULL,
+    "providerAccountId" text NOT NULL,
+    refresh_token text,
+    access_token text,
+    expires_at bigint,
+    token_type text,
+    scope text,
+    id_token text,
+    session_state text,
+    oauth_token_secret text,
+    oauth_token text,
+    "userId" uuid,
+    CONSTRAINT accounts_pkey PRIMARY KEY (id),
+    CONSTRAINT provider_unique UNIQUE (provider, "providerAccountId"),
+    CONSTRAINT "accounts_userId_fkey" FOREIGN KEY ("userId")
+        REFERENCES  next_auth.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+);
+
+GRANT ALL ON TABLE next_auth.accounts TO postgres;
+GRANT ALL ON TABLE next_auth.accounts TO service_role;
+
+--
+-- Create verification_tokens table
+--
+CREATE TABLE IF NOT EXISTS  next_auth.verification_tokens
+(
+    identifier text,
+    token text,
+    expires timestamp with time zone NOT NULL,
+    CONSTRAINT verification_tokens_pkey PRIMARY KEY (token),
+    CONSTRAINT token_unique UNIQUE (token),
+    CONSTRAINT token_identifier_unique UNIQUE (token, identifier)
+);
+
+GRANT ALL ON TABLE next_auth.verification_tokens TO postgres;
+GRANT ALL ON TABLE next_auth.verification_tokens TO service_role;
+`.trim()},{id:17,type:"template",title:"Most frequently invoked",description:"Most frequently called queries in your database.",sql:`-- Most frequently called queries
+
+-- A limit of 100 has been added below
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    -- -- Postgres 13, 14, 15
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.min_exec_time + statements.min_plan_time as min_time,
+    statements.max_exec_time + statements.max_plan_time as max_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    -- -- Postgres <= 12
+    -- total_time,
+    -- min_time,
+    -- max_time,
+    -- mean_time,
+    statements.rows / statements.calls as avg_rows
+
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  order by
+    statements.calls desc
+  limit
+    100;`},{id:18,type:"template",title:"Most time consuming",description:"Aggregate time spent on a query type.",sql:`-- Most time consuming queries
+
+-- A limit of 100 has been added below
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    to_char(((statements.total_exec_time + statements.total_plan_time)/sum(statements.total_exec_time + statements.total_plan_time) over()) * 100, 'FM90D0') || '%' as prop_total_time
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  order by
+    total_time desc
+  limit
+    100;`},{id:19,type:"template",title:"Slowest execution time",description:"Slowest queries based on max execution time.",sql:`-- Slowest queries by max execution time
+
+-- A limit of 100 has been added below
+
+select
+    auth.rolname,
+    statements.query,
+    statements.calls,
+    -- -- Postgres 13, 14, 15
+    statements.total_exec_time + statements.total_plan_time as total_time,
+    statements.min_exec_time + statements.min_plan_time as min_time,
+    statements.max_exec_time + statements.max_plan_time as max_time,
+    statements.mean_exec_time + statements.mean_plan_time as mean_time,
+    -- -- Postgres <= 12
+    -- total_time,
+    -- min_time,
+    -- max_time,
+    -- mean_time,
+    statements.rows / statements.calls as avg_rows
+  from pg_stat_statements as statements
+    inner join pg_authid as auth on statements.userid = auth.oid
+  order by
+    max_time desc
+  limit
+    100;`},{id:20,type:"template",title:"Hit rate",description:"See your cache and index hit rate.",sql:`-- Cache and index hit rate
+
+select
+    'index hit rate' as name,
+    (sum(idx_blks_hit)) / nullif(sum(idx_blks_hit + idx_blks_read),0) as ratio
+  from pg_statio_user_indexes
+  union all
+  select
+    'table hit rate' as name,
+    sum(heap_blks_hit) / nullif(sum(heap_blks_hit) + sum(heap_blks_read),0) as ratio
+  from pg_statio_user_tables;`},{id:21,type:"quickstart",title:"OpenAI Vector Search",description:"Template for the Next.js OpenAI Doc Search Starter.",sql:`
+-- Enable pg_vector extension
+create extension if not exists vector with schema public;
+
+-- Create tables
+create table "public"."nods_page" (
+  id bigserial primary key,
+  parent_page_id bigint references public.nods_page,
+  path text not null unique,
+  checksum text,
+  meta jsonb,
+  type text,
+  source text
+);
+alter table "public"."nods_page" enable row level security;
+
+create table "public"."nods_page_section" (
+  id bigserial primary key,
+  page_id bigint not null references public.nods_page on delete cascade,
+  content text,
+  token_count int,
+  embedding vector(1536),
+  slug text,
+  heading text
+);
+alter table "public"."nods_page_section" enable row level security;
+
+-- Create embedding similarity search functions
+create or replace function match_page_sections(embedding vector(1536), match_threshold float, match_count int, min_content_length int)
+returns table (id bigint, page_id bigint, slug text, heading text, content text, similarity float)
+language plpgsql
+as $$
+#variable_conflict use_variable
+begin
+  return query
+  select
+    nods_page_section.id,
+    nods_page_section.page_id,
+    nods_page_section.slug,
+    nods_page_section.heading,
+    nods_page_section.content,
+    (nods_page_section.embedding <#> embedding) * -1 as similarity
+  from nods_page_section
+
+  -- We only care about sections that have a useful amount of content
+  where length(nods_page_section.content) >= min_content_length
+
+  -- The dot product is negative because of a Postgres limitation, so we negate it
+  and (nods_page_section.embedding <#> embedding) * -1 > match_threshold
+
+  -- OpenAI embeddings are normalized to length 1, so
+  -- cosine similarity and dot product will produce the same results.
+  -- Using dot product which can be computed slightly faster.
+  --
+  -- For the different syntaxes, see https://github.com/pgvector/pgvector
+  order by nods_page_section.embedding <#> embedding
+
+  limit match_count;
+end;
+$$;
+
+create or replace function get_page_parents(page_id bigint)
+returns table (id bigint, parent_page_id bigint, path text, meta jsonb)
+language sql
+as $$
+  with recursive chain as (
+    select *
+    from nods_page
+    where id = page_id
+
+    union all
+
+    select child.*
+      from nods_page as child
+      join chain on chain.parent_page_id = child.id
+  )
+  select id, parent_page_id, path, meta
+  from chain;
+$$;
+`.trim()},{id:22,type:"template",title:"Replication status report",description:"See the status of your replication slots and replication lag.",sql:`-- Replication status report
+
+SELECT
+  s.slot_name,
+  s.active,
+  COALESCE(r.state, 'N/A') as state,
+  COALESCE(r.client_addr, null) as replication_client_address,
+  GREATEST(0, ROUND((redo_lsn-restart_lsn)/1024/1024/1024, 2)) as replication_lag_gb
+FROM pg_control_checkpoint(), pg_replication_slots s
+LEFT JOIN pg_stat_replication r ON (r.pid = s.active_pid);
+`},{id:23,type:"quickstart",title:"LangChain",description:"LangChain is a popular framework for working with AI, Vectors, and embeddings.",sql:`
+-- Enable the pgvector extension to work with embedding vectors
+create extension vector;
+
+-- Create a table to store your documents
+create table documents (
+  id bigserial primary key,
+  content text, -- corresponds to Document.pageContent
+  metadata jsonb, -- corresponds to Document.metadata
+  embedding vector(1536) -- 1536 works for OpenAI embeddings, change if needed
+);
+
+-- Create a function to search for documents
+create function match_documents (
+  query_embedding vector(1536),
+  match_count int default null,
+  filter jsonb DEFAULT '{}'
+) returns table (
+  id bigint,
+  content text,
+  metadata jsonb,
+  similarity float
+)
+language plpgsql
+as $$
+#variable_conflict use_column
+begin
+  return query
+  select
+    id,
+    content,
+    metadata,
+    1 - (documents.embedding <=> query_embedding) as similarity
+  from documents
+  where metadata @> filter
+  order by documents.embedding <=> query_embedding
+  limit match_count;
+end;
+$$;
+`.trim()},{id:24,type:"template",title:"Install dbdev",description:"dbdev is a client for installing Trusted Language Extensions (TLE) into your database.",sql:`
+/*---------------------
+---- install dbdev ----
+-----------------------
+Requires:
+  - pg_tle: https://github.com/aws/pg_tle
+  - pgsql-http: https://github.com/pramsey/pgsql-http
+
+Warning:
+Restoring a logical backup of a database with a TLE installed can fail.
+For this reason, dbdev should only be used with databases with physical backups enabled.
+*/
+create extension if not exists http with schema extensions;
+create extension if not exists pg_tle;
+select pgtle.uninstall_extension_if_exists('supabase-dbdev');
+drop extension if exists "supabase-dbdev";
+select
+    pgtle.install_extension(
+        'supabase-dbdev',
+        resp.contents ->> 'version',
+        'PostgreSQL package manager',
+        resp.contents ->> 'sql'
+    )
+from http(
+    (
+        'GET',
+        'https://api.database.dev/rest/v1/'
+        || 'package_versions?select=sql,version'
+        || '&package_name=eq.supabase-dbdev'
+        || '&order=version.desc'
+        || '&limit=1',
+        array[
+            ('apiKey', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhtdXB0cHBsZnZpaWZyYndtbXR2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODAxMDczNzIsImV4cCI6MTk5NTY4MzM3Mn0.z2CN0mvO2No8wSi46Gw59DFGCTJrzM0AQKsu_5k134s')::http_header
+        ],
+        null,
+        null
+    )
+) x,
+lateral (
+    select
+        ((row_to_json(x) -> 'content') #>> '{}')::json -> 0
+) resp(contents);
+create extension "supabase-dbdev";
+select dbdev.install('supabase-dbdev');
+drop extension if exists "supabase-dbdev";
+create extension "supabase-dbdev";
+`.trim()},{id:25,type:"template",title:"Large objects",description:"List large objects (tables/indexes) in your database.",sql:`SELECT
+    SCHEMA_NAME,
+    relname,
+    table_size
+  FROM
+    (SELECT
+      pg_catalog.pg_namespace.nspname AS SCHEMA_NAME,
+      relname,
+      pg_relation_size(pg_catalog.pg_class.oid) AS table_size
+    FROM pg_catalog.pg_class
+    JOIN pg_catalog.pg_namespace ON relnamespace = pg_catalog.pg_namespace.oid
+    ) t
+  WHERE SCHEMA_NAME NOT LIKE 'pg_%'
+  ORDER BY table_size DESC
+  LIMIT 25`.trim()},{id:26,type:"template",title:"Limit MFA verification attempts to one in 2 seconds",description:"Create an Auth hook that limits the number of failed MFA verification attempts to one in 2 seconds.",sql:`
+create function public.hook_mfa_verification_attempt(event jsonb)
+  returns jsonb
+  language plpgsql
+as $$
+  declare
+    last_failed_at timestamp;
+  begin
+    if event->'valid' is true then
+      -- code is valid, accept it
+      return jsonb_build_object('decision', 'continue');
+    end if;
+
+    select last_failed_at into last_failed_at
+      from public.mfa_failed_verification_attempts
+      where
+        user_id = (event->'user_id')::uuid
+          and
+        factor_id = event->'factor_id';
+
+    if last_failed_at is not null and now() - last_failed_at < interval '2 seconds' then
+      -- last attempt was done too quickly
+      return jsonb_build_object(
+        'error', jsonb_build_object(
+          'http_code', 429,
+          'message',   'Please wait a moment before trying again.'
+        )
+      );
+    end if;
+
+    -- record this failed attempt
+    insert into public.mfa_failed_verification_attempts
+      (
+        user_id,
+        factor_id,
+        last_refreshed_at
+      )
+      values
+      (
+        event->'user_id',
+        event->'factor_id',
+        now()
+      )
+      on conflict do update
+        set last_refreshed_at = now();
+
+    -- finally let Supabase Auth do the default behavior for a failed attempt
+    return jsonb_build_object('decision', 'continue');
+  end;
+$$;
+
+-- Assign appropriate permissions and revoke access
+grant execute
+  on function public.hook_mfa_verification_attempt
+  to supabase_auth_admin;
+
+grant all
+  on table public.mfa_failed_verification_attempts
+  to supabase_auth_admin;
+
+revoke execute
+  on function public.hook_mfa_verification_attempt
+  from authenticated, anon, public;
+
+revoke all
+  on table public.mfa_failed_verification_attempts
+  from authenticated, anon, public;
+
+grant usage on schema public to supabase_auth_admin;`.trim()},{id:27,type:"template",title:"Add Auth Hook (Password Verification Attempt)",description:"Create an Auth Hook that limits number of failed password verification attempts to one in 10 seconds",sql:`
+create function public.hook_password_verification_attempt(event jsonb)
+returns jsonb
+language plpgsql
+as $$
+  declare
+    last_failed_at timestamp;
+  begin
+    if event->'valid' is true then
+      -- password is valid, accept it
+      return jsonb_build_object('decision', 'continue');
+    end if;
+
+    select last_failed_at into last_failed_at
+      from public.password_failed_verification_attempts
+      where
+        user_id = (event->'user_id')::uuid;
+
+    if last_failed_at is not null and now() - last_failed_at < interval '10 seconds' then
+      -- last attempt was done too quickly
+      return jsonb_build_object(
+        'error', jsonb_build_object(
+          'http_code', 429,
+          'message',   'Please wait a moment before trying again.'
+        )
+      );
+    end if;
+
+    -- record this failed attempt
+    insert into public.password_failed_verification_attempts
+      (
+        user_id,
+        last_failed_at
+      )
+      values
+      (
+        event->'user_id',
+        now()
+      )
+      on conflict do update
+        set last_failed_at = now();
+
+    -- finally let Supabase Auth do the default behavior for a failed attempt
+    return jsonb_build_object('decision', 'continue');
+  end;
+$$;
+
+-- Assign appropriate permissions
+grant execute
+  on function public.hook_password_verification_attempt
+  to supabase_auth_admin;
+
+grant all
+  on table public.password_failed_verification_attempts
+  to supabase_auth_admin;
+
+revoke execute
+  on function public.hook_password_verification_attempt
+  from authenticated, anon, public;
+
+revoke all
+  on table public.password_failed_verification_attempts
+  from authenticated, anon, public;
+
+grant usage on schema public to supabase_auth_admin;`.trim()},{id:28,type:"template",title:"Add Auth Hook (Custom Access Token)",description:"Create an Auth Hook to add custom claims to your Auth Token",sql:`
+-- Assumes that there is an is_admin flag on the profiles table.
+create or replace function public.custom_access_token_hook(event jsonb)
+returns jsonb
+language plpgsql
+as $$
+  declare
+    claims jsonb;
+    is_admin boolean;
+  begin
+    -- Check if the user is marked as admin in the profiles table
+    select is_admin into is_admin from profiles where user_id = (event->>'user_id')::uuid;
+
+    -- Proceed only if the user is an admin
+    if is_admin then
+      claims := event->'claims';
+
+      -- Check if 'user_metadata' exists in claims
+      if jsonb_typeof(claims->'user_metadata') is null then
+        -- If 'user_metadata' does not exist, create an empty object
+        claims := jsonb_set(claims, '{user_metadata}', '{}');
+      end if;
+
+      -- Set a claim of 'admin'
+      claims := jsonb_set(claims, '{user_metadata, admin}', 'true');
+
+      -- Update the 'claims' object in the original event
+      event := jsonb_set(event, '{claims}', claims);
+    end if;
+
+    -- Return the modified or original event
+    return event;
+  end;
+$$;
+
+grant execute
+  on function public.custom_access_token_hook
+  to supabase_auth_admin;
+
+revoke execute
+  on function public.custom_access_token_hook
+  from authenticated, anon, public;
+
+grant usage on schema public to supabase_auth_admin;`.trim()},{id:29,type:"template",title:"Add Auth Hook (General)",description:"Create an Auth Hook",sql:`
+create or replace function public.custom_access_token_hook(event jsonb)
+returns jsonb
+language plpgsql
+as $$
+declare
+  -- Insert variables here
+begin
+  -- Insert logic here
+  return event;
+end;
+$$;
+-- Permissions for the hook
+grant execute on function public.custom_access_token_hook to supabase_auth_admin;
+revoke execute on function public.custom_access_token_hook from authenticated, anon, public;
+    `}];e.s(["SQL_TEMPLATES",0,s],448761);var a=e.i(478902),i=e.i(587433),n=e.i(627069);e.s(["ActionCard",0,e=>(0,a.jsx)(n.Card,{className:"grow bg-surface-100 p-3 transition-colors hover:bg-surface-200 border border-light hover:border-default cursor-pointer",onClick:e.onClick,children:(0,a.jsxs)("div",{className:"relative flex items-start gap-3",children:[e.isBeta&&(0,a.jsx)(i.Badge,{className:"absolute -right-5 -top-5 bg-surface-300 bg-opacity-100 text-xs text-foreground",children:"Coming soon"}),(0,a.jsx)("div",{className:`rounded-full ${e.bgColor} w-8 h-8 flex items-center justify-center flex-shrink-0`,children:e.icon}),(0,a.jsxs)("div",{className:"flex flex-col gap-0",children:[(0,a.jsx)("h3",{className:"text-sm text-foreground mb-0",children:e.title}),(0,a.jsx)("p",{className:"text-xs text-foreground-light",children:e.description})]})]})})],457395)},672296,e=>{"use strict";function t(e){return e.split("#")[0]}function s(e,t={}){let{maxDepth:a=3,redaction:i="[REDACTED]",truncationNotice:n="[REDACTED: max depth reached]",sensitiveKeys:r=[]}=t,o=new Set(["password","passwd","pwd","pass","secret","token","id_token","access_token","refresh_token","apikey","api_key","api-key","apiKey","key","privatekey","private_key","client_secret","clientSecret","auth","authorization","ssh_key","sshKey","bearer","session","cookie","csrf","xsrf","ip","ip_address","ipAddress","aws_access_key_id","aws_secret_access_key","gcp_service_account_key",...r].map(e=>e.toLowerCase())),l=[{re:/\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b/g,reason:"ip"},{re:/\b(?:[A-Fa-f0-9]{1,4}:){2,7}[A-Fa-f0-9]{1,4}\b/g,reason:"ip6"},{re:/\b(AKI|ASI)A[0-9A-Z]{16}\b/g,reason:"aws_access_key_id"},{re:/\b[0-9A-Za-z/+]{40}\b/g,reason:"aws_secret_access_key_like"},{re:/\bBearer\s+[A-Za-z0-9\-._~+/]+=*\b/g,reason:"bearer"},{re:/\b[A-Za-z0-9-_]+?\.[A-Za-z0-9-_]+?\.[A-Za-z0-9-_]+?\b/g,reason:"jwt_like"},{re:/\b[A-Za-z0-9_\-]{24,64}\b/g,reason:"long_token"}],c=new WeakMap;function u(e){let t=e;for(let{re:e}of l)t=t.replace(e,i);return t}function d(e){return o.has(String(e).toLowerCase())}return e.map(e=>(function e(t,s){if(null==t||"number"==typeof t||"boolean"==typeof t||"bigint"==typeof t)return t;if("string"==typeof t)return u(t);if("function"==typeof t)return"[Function]";if(t instanceof Date)return t.toISOString();if(t instanceof RegExp)return t.toString();if(ArrayBuffer.isView(t)&&!(t instanceof DataView))return`[TypedArray byteLength=${t.byteLength}]`;if(t instanceof ArrayBuffer)return`[ArrayBuffer byteLength=${t.byteLength}]`;if(s>=a)return n;if("object"==typeof t){if(c.has(t))return"[Circular]";if(Array.isArray(t)){let a=[];c.set(t,a);for(let i=0;i<t.length;i++)a[i]=e(t[i],s+1);return a}if(function(e){if(null===e||"object"!=typeof e)return!1;let t=Object.getPrototypeOf(e);return t===Object.prototype||null===t}(t)){let a={};for(let[n,r]of(c.set(t,a),Object.entries(t)))d(n)?a[n]=i:a[n]=e(r,s+1);return a}if(t instanceof Map){let a=[];for(let[n,r]of(c.set(t,a),t.entries())){let t=d(n)?i:e(n,s+1),o=d(n)?i:e(r,s+1);a.push([t,o])}return a}if(t instanceof Set){let a=[];for(let i of(c.set(t,a),t.values()))a.push(e(i,s+1));return a}if(t instanceof URL)return t.toString();if(t instanceof Error){let e={name:t.name,message:u(t.message),stack:n};return c.set(t,e),e}try{return u(String(t))}catch{return u(Object.prototype.toString.call(t))}}return u(String(t))})(e,0))}e.s(["sanitizeArrayOfObjects",()=>s,"sanitizeUrlHashParams",()=>t])},282672,996941,835453,805279,528921,e=>{"use strict";let t="u"<typeof __SENTRY_DEBUG__||__SENTRY_DEBUG__;e.s(["DEBUG_BUILD",()=>t],282672);var s=e.i(469449);function a(e){let t={};try{e.forEach((e,s)=>{"string"==typeof e&&(t[s]=e)})}catch{}return t}function i(e){let t=Object.create(null);try{Object.entries(e).forEach(([e,s])=>{"string"==typeof s&&(t[e]=s)})}catch{}return t}function n(e){let t=a(e.headers);return{method:e.method,url:e.url,query_string:o(e.url),headers:t}}function r(e){let t=e.headers||{},s=("string"==typeof t["x-forwarded-host"]?t["x-forwarded-host"]:void 0)||("string"==typeof t.host?t.host:void 0),a=("string"==typeof t["x-forwarded-proto"]?t["x-forwarded-proto"]:void 0)||e.protocol||(e.socket?.encrypted?"https":"http"),n=e.url||"",r=function({url:e,protocol:t,host:s}){return e?.startsWith("http")?e:e&&s?`${t}://${s}${e}`:void 0}({url:n,host:s,protocol:a}),l=e.body||void 0,c=e.cookies;return{url:r,method:e.method,query_string:o(n),headers:i(t),cookies:c,data:l}}function o(e){if(e)try{let t=new URL(e,"http://s.io").search.slice(1);return t.length?t:void 0}catch{return}}e.s(["headersToDict",()=>i,"httpRequestToRequestData",()=>r,"winterCGHeadersToDict",()=>a,"winterCGRequestToRequestData",()=>n],996941);var l=e.i(817729),c=e.i(40108);function u(e){let t=c.GLOBAL_OBJ[Symbol.for("@vercel/request-context")],s=t?.get?.();s?.waitUntil&&s.waitUntil(e)}e.s(["vercelWaitUntil",()=>u],835453);var d=e.i(521852);async function m(){try{t&&d.debug.log("Flushing events..."),await (0,l.flush)(2e3),t&&d.debug.log("Done flushing events")}catch(e){t&&d.debug.log("Error while flushing events:\n",e)}}async function p(e){let{req:t,res:a,err:i}=e,n=a?.statusCode||e.statusCode;if(n&&n<500||!e.pathname)return Promise.resolve();(0,s.withScope)(e=>{if(t){let s=r(t);e.setSDKProcessingMetadata({normalizedRequest:s})}(0,l.captureException)(i||`_error.js called with falsy error (${i})`,{mechanism:{type:"auto.function.nextjs.underscore_error",handled:!1,data:{function:"_error.getInitialProps"}}})}),u(m())}e.s(["flushSafelyWithTimeout",()=>m],805279),e.s(["captureUnderscoreErrorException",()=>p],528921)},111331,e=>{"use strict";var t=e.i(478902),s=e.i(934302);e.i(128328);var a=e.i(947748),i=e.i(158639),n=e.i(693241),r=e.i(2579),o=e.i(389959),l=e.i(825713),c=e.i(847498),u=e.i(356003),d=e.i(463333),m=e.i(790819),p=e.i(635494),h=e.i(680576),_=e.i(636047),f=e.i(809323),b=e.i(265100),g=e.i(543851),y=e.i(471998),A=e.i(211570),x=e.i(971131),v=e.i(837710),E=e.i(874311),C=e.i(788070),S=e.i(336908),k=e.i(412385),w=e.i(48189);let j=()=>{let e=(0,w.getModKeyLabel)(),s=(0,_.useTableEditorStateSnapshot)(),a=(0,d.useIsQueueOperationsEnabled)(),{handleSave:i,handleCancel:n}=(0,c.useOperationQueueActions)();!function(){let e=(0,u.useQueryClient)(),{data:t}=(0,p.useSelectedProjectQuery)(),s=(0,d.useIsQueueOperationsEnabled)(),a=(0,_.useTableEditorStateSnapshot)(),{handleSave:i}=(0,c.useOperationQueueActions)(),n="saving"===a.operationQueue.status,r=a.hasPendingOperations,o=s&&r;(0,h.useHotKey)(e=>{e.preventDefault(),e.stopPropagation(),!n&&r&&i()},"s",{enabled:o}),(0,h.useHotKey)(e=>{e.preventDefault(),e.stopPropagation(),a.toggleViewOperationQueue()},".",{enabled:o}),(0,h.useHotKey)(s=>{s.preventDefault(),s.stopPropagation();let i=a.operationQueue.operations.at(-1)?.tableId;a.undoLatestOperation(),t&&i&&e.invalidateQueries({queryKey:m.tableRowKeys.tableRowsAndCount(t.ref,i)})},"z",{enabled:o})}();let r=s.operationQueue.operations.length,o="saving"===s.operationQueue.status,l=s.sidePanel?.type==="operation-queue",j=a&&s.hasPendingOperations&&!l,{confirmOnClose:N,modalProps:O}=(0,k.useConfirmOnClose)({checkIsDirty:()=>!0,onClose:()=>n()}),R=(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(f.AnimatePresence,{children:j&&(0,t.jsx)("div",{className:"fixed bottom-12 z-50 left-1/2 -translate-x-1/2",children:(0,t.jsx)(b.motion.div,{initial:{opacity:0,y:16},animate:{opacity:1,y:0},exit:{opacity:0,y:16},transition:{type:"spring",stiffness:420,damping:30,mass:.4},children:(0,t.jsxs)("div",{className:"flex items-center gap-x-12 pl-4 pr-2 py-2 bg-surface-100 border rounded-lg shadow-lg",children:[(0,t.jsxs)("p",{className:"text-xs text-foreground-light max-w-40 truncate",children:[r," pending change",1!==r?"s":""]}),(0,t.jsxs)("div",{className:"flex items-center gap-x-2",children:[(0,t.jsxs)(v.Button,{size:"tiny",type:"primary",onClick:i,disabled:o,loading:o,children:["Save",(0,t.jsx)("span",{className:"text-[10px] text-foreground/40 ml-1.5",children:`${e}S`})]}),(0,t.jsxs)(E.DropdownMenu,{children:[(0,t.jsx)(E.DropdownMenuTrigger,{asChild:!0,children:(0,t.jsx)(v.Button,{type:"outline",className:"w-7",icon:(0,t.jsx)(y.MoreVertical,{}),"aria-label":"More options"})}),(0,t.jsxs)(E.DropdownMenuContent,{className:"w-40",children:[(0,t.jsxs)(E.DropdownMenuItem,{className:"justify-between",onClick:()=>s.toggleViewOperationQueue(),children:[(0,t.jsxs)("div",{className:"flex items-center gap-x-2",children:[(0,t.jsx)(g.Eye,{size:14}),(0,t.jsx)("span",{children:"Review"})]}),(0,t.jsx)(C.KeyboardShortcut,{keys:["Meta","."]})]}),(0,t.jsx)(E.DropdownMenuSeparator,{}),(0,t.jsx)(E.DropdownMenuItem,{onClick:N,children:(0,t.jsxs)("div",{className:"flex items-center gap-x-2",children:[(0,t.jsx)(A.Trash,{size:14}),(0,t.jsx)("span",{children:"Discard"})]})})]})]})]})]})})})}),(0,t.jsx)(S.DiscardChangesConfirmationDialog,{...O})]});return"u"<typeof document||!document.body?null:(0,x.createPortal)(R,document.body)};e.i(69870);var N=e.i(124416),O=e.i(587433),R=e.i(627069),T=e.i(670447),L=e.i(470754);let D=()=>{let{ref:e}=(0,i.useParams)(),{selectFeaturePreview:s}=(0,d.useFeaturePreviewModal)(),n=(0,d.useIsQueueOperationsEnabled)(),{dismissBanner:r}=(0,L.useBannerStack)(),[,o]=(0,N.useLocalStorageQuery)(a.LOCAL_STORAGE_KEYS.TABLE_EDITOR_QUEUE_OPERATIONS_BANNER_DISMISSED(e??""),!1);return(0,t.jsx)(T.BannerCard,{onDismiss:()=>{o(!0),r("table-editor-queue-operations-banner")},children:(0,t.jsxs)("div",{className:"flex flex-col gap-y-4",children:[(0,t.jsxs)("div",{className:"flex flex-col gap-y-2 items-start",children:[(0,t.jsx)(O.Badge,{variant:"success",className:"-ml-0.5 uppercase inline-flex items-center mb-2",children:"Preview"}),(0,t.jsxs)(R.Card,{className:"text-xs w-full",children:[(0,t.jsx)(R.CardHeader,{className:"flex flex-row gap-2 px-2 py-2",children:(0,t.jsx)("div",{className:"min-w-0 flex-1",children:(0,t.jsxs)("div",{className:"text-xs text-foreground ml-0.5",children:[(0,t.jsx)("span",{children:"name"}),(0,t.jsx)("span",{className:"text-foreground-muted mx-1.5",children:"·"}),(0,t.jsx)("span",{children:"where id = 10"})]})})}),(0,t.jsxs)(R.CardContent,{className:"font-mono text-xs px-2 py-1",children:[(0,t.jsxs)("div",{className:"flex gap-2 py-0.5",children:[(0,t.jsx)("span",{className:"text-destructive select-none font-medium",children:"-"}),(0,t.jsx)("span",{className:"text-destructive truncate max-w-full",children:"Red"})]}),(0,t.jsxs)("div",{className:"flex gap-2 py-0.5",children:[(0,t.jsx)("span",{className:"text-brand-link select-none font-medium",children:"+"}),(0,t.jsx)("span",{className:"text-brand-link truncate max-w-full",children:"Blue"})]})]})]})]}),(0,t.jsxs)("div",{className:"flex flex-col gap-y-1 mb-2",children:[(0,t.jsx)("p",{className:"text-sm font-medium",children:"Queue row edits in Table Editor"}),(0,t.jsx)("p",{className:"text-xs text-foreground-lighter text-balance",children:"Batch multiple row edits and review them before saving to your database"})]}),(0,t.jsxs)(v.Button,{type:"default",className:"w-min",onClick:()=>s(a.LOCAL_STORAGE_KEYS.UI_PREVIEW_QUEUE_OPERATIONS),children:[n?"View":"Enable"," feature preview"]})]})})};e.s(["TableEditorLayout",0,({children:e})=>{let{ref:c}=(0,i.useParams)(),{addBanner:u,dismissBanner:m}=(0,L.useBannerStack)(),p=(0,d.useIsQueueOperationsEnabled)(),[h]=(0,N.useLocalStorageQuery)(a.LOCAL_STORAGE_KEYS.TABLE_EDITOR_QUEUE_OPERATIONS_BANNER_DISMISSED(c??""),!1),{can:_,isSuccess:f}=(0,r.useAsyncCheckPermissions)(s.PermissionAction.TENANT_SQL_ADMIN_READ,"tables"),{can:b}=(0,r.useAsyncCheckPermissions)(s.PermissionAction.TENANT_SQL_ADMIN_WRITE,"tables");return((0,o.useEffect)(()=>{if(f)return!b||h||p?m("table-editor-queue-operations-banner"):u({id:"table-editor-queue-operations-banner",priority:2,isDismissed:!1,content:(0,t.jsx)(D,{})}),()=>{m("table-editor-queue-operations-banner")}},[u,m,f,b,h,p]),f&&!_)?(0,t.jsx)(l.ProjectLayoutWithAuth,{isBlocking:!1,children:(0,t.jsx)(n.default,{isFullPage:!0,resourceText:"view tables from this project"})}):(0,t.jsxs)(t.Fragment,{children:[e,(0,t.jsx)(j,{})]})}],111331)},765672,e=>{"use strict";var t=e.i(478902),s=e.i(934302),a=e.i(667852),i=e.i(219195),n=e.i(385467),r=e.i(629541),o=e.i(355901);e.i(128328);var l=e.i(158639),c=e.i(448761),u=e.i(888738),d=e.i(162082),m=e.i(2579),p=e.i(983783),h=e.i(265735),_=e.i(635494),f=e.i(392491),b=e.i(432478),g=e.i(739409),y=e.i(636047),A=e.i(63519),x=e.i(837710),v=e.i(792459),E=e.i(283606),C=e.i(314805),S=e.i(408279),k=e.i(500850),w=e.i(843778),j=e.i(795826),N=e.i(457395),O=e.i(55956),R=e.i(809323),T=e.i(265100),L=e.i(19583),D=e.i(528462);function I(){let{ref:e}=(0,l.useParams)(),s=(0,A.useTabsStateSnapshot)(),a=(0,j.useEditorType)();if(!s?.recentItems||!e)return null;let i=(a?s.recentItems.filter(e=>A.editorEntityTypes[a].includes(e.type)):[...s.recentItems]).sort((e,t)=>t.timestamp-e.timestamp);return(0,t.jsxs)("div",{className:"space-y-4",children:[(0,t.jsx)("h2",{className:"text-sm text-foreground",children:"Recent items"}),(0,t.jsx)("div",{className:"flex flex-col gap-0",children:0===i.length?(0,t.jsxs)(T.motion.div,{layout:!0,initial:!1,className:"flex flex-col items-center justify-center p-8 text-center border rounded-md border-muted gap-3",children:[(0,t.jsx)(D.EntityTypeIcon,{type:"r"}),(0,t.jsxs)("div",{children:[(0,t.jsx)("p",{className:"text-xs text-foreground-light",children:"No recent items yet"}),(0,t.jsx)("p",{className:"text-xs text-foreground-lighter",children:"Items will appear here as you browse through your project"})]})]}):(0,t.jsx)(R.AnimatePresence,{children:(0,t.jsx)("div",{className:"grid grid-cols-1 gap-12 gap-y-0",children:i.map((s,a)=>(0,t.jsx)(T.motion.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{delay:.012*a,duration:.15},children:(0,t.jsxs)(n.default,{href:"sql"===s.type?`/project/${e}/sql/${s.metadata?.sqlId}`:"r"===s.type||"v"===s.type||"m"===s.type||"f"===s.type||"p"===s.type?(0,L.buildTableEditorUrl)({projectRef:e,tableId:s.metadata?.tableId,schema:s.metadata?.schema}):`/project/${e}/explorer/${s.type}/${s.metadata?.schema}/${s.metadata?.name}`,className:"flex items-center gap-4 rounded-lg bg-surface-100 py-2 transition-colors hover:bg-surface-200",children:[(0,t.jsx)("div",{className:"flex h-6 w-6 items-center justify-center rounded bg-surface-100 border",children:(0,t.jsx)(D.EntityTypeIcon,{type:s.type})}),(0,t.jsxs)("div",{className:"flex flex-1 gap-5 items-center",children:[(0,t.jsxs)("span",{className:"text-sm text-foreground",children:[(0,t.jsx)("span",{className:"text-foreground-lighter",children:s.metadata?.schema}),s.metadata?.schema&&(0,t.jsx)("span",{className:"text-foreground-light",children:"."}),(0,t.jsx)("span",{className:"text-foreground",children:s.label||"Untitled"})]}),(0,t.jsx)("div",{className:"bg-border-muted flex grow h-px"}),(0,t.jsx)("span",{className:"text-xs text-foreground-lighter",children:(0,O.default)(s.timestamp).fromNow()})]})]})},s.id))})})})]})}function B(){let e=(0,r.useRouter)(),{ref:O}=(0,l.useParams)(),R=(0,j.useEditorType)(),{profile:T}=(0,b.useProfile)(),{data:L}=(0,h.useSelectedOrganizationQuery)(),{data:D}=(0,_.useSelectedProjectQuery)(),{selectedSchema:B}=(0,p.useQuerySchemaState)(),{isSchemaLocked:P}=(0,f.useIsProtectedSchema)({schema:B}),F=(0,y.useTableEditorStateSnapshot)(),q=(0,g.useSqlEditorV2StateSnapshot)(),M=(0,A.useTabsStateSnapshot)(),[U]=(0,a.default)(c.SQL_TEMPLATES,{type:"template"}),[$]=(0,a.default)(c.SQL_TEMPLATES,{type:"quickstart"}),{mutate:z}=(0,d.useSendEventMutation)(),{can:Y}=(0,m.useAsyncCheckPermissions)(s.PermissionAction.CREATE,"user_content",{resource:{type:"sql",owner_id:T?.id},subject:{id:T?.id}}),H=P?[]:[{icon:(0,t.jsx)(i.Table2,{className:"h-4 w-4 text-foreground",strokeWidth:1.5}),title:"Create a table",description:"Design and create a new database table",bgColor:"bg-blue-500",isBeta:!1,onClick:()=>F.onAddTable()}],W=[{icon:(0,t.jsx)(v.SQL_ICON,{className:(0,w.cn)("fill-foreground","w-4 h-4"),strokeWidth:1.5}),title:"New SQL Snippet",description:"Execute SQL queries",bgColor:"bg-green-500",isBeta:!1,onClick:()=>e.push(`/project/${O}/sql/new`)}],X=async(t,s)=>{if(!O)return console.error("Project ref is required");if(!D)return console.error("Project is required");if(!T)return console.error("Profile is required");if(!Y)return(0,o.toast)("Your queries will not be saved as you do not have sufficient permissions");try{let a=(0,u.createSqlSnippetSkeletonV2)({name:s,sql:t,owner_id:T?.id,project_id:D?.id});q.addSnippet({projectRef:O,snippet:a}),q.addNeedsSaving(a.id);let i=(0,A.createTabId)("sql",{id:a.id});M.addTab({id:i,type:"sql",label:s,metadata:{sqlId:a.id}}),e.push(`/project/${O}/sql/${a.id}`)}catch(e){o.toast.error(`Failed to create new query: ${e.message}`)}};return(0,t.jsxs)("div",{className:"bg-surface-100 h-full overflow-y-auto py-12",children:[(0,t.jsxs)("div",{className:"mx-auto max-w-2xl flex flex-col gap-10 px-10",children:[(0,t.jsx)("div",{className:"grid grid-cols-2 gap-4",children:("sql"===R?W:H).map((e,s)=>(0,t.jsx)(N.ActionCard,{...e},`action-card-${s}`))}),(0,t.jsx)(I,{})]}),"sql"===R&&(0,t.jsx)("div",{className:"flex flex-col gap-4 mx-auto py-10",children:(0,t.jsxs)(k.Tabs_Shadcn_,{defaultValue:"templates",children:[(0,t.jsxs)(C.TabsList_Shadcn_,{className:"mx-auto justify-center gap-5",children:[(0,t.jsx)(S.TabsTrigger_Shadcn_,{value:"templates",children:"Templates"}),(0,t.jsx)(S.TabsTrigger_Shadcn_,{value:"quickstarts",children:"Quickstarts"})]}),(0,t.jsxs)(E.TabsContent_Shadcn_,{value:"templates",className:"max-w-5xl mx-auto py-5",children:[(0,t.jsx)("div",{className:"grid grid-cols-3 gap-4 px-8",children:U.slice(0,9).map((e,s)=>(0,t.jsx)(N.ActionCard,{onClick:()=>{X(e.sql,e.title),z({action:"sql_editor_template_clicked",properties:{templateName:e.title},groups:{project:O??"Unknown",organization:L?.slug??"Unknown"}})},bgColor:"bg-alternative border",...e,icon:(0,t.jsx)(v.SQL_ICON,{className:(0,w.cn)("fill-foreground","w-4 h-4"),strokeWidth:1.5})},`action-card-${s}`))}),(0,t.jsx)("div",{className:"flex justify-center mt-5",children:(0,t.jsx)(x.Button,{asChild:!0,type:"default",children:(0,t.jsx)(n.default,{href:`/project/${O}/sql/templates`,children:"View more templates"})})})]}),(0,t.jsxs)(E.TabsContent_Shadcn_,{value:"quickstarts",className:"max-w-5xl mx-auto py-5",children:[(0,t.jsx)("div",{className:"grid grid-cols-3 gap-4 px-8",children:$.map((e,s)=>(0,t.jsx)(N.ActionCard,{onClick:()=>{X(e.sql,e.title),z({action:"sql_editor_quickstart_clicked",properties:{quickstartName:e.title},groups:{project:O??"Unknown",organization:L?.slug??"Unknown"}})},bgColor:"bg-alternative border",...e,icon:(0,t.jsx)(v.SQL_ICON,{className:(0,w.cn)("fill-foreground","w-4 h-4"),strokeWidth:1.5})},`action-card-${s}`))}),(0,t.jsx)("div",{className:"flex justify-center mt-5",children:(0,t.jsx)(x.Button,{asChild:!0,type:"default",children:(0,t.jsx)(n.default,{href:`/project/${O}/sql/quickstarts`,children:"View more templates"})})})]})]})})]})}e.s(["NewTab",()=>B],765672)},830033,e=>{"use strict";var t=e.i(478902),s=e.i(629541),a=e.i(389959);e.i(128328);var i=e.i(158639),n=e.i(19583),r=e.i(565066),o=e.i(448710),l=e.i(569715),c=e.i(111331),u=e.i(207831),d=e.i(765672),m=e.i(990510),p=e.i(983783),h=e.i(63519);let _=()=>{let e=(0,s.useRouter)(),{ref:o}=(0,i.useParams)(),l=(0,h.useTabsStateSnapshot)(),{selectedSchema:c}=(0,p.useQuerySchemaState)(),{history:u,isHistoryLoaded:_}=(0,m.useDashboardHistory)();return(0,a.useEffect)(()=>{if(_&&o&&e){let t=Number(u.editor),s=Number(l.openTabs.find(e=>h.editorEntityTypes.table.includes(l.tabsMap[e]?.type)));if(Number.isInteger(t)){let s=l.tabsMap[t];e.push((0,n.buildTableEditorUrl)({projectRef:o,tableId:t,schema:s?.metadata?.schema}))}else if(Number.isInteger(s)){let t=l.tabsMap[s];e.push((0,n.buildTableEditorUrl)({projectRef:o,tableId:s,schema:t?.metadata?.schema}))}}},[_,o,e]),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(d.NewTab,{}),(0,t.jsx)(r.SidePanelEditor,{onTableCreated:t=>{e.push(`/project/${o}/editor/${t.id}${c?`?schema=${c}`:""}`)}})]})};_.getLayout=e=>(0,t.jsx)(o.DefaultLayout,{children:(0,t.jsx)(l.EditorBaseLayout,{productMenu:(0,t.jsx)(u.TableEditorMenu,{}),product:"Table Editor",productMenuClassName:"overflow-y-hidden",children:(0,t.jsx)(c.TableEditorLayout,{children:e})})}),e.s(["default",0,_])},309956,(e,t,s)=>{let a="/project/[ref]/editor";(window.__NEXT_P=window.__NEXT_P||[]).push([a,()=>e.r(830033)]),t.hot&&t.hot.dispose(function(){window.__NEXT_P.push([a])})},111410,e=>{e.v(t=>Promise.all(["static/chunks/a428d2b7e6671266.js","static/chunks/db6e89e400789b2b.js"].map(t=>e.l(t))).then(()=>t(677146)))},883471,e=>{e.v(t=>Promise.all(["static/chunks/f2ab36b4c62edcb1.js"].map(t=>e.l(t))).then(()=>t(518769)))},174741,e=>{e.v(t=>Promise.all(["static/chunks/9072df09e4f60a51.js"].map(t=>e.l(t))).then(()=>t(576046)))},158192,e=>{e.v(t=>Promise.all(["static/chunks/25bc092e24c7ccdd.js"].map(t=>e.l(t))).then(()=>t(533066)))},591393,e=>{e.v(t=>Promise.all(["static/chunks/e9ad074e72197584.js"].map(t=>e.l(t))).then(()=>t(217383)))},379416,e=>{e.v(t=>Promise.all(["static/chunks/031b0d6330b6fbae.js"].map(t=>e.l(t))).then(()=>t(931066)))},15732,e=>{e.v(t=>Promise.all(["static/chunks/0d5256e667945be4.js"].map(t=>e.l(t))).then(()=>t(760545)))},957083,e=>{e.v(t=>Promise.all(["static/chunks/e7d07ff1ae210964.js"].map(t=>e.l(t))).then(()=>t(667558)))},926327,e=>{e.v(t=>Promise.all(["static/chunks/a5f6425a6c20e9a8.js"].map(t=>e.l(t))).then(()=>t(72947)))},207969,e=>{e.v(t=>Promise.all(["static/chunks/8dd7282c22f923f6.js"].map(t=>e.l(t))).then(()=>t(427328)))},992842,e=>{e.v(t=>Promise.all(["static/chunks/d064a48a1c7cf778.js"].map(t=>e.l(t))).then(()=>t(793794)))},239573,e=>{e.v(t=>Promise.all(["static/chunks/edc5d84148401903.js"].map(t=>e.l(t))).then(()=>t(210246)))},963685,e=>{e.v(t=>Promise.all(["static/chunks/92b20126e5ca0919.js"].map(t=>e.l(t))).then(()=>t(983756)))},665811,e=>{e.v(t=>Promise.all(["static/chunks/44e647523eaf7d10.js"].map(t=>e.l(t))).then(()=>t(544836)))},369256,e=>{e.v(t=>Promise.all(["static/chunks/8296dc618dae72f0.js"].map(t=>e.l(t))).then(()=>t(930239)))},16037,e=>{e.v(t=>Promise.all(["static/chunks/3251b4bc539a554b.js"].map(t=>e.l(t))).then(()=>t(397698)))},616788,e=>{e.v(t=>Promise.all(["static/chunks/c6b81ab43a1d5d23.js"].map(t=>e.l(t))).then(()=>t(7346)))},315750,e=>{e.v(t=>Promise.all(["static/chunks/32c236321136eb7c.js"].map(t=>e.l(t))).then(()=>t(531289)))},460510,e=>{e.v(t=>Promise.all(["static/chunks/d91062943e6a7c30.js"].map(t=>e.l(t))).then(()=>t(276898)))},550265,e=>{e.v(t=>Promise.all(["static/chunks/75ff0e62b8a31d26.js"].map(t=>e.l(t))).then(()=>t(259714)))},830960,e=>{e.v(t=>Promise.all(["static/chunks/b44aa26556fee7df.js"].map(t=>e.l(t))).then(()=>t(882885)))},336744,e=>{e.v(t=>Promise.all(["static/chunks/2b0767b5c008139a.js"].map(t=>e.l(t))).then(()=>t(955268)))},63631,e=>{e.v(t=>Promise.all(["static/chunks/21a4706e1f02d90b.js"].map(t=>e.l(t))).then(()=>t(853630)))},396476,e=>{e.v(t=>Promise.all(["static/chunks/265a0c1d143bd3f1.js"].map(t=>e.l(t))).then(()=>t(62943)))},912072,e=>{e.v(t=>Promise.all(["static/chunks/c17c80e5efc43419.js"].map(t=>e.l(t))).then(()=>t(311301)))},846537,e=>{e.v(t=>Promise.all(["static/chunks/1eb4d0ef3a3b833f.js"].map(t=>e.l(t))).then(()=>t(245201)))},50229,e=>{e.v(t=>Promise.all(["static/chunks/1af29126b4b1a587.js"].map(t=>e.l(t))).then(()=>t(331248)))},263652,e=>{e.v(t=>Promise.all(["static/chunks/94a360859d9c86a3.js"].map(t=>e.l(t))).then(()=>t(700224)))},822335,e=>{e.v(t=>Promise.all(["static/chunks/4b268363a31d2851.js"].map(t=>e.l(t))).then(()=>t(48216)))},827389,e=>{e.v(t=>Promise.all(["static/chunks/38b67e7ffe9ab817.js"].map(t=>e.l(t))).then(()=>t(780795)))},306465,e=>{e.v(t=>Promise.all(["static/chunks/2ddab81bcbf57c62.js"].map(t=>e.l(t))).then(()=>t(84223)))},320810,e=>{e.v(t=>Promise.all(["static/chunks/c03e305b98f6e435.js"].map(t=>e.l(t))).then(()=>t(190529)))},44756,e=>{e.v(t=>Promise.all(["static/chunks/4b657c7afc90ce48.js"].map(t=>e.l(t))).then(()=>t(411609)))},77572,e=>{e.v(t=>Promise.all(["static/chunks/f4d9b3ddaeddf18b.js"].map(t=>e.l(t))).then(()=>t(550910)))},299015,e=>{e.v(t=>Promise.all(["static/chunks/862f2eee69e43ef3.js"].map(t=>e.l(t))).then(()=>t(956403)))},853832,e=>{e.v(t=>Promise.all(["static/chunks/06c680e482a6c261.js"].map(t=>e.l(t))).then(()=>t(523047)))},444444,e=>{e.v(t=>Promise.all(["static/chunks/7615a8c7bdfa04e3.js"].map(t=>e.l(t))).then(()=>t(306141)))},89982,e=>{e.v(t=>Promise.all(["static/chunks/a075421760098ba4.js"].map(t=>e.l(t))).then(()=>t(84181)))},439,e=>{e.v(t=>Promise.all(["static/chunks/2a58fe5d00c7ff3f.js"].map(t=>e.l(t))).then(()=>t(585967)))},674055,e=>{e.v(t=>Promise.all(["static/chunks/a8a0173be5eb4b1a.js"].map(t=>e.l(t))).then(()=>t(659864)))},801894,e=>{e.v(t=>Promise.all(["static/chunks/a396db3ca0f9964b.js"].map(t=>e.l(t))).then(()=>t(532683)))},578444,e=>{e.v(t=>Promise.all(["static/chunks/af0965ff035e3bff.js"].map(t=>e.l(t))).then(()=>t(221183)))},185608,e=>{e.v(t=>Promise.all(["static/chunks/1974e32bc27c46ff.js"].map(t=>e.l(t))).then(()=>t(79472)))},612314,e=>{e.v(t=>Promise.all(["static/chunks/473c2dfa1c25381c.js"].map(t=>e.l(t))).then(()=>t(980791)))},660943,e=>{e.v(t=>Promise.all(["static/chunks/c90413a3fb4f7fb4.js"].map(t=>e.l(t))).then(()=>t(620893)))},214615,e=>{e.v(t=>Promise.all(["static/chunks/726c9c09fe01762c.js"].map(t=>e.l(t))).then(()=>t(194742)))},877303,e=>{e.v(t=>Promise.all(["static/chunks/f7c8e9045a5d9537.js"].map(t=>e.l(t))).then(()=>t(85809)))},565731,e=>{e.v(t=>Promise.all(["static/chunks/a857737ee1ea178f.js"].map(t=>e.l(t))).then(()=>t(846526)))},439954,e=>{e.v(t=>Promise.all(["static/chunks/d7542e9c60951f94.js"].map(t=>e.l(t))).then(()=>t(399358)))},646193,e=>{e.v(t=>Promise.all(["static/chunks/0e86c6f6f44c3d01.js"].map(t=>e.l(t))).then(()=>t(270671)))},470322,e=>{e.v(t=>Promise.all(["static/chunks/95e51d9895d75e1b.js"].map(t=>e.l(t))).then(()=>t(433215)))},310666,e=>{e.v(t=>Promise.all(["static/chunks/c29b3dc53abbda08.js"].map(t=>e.l(t))).then(()=>t(191809)))},38970,e=>{e.v(t=>Promise.all(["static/chunks/6dc6b877e84c88ae.js"].map(t=>e.l(t))).then(()=>t(66554)))},68365,e=>{e.v(t=>Promise.all(["static/chunks/8229f5f7f1da78d8.js"].map(t=>e.l(t))).then(()=>t(531769)))},705292,e=>{e.v(t=>Promise.all(["static/chunks/055f0ce00306f8fb.js"].map(t=>e.l(t))).then(()=>t(147575)))},930188,e=>{e.v(t=>Promise.all(["static/chunks/82add4c171124deb.js"].map(t=>e.l(t))).then(()=>t(604919)))},736620,e=>{e.v(t=>Promise.all(["static/chunks/fb200c2b93e182d4.js"].map(t=>e.l(t))).then(()=>t(85022)))},101928,e=>{e.v(t=>Promise.all(["static/chunks/b11be5a5365b7b1d.js"].map(t=>e.l(t))).then(()=>t(846161)))},41375,e=>{e.v(t=>Promise.all(["static/chunks/0912339940d33c05.js"].map(t=>e.l(t))).then(()=>t(834473)))},715733,e=>{e.v(t=>Promise.all(["static/chunks/fda629c97ad86f4b.js"].map(t=>e.l(t))).then(()=>t(417897)))},268726,e=>{e.v(t=>Promise.all(["static/chunks/60f6a57c12840f76.js"].map(t=>e.l(t))).then(()=>t(898187)))},740028,e=>{e.v(t=>Promise.all(["static/chunks/b0a0ce66a05b020e.js"].map(t=>e.l(t))).then(()=>t(391060)))},329867,e=>{e.v(t=>Promise.all(["static/chunks/89b2c7425982c5c1.js"].map(t=>e.l(t))).then(()=>t(562380)))},643342,e=>{e.v(t=>Promise.all(["static/chunks/0055c7f937c27131.js","static/chunks/6a6e737ce7e02ab3.js","static/chunks/2f742fe3bf6a391c.js","static/chunks/7a7b810a95ccfa68.js","static/chunks/18f630c6dd24a574.js","static/chunks/d230886f217d6688.js"].map(t=>e.l(t))).then(()=>t(232258)))},804879,e=>{e.v(t=>Promise.all(["static/chunks/427dbd3baa71ae4c.js"].map(t=>e.l(t))).then(()=>t(199687)))},95833,e=>{e.v(t=>Promise.all(["static/chunks/aad178aeb8ef28d2.js"].map(t=>e.l(t))).then(()=>t(142543)))},909495,e=>{e.v(t=>Promise.all(["static/chunks/4415bfe6e872ae77.js"].map(t=>e.l(t))).then(()=>t(698380)))},548863,e=>{e.v(t=>Promise.all(["static/chunks/2bb23bc821dc70b8.js"].map(t=>e.l(t))).then(()=>t(79703)))},283398,e=>{e.v(t=>Promise.all(["static/chunks/a5b5fe0d3709ba4e.js"].map(t=>e.l(t))).then(()=>t(541970)))},274794,e=>{e.v(t=>Promise.all(["static/chunks/a0e71745be48440b.js","static/chunks/3d0dd82b7e3b7a00.js","static/chunks/7c75f9b22dd552eb.js","static/chunks/08a8a9fbb8ce7be8.js"].map(t=>e.l(t))).then(()=>t(571538)))},529471,e=>{e.v(t=>Promise.all(["static/chunks/f0dfa97886bcca4c.js"].map(t=>e.l(t))).then(()=>t(159380)))},579437,e=>{e.v(t=>Promise.all(["static/chunks/e761b7a73e3ddc11.js","static/chunks/93ff00a353b7c035.js"].map(t=>e.l(t))).then(()=>t(524943)))},609157,e=>{e.v(t=>Promise.all(["static/chunks/79c33d86a9295f7b.js","static/chunks/93ff00a353b7c035.js"].map(t=>e.l(t))).then(()=>t(323205)))},707643,e=>{e.v(t=>Promise.all(["static/chunks/7345b8261e343585.js","static/chunks/f51f176b2997f9cb.js","static/chunks/9f8115378d1576db.js"].map(t=>e.l(t))).then(()=>t(935100)))},467186,e=>{e.v(t=>Promise.all(["static/chunks/2a357ec492090b17.js"].map(t=>e.l(t))).then(()=>t(6777)))},639206,e=>{e.v(t=>Promise.all(["static/chunks/125d5c8050857c98.js","static/chunks/15053cd531e460c8.js"].map(t=>e.l(t))).then(()=>t(791713)))},250577,e=>{e.v(t=>Promise.all(["static/chunks/3843b18f06c22ed9.js"].map(t=>e.l(t))).then(()=>t(429091)))},610764,e=>{e.v(t=>Promise.all(["static/chunks/78fd6bce49c52470.js","static/chunks/bc7d7e225cba2fb3.js"].map(t=>e.l(t))).then(()=>t(247311)))},818633,e=>{e.v(t=>Promise.all(["static/chunks/ec80796bc5ca5d72.js","static/chunks/dece098f25f940c2.js"].map(t=>e.l(t))).then(()=>t(338481)))},500556,e=>{e.v(t=>Promise.all(["static/chunks/9221cae00b5d705a.css","static/chunks/a0e71745be48440b.js","static/chunks/7c75f9b22dd552eb.js","static/chunks/1e529d4799e295ee.js","static/chunks/e91089a69bec4b94.js","static/chunks/c1ed92efdfd83ed9.js","static/chunks/fba71424bbeef911.js","static/chunks/0f3ede4167338118.js"].map(t=>e.l(t))).then(()=>t(321608)))},596207,e=>{e.v(t=>Promise.all(["static/chunks/899ea897f6225b91.js","static/chunks/bd24e9df7b8835ed.js","static/chunks/f51f176b2997f9cb.js","static/chunks/9f8115378d1576db.js"].map(t=>e.l(t))).then(()=>t(865243)))},354946,e=>{e.v(t=>Promise.all(["static/chunks/53fc97799378e4f4.js","static/chunks/bd24e9df7b8835ed.js","static/chunks/f51f176b2997f9cb.js","static/chunks/9f8115378d1576db.js"].map(t=>e.l(t))).then(()=>t(674412)))},208268,e=>{e.v(t=>Promise.all(["static/chunks/e37c5d36b72a4971.js"].map(t=>e.l(t))).then(()=>t(799765)))},98740,e=>{e.v(t=>Promise.all(["static/chunks/551bf048ade2f58d.js"].map(t=>e.l(t))).then(()=>t(795776)))},134805,e=>{e.v(t=>Promise.all(["static/chunks/3ea6b70f22b475ec.js"].map(t=>e.l(t))).then(()=>t(664336)))},597523,e=>{e.v(t=>Promise.all(["static/chunks/17e141e80fd4764a.js"].map(t=>e.l(t))).then(()=>t(245099)))},678679,e=>{e.v(t=>Promise.all(["static/chunks/d7fdab301a89f5b1.js"].map(t=>e.l(t))).then(()=>t(404154)))},73751,e=>{e.v(t=>Promise.all(["static/chunks/9241a7ed3ae3d9a4.js"].map(t=>e.l(t))).then(()=>t(31724)))},429186,e=>{e.v(t=>Promise.all(["static/chunks/e1f246b50a446b24.css","static/chunks/8825e86f66063aa6.js","static/chunks/9f8115378d1576db.js","static/chunks/eab58116508586b0.js","static/chunks/98efb28b28c8fad9.js","static/chunks/f0422b11fdb1399e.js","static/chunks/72b3d15e45a0ce77.js","static/chunks/3d9825ec0b4df508.js","static/chunks/5a17a5b381ca9caa.js","static/chunks/86441a624eafddb3.js","static/chunks/e02ca2c62fa1edfe.js","static/chunks/29cd40a8178e8165.js","static/chunks/3250e45415e1515a.js","static/chunks/5181225660f216da.js","static/chunks/74b02c39c23217a7.js","static/chunks/53336ce6f5ffe2b7.js"].map(t=>e.l(t))).then(()=>t(818996)))},488584,e=>{e.v(t=>Promise.all(["static/chunks/8059e2ca97e93a45.js"].map(t=>e.l(t))).then(()=>t(851420)))},25642,e=>{e.v(e=>Promise.resolve().then(()=>e(207831)))},561602,e=>{e.v(t=>Promise.all(["static/chunks/d45627890dc92de8.js","static/chunks/23e88c4229fc725a.js"].map(t=>e.l(t))).then(()=>t(326204)))},877114,e=>{e.v(t=>Promise.all(["static/chunks/927e053f48b5d6ef.js"].map(t=>e.l(t))).then(()=>t(812136)))},540007,e=>{e.v(t=>Promise.all(["static/chunks/f475389585d7670a.js"].map(t=>e.l(t))).then(()=>t(785951)))},593029,e=>{e.v(t=>Promise.all(["static/chunks/2c041288916a8c5e.js"].map(t=>e.l(t))).then(()=>t(755497)))},849654,e=>{e.v(t=>Promise.all(["static/chunks/6ebf6a849026d0d6.js"].map(t=>e.l(t))).then(()=>t(839941)))},639363,e=>{e.v(t=>Promise.all(["static/chunks/a37d63f4b674be02.js"].map(t=>e.l(t))).then(()=>t(904340)))},425360,e=>{e.v(t=>Promise.all(["static/chunks/a5e264d7180592eb.js"].map(t=>e.l(t))).then(()=>t(409222)))},548315,e=>{e.v(t=>Promise.all(["static/chunks/a2928a65b434619c.js"].map(t=>e.l(t))).then(()=>t(256337)))},661328,e=>{e.v(t=>Promise.all(["static/chunks/ad2253f51d8982c6.js","static/chunks/f51f176b2997f9cb.js","static/chunks/9f8115378d1576db.js"].map(t=>e.l(t))).then(()=>t(447400)))},265029,e=>{e.v(t=>Promise.all(["static/chunks/55176cbf9c4c35ee.js"].map(t=>e.l(t))).then(()=>t(289339)))},151872,e=>{e.v(t=>Promise.all(["static/chunks/e683418d9676e1b4.js"].map(t=>e.l(t))).then(()=>t(865389)))}]);
+
+//# debugId=7a46a9f4-2362-3ab9-fa62-53114f94b81b
+//# sourceMappingURL=14b4067d70799c5b.js.map

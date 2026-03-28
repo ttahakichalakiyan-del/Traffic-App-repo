@@ -1,0 +1,48 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Backend API",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "apps/backend",
+      "port": 3001,
+      "autoPort": false
+    },
+    {
+      "name": "Admin Panel",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "apps/admin-panel",
+      "port": 5173
+    },
+    {
+      "name": "DSP Command App",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "cwd": "apps/dsp-app",
+      "port": 8081
+    },
+    {
+      "name": "Staff Tracker App",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start", "--", "--port", "8082"],
+      "cwd": "apps/staff-app",
+      "port": 8082
+    },
+    {
+      "name": "ML Prediction Engine",
+      "runtimeExecutable": "venv/Scripts/python",
+      "runtimeArgs": ["-m", "uvicorn", "main:app", "--host", "127.0.0.1", "--port", "8001", "--reload"],
+      "cwd": "apps/ml-engine",
+      "port": 8001
+    },
+    {
+      "name": "PostgreSQL + Redis (Docker)",
+      "runtimeExecutable": "docker",
+      "runtimeArgs": ["compose", "up", "-d"],
+      "cwd": ".",
+      "port": 5432
+    }
+  ]
+}

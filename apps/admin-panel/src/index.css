@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1A3A5C;
+  --navy-light: #244d7a;
+  --navy-dark: #102540;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f1f5f9;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #94a3b8;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav-item:hover {
+  background: rgba(255,255,255,0.08);
+  color: #e2e8f0;
+}
+
+.sidebar-nav-item.active {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border-left-color: white;
+}

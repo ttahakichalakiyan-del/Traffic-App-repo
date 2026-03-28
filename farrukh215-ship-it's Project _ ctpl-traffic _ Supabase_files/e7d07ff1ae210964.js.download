@@ -1,0 +1,66 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="297ba585-a469-da8a-175d-e030ad199939")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,905266,e=>{"use strict";var t=e.i(478902);let s=(0,e.i(388019).default)("FileJson2",[["path",{d:"M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4",key:"1pf5j1"}],["path",{d:"M14 2v4a2 2 0 0 0 2 2h4",key:"tnqrlb"}],["path",{d:"M4 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1",key:"fq0c9t"}],["path",{d:"M8 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1",key:"4gibmv"}]]);var a=e.i(389959),r=e.i(500850),o=e.i(283606),n=e.i(314805),i=e.i(408279);e.s(["ConnectTabContent",0,({value:e,children:s})=>(0,t.jsx)(o.TabsContent_Shadcn_,{value:e,className:"p-3 mt-1 max-h-72 overflow-scroll",children:s}),"ConnectTabTrigger",0,({value:e})=>(0,t.jsxs)(i.TabsTrigger_Shadcn_,{value:e,className:"flex items-center gap-1 text-xs px-0 data-[state=active]:bg-transparent py-2.5",children:[(0,t.jsx)(s,{size:15,className:"text-foreground-muted"}),e]}),"ConnectTabTriggers",0,({children:e})=>(0,t.jsx)(n.TabsList_Shadcn_,{className:"bg-surface-100 px-5 rounded-lg rounded-b-none gap-5",children:e}),"ConnectTabs",0,({children:e,value:s,onValueChange:o})=>{let n=e[0],i=(0,a.isValidElement)(n)?n.props?.children[0]?.props?.value||"":null;return(0,t.jsx)(r.Tabs_Shadcn_,{defaultValue:i,value:s,onValueChange:o,children:e})}],905266)},667558,e=>{"use strict";var t=e.i(478902),s=e.i(905266),a=e.i(200243);e.s(["default",0,({projectKeys:e})=>(0,t.jsxs)(s.ConnectTabs,{children:[(0,t.jsxs)(s.ConnectTabTriggers,{children:[(0,t.jsx)(s.ConnectTabTrigger,{value:".env.local"}),(0,t.jsx)(s.ConnectTabTrigger,{value:"utils/supabase.ts"}),(0,t.jsx)(s.ConnectTabTrigger,{value:"App.tsx"})]}),(0,t.jsx)(s.ConnectTabContent,{value:".env.local",children:(0,t.jsx)(a.SimpleCodeBlock,{className:"bash",parentClassName:"min-h-72",children:`
+EXPO_PUBLIC_SUPABASE_URL=${e.apiUrl??"your-project-url"}
+EXPO_PUBLIC_SUPABASE_KEY=${e.publishableKey??"<prefer publishable key instead of anon key for mobile and desktop apps>"}
+        `})}),(0,t.jsx)(s.ConnectTabContent,{value:"utils/supabase.ts",children:(0,t.jsx)(a.SimpleCodeBlock,{className:"ts",parentClassName:"min-h-72",children:`
+import 'react-native-url-polyfill/auto'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { createClient, processLock } from '@supabase/supabase-js'
+
+export const supabase = createClient(
+  process.env.EXPO_PUBLIC_SUPABASE_URL!,
+  process.env.EXPO_PUBLIC_SUPABASE_KEY!,
+  {
+    auth: {
+      storage: AsyncStorage,
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: false,
+      lock: processLock,
+    },
+  })
+        `})}),(0,t.jsx)(s.ConnectTabContent,{value:"App.tsx",children:(0,t.jsx)(a.SimpleCodeBlock,{className:"tsx",parentClassName:"min-h-72",children:`
+import React, { useState, useEffect } from 'react';
+import { View, Text, FlatList } from 'react-native';
+import { supabase } from '../utils/supabase';
+
+export default function App() {
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    const getTodos = async () => {
+      try {
+        const { data: todos, error } = await supabase.from('todos').select();
+
+        if (error) {
+          console.error('Error fetching todos:', error.message);
+          return;
+        }
+
+        if (todos && todos.length > 0) {
+          setTodos(todos);
+        }
+      } catch (error) {
+        console.error('Error fetching todos:', error.message);
+      }
+    };
+
+    getTodos();
+  }, []);
+
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Todo List</Text>
+      <FlatList
+        data={todos}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <Text key={item.id}>{item.title}</Text>}
+      />
+    </View>
+  );
+};
+
+`})})]})])}]);
+
+//# debugId=297ba585-a469-da8a-175d-e030ad199939
+//# sourceMappingURL=740acf2f25151f64.js.map

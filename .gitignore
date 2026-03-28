@@ -1,0 +1,45 @@
+node_modules/
+dist/
+build/
+.expo/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+*.apk
+*.aab
+__pycache__/
+*.pyc
+.venv/
+coverage/
+.DS_Store
+Thumbs.db
+
+# Keystores - NEVER commit
+*.keystore
+*.jks
+keystores/
+
+# Built APKs
+release-apks/
+
+# Android build artifacts
+apps/*/android/app/build/
+apps/*/android/.gradle/
+apps/*/android/build/
+
+# Temp/Office lock files
+~$*
+*.tmp
+
+# Claude project memory (local only)
+.claude/
+
+# Python virtual environment
+venv/
+.venv/
+apps/ml-engine/venv/
+
+# Supabase HTML exports
+*.html
+*_files/
