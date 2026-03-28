@@ -96,6 +96,55 @@ const CreateAreaSchema = z.object({
   geoJsonPolygon: z.unknown().optional(),
 });
 
+// ─── GeoJSON Helper ──────────────────────────────────────────
+// Accepts any format pasted from geojson.io:
+//   - FeatureCollection  → extracts first feature's geometry
+//   - Feature            → extracts geometry
+//   - LineString         → auto-closes into a Polygon ring
+//   - Polygon            → used as-is
+// Returns a GeoJSON Polygon geometry string, or null on failure.
+function normalizeToPolygonGeoJson(raw: unknown): string | null {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let geo: any = raw;
+
+    // FeatureCollection → take first feature
+    if (geo?.type === 'FeatureCollection') {
+      geo = geo.features?.[0]?.geometry ?? null;
+    }
+    // Feature → extract geometry
+    if (geo?.type === 'Feature') {
+      geo = geo.geometry ?? null;
+    }
+    if (!geo || !geo.type) return null;
+
+    // LineString → close the ring and wrap as Polygon
+    if (geo.type === 'LineString') {
+      const coords: number[][] = geo.coordinates;
+      if (!coords || coords.length < 3) return null;
+      // Close ring: first point === last point
+      const ring = [...coords];
+      const first = ring[0];
+      const last = ring[ring.length - 1];
+      if (first[0] !== last[0] || first[1] !== last[1]) {
+        ring.push(first);
+      }
+      geo = { type: 'Polygon', coordinates: [ring] };
+    }
+
+    // MultiPolygon → take first polygon
+    if (geo.type === 'MultiPolygon') {
+      geo = { type: 'Polygon', coordinates: geo.coordinates[0] };
+    }
+
+    if (geo.type !== 'Polygon') return null;
+
+    return JSON.stringify(geo);
+  } catch {
+    return null;
+  }
+}
+
 const UpdateAreaSchema = z.object({
   name: z.string().optional(),
   dspUserId: z.string().uuid().nullable().optional(),
@@ -704,8 +753,9 @@ router.post(
     try {
       const { name, dspUserId, colorHex, geoJsonPolygon } = req.body;
 
-      const boundaryValue = geoJsonPolygon
-        ? sql`ST_GeomFromGeoJSON(${JSON.stringify(geoJsonPolygon)})`
+      const normalizedGeo = geoJsonPolygon ? normalizeToPolygonGeoJson(geoJsonPolygon) : null;
+      const boundaryValue = normalizedGeo
+        ? sql`ST_GeomFromGeoJSON(${normalizedGeo})`
         : sql`ST_GeomFromText('POLYGON((0 0,0 1,1 1,1 0,0 0))', 4326)`;
 
       const [area] = await db
@@ -765,7 +815,10 @@ router.put(
       if (colorHex !== undefined) updateData.colorHex = colorHex;
       if (isActive !== undefined) updateData.isActive = isActive;
       if (geoJsonPolygon !== undefined) {
-        updateData.boundary = sql`ST_GeomFromGeoJSON(${JSON.stringify(geoJsonPolygon)})`;
+        const normalizedGeo = normalizeToPolygonGeoJson(geoJsonPolygon);
+        if (normalizedGeo) {
+          updateData.boundary = sql`ST_GeomFromGeoJSON(${normalizedGeo})`;
+        }
       }
 
       const [updated] = await db
