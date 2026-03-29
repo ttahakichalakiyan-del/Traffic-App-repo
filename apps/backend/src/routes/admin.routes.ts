@@ -437,7 +437,21 @@ router.get('/staff', async (req: Request, res: Response, next: NextFunction) => 
 
     const whereClause = conditions.length > 0 ? and(...conditions) : undefined;
 
-    const [rows, [{ total }]] = await Promise.all([
+    // Base conditions without status filter (for stats counts)
+    const baseConditions = [];
+    if (search) {
+      baseConditions.push(
+        or(
+          ilike(staffMembers.fullName, `%${search}%`),
+          ilike(staffMembers.badgeId, `%${search}%`),
+        ),
+      );
+    }
+    if (areaId) baseConditions.push(eq(staffMembers.areaId, areaId));
+    if (sectorId) baseConditions.push(eq(staffMembers.sectorId, sectorId));
+    const baseWhere = baseConditions.length > 0 ? and(...baseConditions) : undefined;
+
+    const [rows, [{ total }], [{ activeCount }], [{ onDutyCount }], [{ inactiveCount }]] = await Promise.all([
       db
         .select({
           id: staffMembers.id,
@@ -464,11 +478,31 @@ router.get('/staff', async (req: Request, res: Response, next: NextFunction) => 
         .limit(limit)
         .offset(offset),
       db.select({ total: count() }).from(staffMembers).where(whereClause),
+      db.select({ activeCount: count() }).from(staffMembers).where(
+        baseWhere ? and(baseWhere, eq(staffMembers.isActive, true)) : eq(staffMembers.isActive, true)
+      ),
+      db.select({ onDutyCount: count() }).from(staffMembers).where(
+        baseWhere ? and(baseWhere, eq(staffMembers.isOnDuty, true)) : eq(staffMembers.isOnDuty, true)
+      ),
+      db.select({ inactiveCount: count() }).from(staffMembers).where(
+        baseWhere ? and(baseWhere, eq(staffMembers.isActive, false)) : eq(staffMembers.isActive, false)
+      ),
     ]);
 
     res.json({
       success: true,
-      data: { staff: rows, total: Number(total), page, limit },
+      data: {
+        staff: rows,
+        total: Number(total),
+        page,
+        limit,
+        stats: {
+          total: Number(activeCount) + Number(inactiveCount),
+          active: Number(activeCount),
+          onDuty: Number(onDutyCount),
+          inactive: Number(inactiveCount),
+        },
+      },
       error: null,
       timestamp: new Date().toISOString(),
     });
