@@ -61,10 +61,103 @@ export type OnDutyStaff = StaffWithLocation;
 // ============================================================
 
 export async function getStaffByArea(areaId: string): Promise<StaffWithLocation[]> {
-  const result = await db.execute<StaffWithLocation>(
-    sql`SELECT * FROM v_on_duty_staff WHERE area_id = ${areaId}`,
-  );
-  return result.rows;
+  const today = new Date().toISOString().slice(0, 10);
+
+  const rows = await db
+    .select({
+      staff_id: staffMembers.id,
+      badge_id: staffMembers.badgeId,
+      full_name: staffMembers.fullName,
+      rank: staffMembers.rank,
+      designation: staffMembers.designation,
+      phone: staffMembers.phone,
+      device_token: staffMembers.deviceToken,
+      is_on_duty: staffMembers.isOnDuty,
+      last_seen_at: staffMembers.lastSeenAt,
+      area_id: staffMembers.areaId,
+      sector_id: staffMembers.sectorId,
+      sector_name: sectors.name,
+      sector_color: sectors.colorHex,
+      lat: sql<number | null>`(
+        SELECT sl.lat FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      lng: sql<number | null>`(
+        SELECT sl.lng FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      accuracy: sql<number | null>`(
+        SELECT sl.accuracy FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      battery_level: sql<number | null>`(
+        SELECT sl.battery_level FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      last_ping_at: sql<Date | null>`(
+        SELECT sl.timestamp FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      minutes_since_ping: sql<number | null>`(
+        SELECT EXTRACT(EPOCH FROM (NOW() - sl.timestamp)) / 60
+        FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      is_location_stale: sql<boolean | null>`(
+        SELECT (NOW() - sl.timestamp) > INTERVAL '5 minutes'
+        FROM staff_locations sl
+        WHERE sl.staff_id = ${staffMembers.id}
+        ORDER BY sl.timestamp DESC LIMIT 1
+      )`,
+      duty_category_id: sql<string | null>`(
+        SELECT re.duty_category_id FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+      duty_category_name: sql<string | null>`(
+        SELECT dc.name FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        JOIN duty_categories dc ON re.duty_category_id = dc.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+      todays_duty_location: sql<string | null>`(
+        SELECT re.duty_location FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+      beat_route: sql<string | null>`(
+        SELECT re.beat_route FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+      shift_start: sql<string | null>`(
+        SELECT re.shift_start::text FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+      shift_end: sql<string | null>`(
+        SELECT re.shift_end::text FROM roster_entries re
+        JOIN daily_rosters dr ON re.roster_id = dr.id
+        WHERE re.staff_id = ${staffMembers.id} AND dr.roster_date = ${today}
+        LIMIT 1
+      )`,
+    })
+    .from(staffMembers)
+    .leftJoin(sectors, eq(staffMembers.sectorId, sectors.id))
+    .where(and(eq(staffMembers.areaId, areaId), eq(staffMembers.isActive, true)));
+
+  return rows as unknown as StaffWithLocation[];
 }
 
 export async function getStaffDetail(staffId: string): Promise<StaffDetail> {

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 import { extractTokenFromHeader, verifyToken } from '../lib/jwt';
 import { AppError, AuthErrors } from '../lib/errors';
 import { db } from '../db/index';
@@ -35,7 +35,7 @@ export async function verifyDspToken(
     const [area] = await db
       .select({ id: areas.id })
       .from(areas)
-      .where(eq(areas.dspUserId, dsp.id))
+      .where(and(eq(areas.dspUserId, dsp.id), eq(areas.isActive, true)))
       .limit(1);
 
     req.dsp = {
@@ -156,7 +156,7 @@ export async function optionalDspToken(
       const [area] = await db
         .select({ id: areas.id })
         .from(areas)
-        .where(eq(areas.dspUserId, dsp.id))
+        .where(and(eq(areas.dspUserId, dsp.id), eq(areas.isActive, true)))
         .limit(1);
 
       req.dsp = {
@@ -198,7 +198,7 @@ export async function verifyAnyToken(
       const [area] = await db
         .select({ id: areas.id })
         .from(areas)
-        .where(eq(areas.dspUserId, dsp.id))
+        .where(and(eq(areas.dspUserId, dsp.id), eq(areas.isActive, true)))
         .limit(1);
 
       req.dsp = {
