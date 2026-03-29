@@ -21,10 +21,8 @@ function ok(res: Response, data: unknown) {
 // All active staff for DSP's area with latest location + today's duty
 router.get('/', verifyDspToken, async (req: Request, res: Response, next: NextFunction) => {
   try {
-    // areaId comes from JWT (set by verifyDspToken) — query param as fallback
-    const dspAreaId =
-      (req as Request & { user?: { areaId?: string } }).user?.areaId ??
-      (req.query.areaId as string | undefined);
+    // areaId from verifyDspToken middleware (req.dsp) — query param as fallback
+    const dspAreaId = req.dsp?.areaId ?? (req.query.areaId as string | undefined);
 
     if (!dspAreaId) {
       return ok(res, []);
