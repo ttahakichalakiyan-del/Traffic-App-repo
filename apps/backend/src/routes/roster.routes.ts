@@ -47,7 +47,7 @@ router.get('/daily', verifyDspToken, async (req: Request, res: Response, next: N
   try {
     const { date } = req.query as { date?: string };
     const targetDate = date || new Date().toISOString().slice(0, 10);
-    const dspAreaId = (req as Request & { user?: { areaId?: string } }).user?.areaId ?? null;
+    const dspAreaId = req.dsp?.areaId ?? null;
 
     if (!dspAreaId) {
       // DSP not assigned to any area — return empty

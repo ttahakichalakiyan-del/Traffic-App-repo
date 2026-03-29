@@ -383,15 +383,16 @@ router.get(
       }
 
       const responseData = {
-        on_duty: onDuty,
+        onDuty,
         stale,
+        recent: [] as typeof onDuty,
         offline,
-        never_connected: neverConnected,
+        neverConnected,
         counts: {
-          on_duty: onDuty.length,
+          onDuty: onDuty.length,
           stale: stale.length,
           offline: offline.length,
-          never_connected: neverConnected.length,
+          neverConnected: neverConnected.length,
           total: allStaff.length,
         },
       };
